@@ -19,9 +19,14 @@ const onLogin = (email, password) => {
 const LoginScreen2 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isSelected, setSelection] = useState(false);
+    // const [isSelected, setSelection] = useState(false);
     return (
         <View style={styles.container}>
+        <Image
+        style={styles.logo}
+        source={require('../images/logo.png')}
+        />
+
             <Text style={styles.inputext}> Welcome Back</Text>
             <Text style={styles.inputext1}> Sign in for continue</Text>
 
@@ -29,11 +34,14 @@ const LoginScreen2 = () => {
                 style={styles.tinyLogo}
                 source={require('../images/email.jpg')}
             />
+            <Image
+            style={styles.ellipse}
+            source={require('../images/Ellipse.png')}
+            />
             <TextInput
                 value={email}
                 onChangeText={(email) => setEmail(email)}
                 label='Enter your email'
-                //    placeholder='Enter your email'
                 style={styles.input}
             />
             <Image
@@ -49,22 +57,12 @@ const LoginScreen2 = () => {
                 onChangeText={(password) => setPassword(password)}
                 label='Password'
                 secureTextEntry={true}
-                //   placeholder='Password'
                 style={styles.input}
             />
-            {/* <View style={{
-                height: 100, marginTop: 130,
-            }}>
-                <Button
-                    title={'Sign in'}
-                    style={styles.btnSize}
-                    onPress={() => onLogin(email, password)}
-                />
-        </View> */}
 
             <CheckBox
-                value={isSelected}
-                onValueChange={setSelection}
+                // value={isSelected}
+                // onValueChange={setSelection}
                 style={styles.checkbox}
             />
             <Text style={styles.rememberText}> Remember me</Text>
@@ -72,7 +70,7 @@ const LoginScreen2 = () => {
             <Text style={styles.signupText}>Forgot Password? </Text>
 
             <View style={{
-                height: 100, marginTop: 60,
+                height: 100, marginTop: -40,
             }}>
                 <TouchableOpacity
                     style={styles.button}
@@ -88,7 +86,7 @@ const LoginScreen2 = () => {
             </View>
             <Text style={styles.changeText}>Or continue with </Text>
             <View style={{
-                height: 100, marginTop: 130,
+                height: 100, marginTop: 90,
             }}>
                 <Image
                     style={styles.googleIcon}
@@ -104,6 +102,9 @@ const LoginScreen2 = () => {
                             fontSize: 20
                         }}
                     >Google</Text>
+                    <Text style={styles.signupAccountText}>Don’t Have an Account? </Text>
+                    <Text style={styles.accounText}> Sign Up </Text>
+
                 </TouchableOpacity>
                 <Image
                     style={styles.facebookIcon}
@@ -121,9 +122,6 @@ const LoginScreen2 = () => {
                     >Facebook</Text>
                 </TouchableOpacity>
             </View>
-            <Text style={styles.accounText}>Don’t Have an Account </Text>
-
-            <Text style={styles.signupAccountText}>Don’t Have an Account? Sign Up </Text>
         </View>
     );
 };
@@ -132,18 +130,27 @@ export default LoginScreen2;
 
 const styles = StyleSheet.create({
     container: {
-        // flex: 1,
+        flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',   
+        justifyContent: 'center',
         backgroundColor: 'white',
     },
     btnSize: {
         width: "100%"
     },
+    logo: {
+        bottom: -70,
+    },
+    ellipse: {
+        left: 160,
+        bottom: 200,
+
+    },
     input: {
         width: 300,
         height: 30,
         padding: 15,
+        bottom: 50,
         borderWidth: 2,
         borderColor: 'gray',
         marginBottom: -15,
@@ -154,15 +161,17 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 12,
     },
     inputext: {
-        bottom: 10,
+        bottom: -80,
         fontSize: 50,
+        width: 204,
+        height: 33,
         textAlign: 'center',
         fontWeight: 'bold',
         marginBottom: 10,
         margin: 12,
     },
     inputext1: {
-        bottom: 10,
+        bottom: -80,
         fontSize: 20,
         color: 'grey',
         textAlign: 'center',
@@ -171,22 +180,22 @@ const styles = StyleSheet.create({
     tinyLogo: {
         width: 15,
         height: 15,
-        top: 40,
-        right: 138,
+        top: 128,
+        right: 132,
         zIndex: 9999999999,
     },
     Logo: {
         width: 25,
         display: "flex",
         height: 25,
-        top: 68,
-        right: 138,
+        top: 20,
+        right: 132,
         zIndex: 9999999999,
     },
     eye: {
         width: 25,
         height: 25,
-        top: 43,
+        bottom: 2,
         right: -120,
         zIndex: 9999999999,
     },
@@ -200,32 +209,32 @@ const styles = StyleSheet.create({
         backgroundColor: '#2945FF',
     },
     checkbox: {
-        top: 50,
+        bottom: 20,
         right: 130,
     },
     rememberText: {
         color: 'grey',
-        top: 24,
+        bottom: 48,
         right: 60,
         fontSize: 15,
     },
     signupText: {
         color: '#2945FF',
         fontSize: 16,
-        top: 5,
+        bottom: 70,
         left: 90,
     },
     changeText: {
         textAlign: "center",
         color: 'grey',
-        bottom: 15,
+        bottom: 30,
         fontSize: 18,
     },
     googleButton: {
         alignItems: "center",
         backgroundColor: "#FC6A57",
         padding: 10,
-        bottom: 100,
+        bottom: 130,
         width: 150,
         height: 50,
         right: 80,
@@ -235,7 +244,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#298FFF",
         padding: 10,
-        bottom: 175,
+        bottom: 205,
         width: 150,
         height: 50,
         left: 100,
@@ -244,7 +253,7 @@ const styles = StyleSheet.create({
     googleIcon: {
         width: 25,
         height: 25,
-        bottom: 64,
+        bottom: 93,
         left: -70,
         // backgroundColor: 'black',
         zIndex: 9999999999,
@@ -252,16 +261,20 @@ const styles = StyleSheet.create({
     facebookIcon: {
         width: 25,
         height: 25,
-        bottom: 138,
+        bottom: 168,
         right: -102,
         // backgroundColor: 'black',
         zIndex: 9999999999,
     },
-    accounText : {
+    accounText: {
         color: '#2945FF',
         fontSize: 16,
-        backgroundColor: 'black',
-        // top: 5,
-        // left: 90,
+        bottom: 10,
+        left: 130,
+    },
+    signupAccountText: {
+        fontSize: 16,
+        top: 20,
+        left: 50,
     }
 });
