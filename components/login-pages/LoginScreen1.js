@@ -6,7 +6,6 @@ import {
     StyleSheet,
     Image,
     TouchableOpacity,
-    CheckBox
 } from 'react-native';
 import { TextInput } from 'react-native-paper';
 import { AppColor } from '../../AllScreens/AppUtil';
@@ -19,7 +18,6 @@ const onLogin = (email, password) => {
 const LoginScreen1 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isSelected, setSelection] = useState(false);
     return (
         <View style={styles.container}>
             <Image
@@ -49,6 +47,16 @@ const LoginScreen1 = () => {
                 style={styles.ellipse}
                 source={require('../../images/Ellipse.png')}
             />
+
+            <Image
+                style={styles.zigzag}
+                source={require('../../images/zigzag.png')}
+            />
+
+            <Image
+                style={styles.circle}
+                source={require('../../images/circle.png')}
+            />
             <TextInput
                 value={email}
                 onChangeText={(email) => setEmail(email)}
@@ -73,14 +81,10 @@ const LoginScreen1 = () => {
                 secureTextEntry={true}
                 style={styles.input}
             />
-            <CheckBox
-                value={isSelected}
-                onValueChange={setSelection}
-                style={styles.checkbox}
-            />
-            <Text style={styles.rememberText}> Remember me</Text>
+            
+            <Text style={styles.rememberText}>Forgote Account</Text>
 
-            <Text style={styles.signupText}>Forgot Password? </Text>
+            <Text style={styles.signupText}>/ Reset </Text>
 
             <View style={{
                 height: 100, marginTop: -40,
@@ -97,44 +101,7 @@ const LoginScreen1 = () => {
                     >Login</Text>
                 </TouchableOpacity>
             </View>
-            <Text style={styles.changeText}>Or continue with </Text>
-            <View style={{
-                height: 100, marginTop: 90,
-            }}>
-                <Image
-                    style={styles.googleIcon}
-                    source={require('../../images/Vector.png')}
-                />
-                <TouchableOpacity
-                    style={styles.googleButton}
-                    onPress={() => onLogin(email, password)}
-                >
-                    <Text
-                        style={{
-                            color: 'white',
-                            fontSize: 20
-                        }}
-                    >Google</Text>
-                    <Text style={styles.signupAccountText}>Don’t Have an Account? </Text>
-                    <Text style={styles.accounText}> Sign Up </Text>
-
-                </TouchableOpacity>
-                <Image
-                    style={styles.facebookIcon}
-                    source={require('../../images/Shape.png')}
-                />
-                <TouchableOpacity
-                    style={styles.FacebookButton}
-                    onPress={() => onLogin(email, password)}
-                >
-                    <Text
-                        style={{
-                            color: 'white',
-                            fontSize: 20
-                        }}
-                    >Facebook</Text>
-                </TouchableOpacity>
-            </View>
+            <Text style={styles.changeText}>  Just Skip? </Text>
         </View>
     );
 };
@@ -157,14 +124,24 @@ const styles = StyleSheet.create({
     },
     ellipse: {
         left: 160,
-        bottom: 200,
+        bottom: 330,
+    },
+    zigzag: {
+      left: 105,
+      bottom: 355,
+      zIndex: 999999999,
+    },
+    circle: {
+      left: 120,
+      bottom: 380,
+      // zIndex: 999999999,
 
     },
     input: {
         width: 300,
         height: 44,
-        padding: 15,
-        bottom: 50,
+        padding: 35,
+        bottom: 140,
         borderWidth: 2,
         borderColor: '#E5E5E5',
         marginBottom: -15,
@@ -210,26 +187,25 @@ const styles = StyleSheet.create({
       marginBottom: 10,
     },
     tinyLogo: {
-        top: 210,
+        top: 150,
         right: 135,
         zIndex: 9999999999,
     },
     lineLogo: {
-      top: 180,
-      right: 125,
-      height: 39,
+      top: 126,
+      right: 116,
+      height: 30,
       zIndex: 9999999999,
     },
     lineLogo1: {
-      top: 255,
-      right: 125,
-      height: 39,
+      top: 200,
+      right: 116,
+      height: 30,
       zIndex: 9999999999,
     },
     Logo: {
-        display: "flex",
-        top: 25,
-        right: 138,
+        bottom: 10,
+        right: 135,
         zIndex: 9999999999,
     },
     eye: {
@@ -252,16 +228,16 @@ const styles = StyleSheet.create({
         right: 130,
     },
     rememberText: {
-        color: '#ABB3BB',
-        bottom: 48,
-        right: 60,
+        color: AppColor.black,
+        bottom: 30,
+        right: 88,
         fontSize: 15,
     },
     signupText: {
-        color: '#2945FF',
+        color: AppColor.textGrey,
         fontSize: 16,
-        bottom: 70,
-        left: 90,
+        bottom: 52,
+        left: 5,
     },
     changeText: {
         textAlign: "center",
@@ -269,56 +245,4 @@ const styles = StyleSheet.create({
         bottom: 30,
         fontSize: 18,
     },
-    googleButton: {
-        alignItems: "center",
-        backgroundColor: "#FC6A57",
-        padding: 10,
-        bottom: 130,
-        width: 150,
-        height: 50,
-        right: 80,
-        borderRadius: 12,
-    },
-    FacebookButton: {
-        alignItems: "center",
-        backgroundColor: "#298FFF",
-        padding: 10,
-        bottom: 205,
-        width: 150,
-        height: 50,
-        left: 100,
-        borderRadius: 12,
-    },
-    googleIcon: {
-        width: 25,
-        height: 25,
-        bottom: 93,
-        left: -70,
-        // backgroundColor: 'black',
-        zIndex: 9999999999,
-    },
-    facebookIcon: {
-        width: 25,
-        height: 25,
-        bottom: 168,
-        right: -102,
-        // backgroundColor: 'black',
-        zIndex: 9999999999,
-    },
-    accounText: {
-        color: '#2945FF',
-        fontSize: 14,
-        bottom: 5,
-        left: 150,
-        lineHeight: 14,
-        textAlign: "center",
-    },
-    signupAccountText: {
-        fontSize: 16,
-        top: 20,
-        left: 50,
-        width: 200,
-        lineHeight: 40,
-        
-    }
 });
