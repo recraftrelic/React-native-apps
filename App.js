@@ -18,7 +18,9 @@ import React from 'react';
 import { NativeRouter, Route, Switch } from 'react-router-native';
 // import Screen1 from './AllScreens/Screen1';
 // import Screen2 from './AllScreens/Screen2';
-import LoginScreen1 from './components/login-pages/LoginScreen1';
+// import LoginScreen1 from './components/login-pages/LoginScreen1';
+ import LoginScreen1 from './components/login-pages/LoginScreen1';
+// import LoginScreen2 from './components/LoginScreen2';
 
 const App  = () => {
   return (

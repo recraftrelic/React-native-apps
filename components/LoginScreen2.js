@@ -9,6 +9,7 @@ import {
     CheckBox
 } from 'react-native';
 import { TextInput } from 'react-native-paper';
+import login2 from './login2.json';
 
 const onLogin = (email, password) => {
     Alert.alert('Credentials', `${email} + ${password}`);
@@ -25,8 +26,8 @@ const LoginScreen2 = () => {
                 style={styles.logo}
                 source={require('../images/logo.png')}
             />
-            <Text style={styles.inputext}> Welcome Back</Text>
-            <Text style={styles.inputext1}> Sign in for continue</Text>
+            <Text style={styles.inputext}> {login2.headername} </Text>
+            <Text style={styles.inputext1}> {login2.header}</Text>
 
             <Image
                 style={styles.tinyLogo}
@@ -40,7 +41,7 @@ const LoginScreen2 = () => {
                 value={email}
                 onChangeText={(email) => setEmail(email)}
                 label='Enter your email'
-                theme={{colors: {primary: 'blue'}}}
+                theme={{ colors: { primary: 'blue' } }}
                 style={styles.input}
             />
             <Image
@@ -55,7 +56,7 @@ const LoginScreen2 = () => {
                 value={password}
                 onChangeText={(password) => setPassword(password)}
                 label='Password'
-                theme={{colors: {primary: 'blue'}}}
+                theme={{ colors: { primary: 'blue' } }}
                 secureTextEntry={true}
                 style={styles.input}
             />
@@ -64,13 +65,11 @@ const LoginScreen2 = () => {
                 onValueChange={setSelection}
                 style={styles.checkbox}
             />
-            <Text style={styles.rememberText}> Remember me</Text>
+            <Text style={styles.rememberText}> {login2.remember}</Text>
 
-            <Text style={styles.signupText}>Forgot Password? </Text>
+            <Text style={styles.signupText}>{login2.continue} </Text>
 
-            <View style={{
-                height: 100, marginTop: -40,
-            }}>
+            <View style={styles.viewStyle}>
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => onLogin(email, password)}
@@ -83,10 +82,8 @@ const LoginScreen2 = () => {
                     >Sign In</Text>
                 </TouchableOpacity>
             </View>
-            <Text style={styles.changeText}>Or continue with </Text>
-            <View style={{
-                height: 100, marginTop: 90,
-            }}>
+            <Text style={styles.changeText}>{login2.forgote} </Text>
+            <View style={styles.viewIcon}>
                 <Image
                     style={styles.googleIcon}
                     source={require('../images/Vector.png')}
@@ -95,14 +92,9 @@ const LoginScreen2 = () => {
                     style={styles.googleButton}
                     onPress={() => onLogin(email, password)}
                 >
-                    <Text
-                        style={{
-                            color: 'white',
-                            fontSize: 20
-                        }}
-                    >Google</Text>
-                    <Text style={styles.signupAccountText}>Don’t Have an Account? </Text>
-                    <Text style={styles.accounText}> Sign Up </Text>
+                    <Text style={styles.googleText}>Google</Text>
+                    <Text style={styles.signupAccountText}>{login2.account} </Text>
+                    <Text style={styles.accounText}> {login2.signup} </Text>
 
                 </TouchableOpacity>
                 <Image
@@ -113,12 +105,7 @@ const LoginScreen2 = () => {
                     style={styles.FacebookButton}
                     onPress={() => onLogin(email, password)}
                 >
-                    <Text
-                        style={{
-                            color: 'white',
-                            fontSize: 20
-                        }}
-                    >Facebook</Text>
+                    <Text style={styles.FacebookLogo}>{login2.Facebook}</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -146,7 +133,7 @@ const styles = StyleSheet.create({
 
     },
     input: {
-        width: 300,
+        width: 320,
         height: 44,
         padding: 15,
         bottom: 50,
@@ -176,13 +163,13 @@ const styles = StyleSheet.create({
     },
     tinyLogo: {
         top: 135,
-        right: 135,
+        right: 145,
         zIndex: 9999999999,
     },
     Logo: {
         display: "flex",
         top: 25,
-        right: 135,
+        right: 145,
         zIndex: 9999999999,
     },
     eye: {
@@ -216,6 +203,16 @@ const styles = StyleSheet.create({
         bottom: 70,
         left: 90,
     },
+
+    viewStyle: {
+        height: 100,
+        marginTop: -40,
+    },
+    viewIcon: {
+        height: 100,
+        marginTop: 90,
+    },
+
     changeText: {
         textAlign: "center",
         color: 'grey',
@@ -232,6 +229,10 @@ const styles = StyleSheet.create({
         right: 80,
         borderRadius: 12,
     },
+    googleText: {
+        color: 'white',
+        fontSize: 20
+    },
     FacebookButton: {
         alignItems: "center",
         backgroundColor: "#298FFF",
@@ -241,6 +242,10 @@ const styles = StyleSheet.create({
         height: 50,
         left: 100,
         borderRadius: 12,
+    },
+    FacebookLogo: {
+        color: 'white',
+        fontSize: 20
     },
     googleIcon: {
         width: 25,
@@ -262,7 +267,7 @@ const styles = StyleSheet.create({
         color: '#2945FF',
         fontSize: 14,
         bottom: 5,
-        left: 150,
+        left: 160,
         lineHeight: 14,
         textAlign: "center",
     },
@@ -272,6 +277,6 @@ const styles = StyleSheet.create({
         left: 50,
         width: 200,
         lineHeight: 40,
-        
+
     }
 });
