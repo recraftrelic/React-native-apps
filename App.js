@@ -1,12 +1,22 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
+<<<<<<< HEAD
+import { Route, Switch, NativeRouter } from "react-router-native";
+import LoginScreen1 from './components/login-pages/LoginScreen1';
+import LoginScreen2 from './components/LoginScreen2';
+
+const App = () => {
+    return (
+      <NativeRouter>
+      <Switch>
+      <Route exact path="/" component={LoginScreen2} />
+      {/* <Route exact path="/base/" component={BaseNext} />  */}
+      </Switch>
+      </NativeRouter>
+    );
+};
+
+export default App;
+=======
 import {
   SafeAreaView,
   StyleSheet,
@@ -44,3 +54,4 @@ const App  = () => {
 
 
 export default App;
+>>>>>>> 535b887739bf4dc9a398665b47b85239cd7137a0
