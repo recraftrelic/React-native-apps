@@ -32,8 +32,8 @@ const App  = () => {
   <NativeRouter>
    
     <Switch>
-      <Route exact path="/" component={Screen2}></Route>
-      {/* <Route exact path="/" component={Screen1}></Route> */}
+      {/* <Route exact path="/" component={Screen2}></Route> */}
+      <Route exact path="/" component={Screen1}></Route>
     </Switch>
    
     </NativeRouter>
