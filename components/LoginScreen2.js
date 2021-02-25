@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
     Text,
     Alert,
-    Button,
     View,
     StyleSheet,
     Image,
@@ -19,14 +18,13 @@ const onLogin = (email, password) => {
 const LoginScreen2 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // const [isSelected, setSelection] = useState(false);
+    const [isSelected, setSelection] = useState(false);
     return (
         <View style={styles.container}>
-        <Image
-        style={styles.logo}
-        source={require('../images/logo.png')}
-        />
-
+            <Image
+                style={styles.logo}
+                source={require('../images/logo.png')}
+            />
             <Text style={styles.inputext}> Welcome Back</Text>
             <Text style={styles.inputext1}> Sign in for continue</Text>
 
@@ -35,13 +33,14 @@ const LoginScreen2 = () => {
                 source={require('../images/email.jpg')}
             />
             <Image
-            style={styles.ellipse}
-            source={require('../images/Ellipse.png')}
+                style={styles.ellipse}
+                source={require('../images/Ellipse.png')}
             />
             <TextInput
                 value={email}
                 onChangeText={(email) => setEmail(email)}
                 label='Enter your email'
+                theme={{colors: {primary: 'blue'}}}
                 style={styles.input}
             />
             <Image
@@ -56,13 +55,13 @@ const LoginScreen2 = () => {
                 value={password}
                 onChangeText={(password) => setPassword(password)}
                 label='Password'
+                theme={{colors: {primary: 'blue'}}}
                 secureTextEntry={true}
                 style={styles.input}
             />
-
             <CheckBox
-                // value={isSelected}
-                // onValueChange={setSelection}
+                value={isSelected}
+                onValueChange={setSelection}
                 style={styles.checkbox}
             />
             <Text style={styles.rememberText}> Remember me</Text>
@@ -139,7 +138,7 @@ const styles = StyleSheet.create({
         width: "100%"
     },
     logo: {
-        bottom: -70,
+        bottom: -90,
     },
     ellipse: {
         left: 160,
@@ -148,11 +147,11 @@ const styles = StyleSheet.create({
     },
     input: {
         width: 300,
-        height: 30,
+        height: 44,
         padding: 15,
         bottom: 50,
         borderWidth: 2,
-        borderColor: 'gray',
+        borderColor: '#E5E5E5',
         marginBottom: -15,
         textAlign: "left",
         backgroundColor: 'white',
@@ -163,8 +162,6 @@ const styles = StyleSheet.create({
     inputext: {
         bottom: -80,
         fontSize: 50,
-        width: 204,
-        height: 33,
         textAlign: 'center',
         fontWeight: 'bold',
         marginBottom: 10,
@@ -178,18 +175,14 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     tinyLogo: {
-        width: 15,
-        height: 15,
-        top: 128,
-        right: 132,
+        top: 135,
+        right: 135,
         zIndex: 9999999999,
     },
     Logo: {
-        width: 25,
         display: "flex",
-        height: 25,
-        top: 20,
-        right: 132,
+        top: 25,
+        right: 135,
         zIndex: 9999999999,
     },
     eye: {
@@ -201,7 +194,6 @@ const styles = StyleSheet.create({
     },
     button: {
         alignItems: "center",
-        backgroundColor: "#DDDDDD",
         padding: 10,
         width: 300,
         height: 50,
@@ -213,7 +205,7 @@ const styles = StyleSheet.create({
         right: 130,
     },
     rememberText: {
-        color: 'grey',
+        color: '#ABB3BB',
         bottom: 48,
         right: 60,
         fontSize: 15,
@@ -268,13 +260,18 @@ const styles = StyleSheet.create({
     },
     accounText: {
         color: '#2945FF',
-        fontSize: 16,
-        bottom: 10,
-        left: 130,
+        fontSize: 14,
+        bottom: 5,
+        left: 150,
+        lineHeight: 14,
+        textAlign: "center",
     },
     signupAccountText: {
         fontSize: 16,
         top: 20,
         left: 50,
+        width: 200,
+        lineHeight: 40,
+        
     }
 });
