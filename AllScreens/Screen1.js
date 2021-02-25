@@ -1,11 +1,12 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const Screen1 = () => {
 
     return (
         <>
     <View>
+        <ImageBackground style={styles.image1} source={require('./Images/Ellipse1.png')} />
         <View style={styles.container}>
             <Text style={styles.login}>Login</Text>
             <Text style={styles.email}>Please enter your email & phone</Text>
@@ -54,7 +55,8 @@ const styles = StyleSheet.create({
         marginTop:176,
         marginLeft:40,
         borderRadius:40,
-        backgroundColor:'#000000'
+        backgroundColor:'#000000',
+        position:'absolute'
     },
     login: {
         width:89,
@@ -147,7 +149,15 @@ const styles = StyleSheet.create({
         position:'absolute',
         color:'#4E49FF'
     },
-   
+    image1: {
+        width:316,
+        height: 316,
+        marginTop:120,
+        marginLeft:-154,
+        opacity:30,
+        position:'absolute',
+        color:'black'
+    }
     
 })
 
