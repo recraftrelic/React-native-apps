@@ -9,6 +9,7 @@ import {
     CheckBox
 } from 'react-native';
 import { TextInput } from 'react-native-paper';
+import { AppColor } from '../../AllScreens/AppUtil';
 
 const onLogin = (email, password) => {
     Alert.alert('Credentials', `${email} + ${password}`);
@@ -93,7 +94,7 @@ const LoginScreen1 = () => {
                             color: 'white',
                             fontSize: 20
                         }}
-                    >Sign In</Text>
+                    >Login</Text>
                 </TouchableOpacity>
             </View>
             <Text style={styles.changeText}>Or continue with </Text>
@@ -167,11 +168,11 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#E5E5E5',
         marginBottom: -15,
-        backgroundColor: 'white',
         borderRadius: 15,
         borderTopRightRadius: 12,
         borderTopLeftRadius: 12,
         paddingVertical: 12,
+        backgroundColor: AppColor.lightGrey,
         // textAlign: "center",
     },
     inputext: {
@@ -209,18 +210,18 @@ const styles = StyleSheet.create({
       marginBottom: 10,
     },
     tinyLogo: {
-        top: 172,
+        top: 210,
         right: 135,
         zIndex: 9999999999,
     },
     lineLogo: {
-      top: 146,
+      top: 180,
       right: 125,
       height: 39,
       zIndex: 9999999999,
     },
     lineLogo1: {
-      top: 500,
+      top: 255,
       right: 125,
       height: 39,
       zIndex: 9999999999,
@@ -228,7 +229,7 @@ const styles = StyleSheet.create({
     Logo: {
         display: "flex",
         top: 25,
-        right: 135,
+        right: 138,
         zIndex: 9999999999,
     },
     eye: {
