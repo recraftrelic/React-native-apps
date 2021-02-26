@@ -5,7 +5,6 @@ import screen1 from "./screen1.json";
 const Screen1 = () => {
 
     return (
-        <>
     <View>
         <Image style={styles.image1} source={require('../Images/Ellipse1.png')} />
         <Image style={styles.circle1} source={require('../Images/Circle1.png')} />
@@ -17,25 +16,23 @@ const Screen1 = () => {
         <Image style={styles.image3} source={require('../Images/Ellipse3.png')} />
         <Image style={styles.circle4} source={require('../Images/Circle4.png')} />
         <View style={styles.container}>
-            <Text style={styles.login}>{screen1.name}</Text>
-            <Text style={styles.email}>{screen1.email}</Text>
-           
-            <Text style={styles.number}>{screen1.number}</Text>
-           
-            <View >
-           
+                <Text style={styles.login}>{screen1.name}</Text>
+                <Text style={styles.email}>{screen1.email}</Text>
+                <Text style={styles.number}>{screen1.number}</Text>
+            <View>
             <Text style={styles.inputEmail}>{screen1.email2}</Text>
             <Image style={styles.emailIcon} source={require('../Images/Vector.png')} />
-            <View style={styles.childView}></View>
+                    <View style={styles.childView}>
+                    </View>
             </View>
             <View >
-            <Text style={styles.inputEmail}>{screen1.password}</Text>
-            <Image style={styles.emailIcon} source={require('../Images/bx_bx-lock-open.png')} />
-            <View style={styles.childView}></View>
+                <Text style={styles.inputEmail}>{screen1.password}</Text>
+                <Image style={styles.emailIcon} source={require('../Images/bx_bx-lock-open.png')} />
+                    <View style={styles.childView}>
+                    </View>
             </View>
             <View >
-            <Text style={styles.forgotPassword}>{screen1.forgot}</Text>
-            
+                <Text style={styles.forgotPassword}>{screen1.forgot}</Text>   
             </View>
             <View style={styles.loginButton}>            
                 <Text style={styles.button} >{screen1.button}</Text>            
@@ -45,11 +42,8 @@ const Screen1 = () => {
                 <Text style={styles.Sign}>{screen1.sign}</Text>
             </View>
         </View>
-        <View>   
-        </View>
     </View>
-        </>
-    )
+    );
 };
 const styles = StyleSheet.create({
     container:{
@@ -68,93 +62,101 @@ const styles = StyleSheet.create({
         marginLeft:116,
         fontWeight:'400',
         fontSize:34,
-        color:'#ffff'
+        color:'#ffff', 
+        fontFamily:'AbrilFatface-Regular',
     },
     email: {
         height:36,
         marginTop:15,
-        fontSize:14,
+        fontSize:15,
         fontWeight:'400',
         textAlign:'center',
-        color:'#ffffff'
+        color:'#ffffff',
+        fontFamily:'WorkSans-VariableFont'
     },
     number: {
-        fontSize:14,
+        fontSize:15,
         fontWeight:'400',
         textAlign:'center',
         color:'#ffffff',
         height:36,
-        marginTop:-5,
+        marginTop:-8,
+        fontFamily:'WorkSans-VariableFont'
     },
     inputEmail:{
-        width: 162,
-        height:16,
-        marginTop:30,
+        width: 172,
+        height:26,
+        marginTop:27,
         marginLeft:85,
         fontWeight:'400',
-        fontSize:14,
+        fontSize:16,
         color:'#ffffff',
+        fontFamily:'WorkSans-VariableFont'
     },
     emailIcon: {
-        width: 13,
-        height: 11,
+        width: 17,
+        height: 14,
         marginLeft:50,
-        marginTop:-9,
+        marginTop:-17,   
     },
     childView: {
-        marginTop:22,
+        marginTop:15,
         width: 256,
         height: 0,
         marginLeft:40,
         borderBottomWidth :1,
         borderBottomColor: '#393F45',     
-      },
-      forgotPassword: {
-          width:97,
-          height:20,
-          marginTop:20,
-          marginLeft:200,
-          fontWeight:'400',
-          fontSize:12,
-          color:'#ffffff',
-      },
-      loginButton: {
-        width:240,
+    },
+    forgotPassword: {
+        width:140,
+        height:20,
+        marginTop:20,
+        marginLeft:200,
+        fontWeight:'400',
+        fontSize:14,
+        color:'#ffffff',
+        fontFamily:'WorkSans-VariableFont'
+    },
+    loginButton: {
+        width:260,
         height:50,
         marginTop:15,
-        marginLeft:55,
-        borderRadius:40,
+        marginLeft:40,
         backgroundColor:"blue",
         borderRadius:10
     },
-  button: {
-       paddingTop:15,
-      textAlign:'center',
-      color:'#ffff',
-      fontSize:15,
-   },
+    button: {
+        paddingTop:15,
+        textAlign:'center',
+        color:'#ffff',
+        fontSize:17,
+        fontFamily:'WorkSans-VariableFont'
+    },
    account: {
         width:200,
         height:20,
         marginTop:10,
-        marginLeft:85,
+        marginLeft:75,
         color:'#ffff',
+        fontSize:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     Sign: {
-        width:51,
+        width:55,
         height:20,
         marginTop:10,
         marginLeft:225,
         position:'absolute',
-        color:'#4E49FF'
+        color:'#4E49FF',
+        fontSize:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     image1: {
         width:316,
         height: 516,
         top:125,
         opacity:30,
-        position:'absolute',
-       
+        position:'absolute',   
     },
     circle1: {
         width:18,
