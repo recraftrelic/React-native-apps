@@ -67,17 +67,16 @@ const LoginScreen2 = () => {
             />
             <Text style={styles.rememberText}> {login2.remember}</Text>
 
-            <Text style={styles.signupText}>{login2.continue} </Text>
+            <Text style={styles.signupText}>{login2.forgote} </Text>
 
             <View style={styles.viewStyle}>
-                <TouchableOpacity
-                    style={styles.button}
-                    onPress={() => onLogin(email, password)}
-                >
-                    <Text style={styles.loginText}>Sign In</Text>
+            <TouchableOpacity style={styles.button}
+            onPress={() => onLogin(email, password)}
+            >
+            <Text style={styles.loginText}>Sign In</Text>
                 </TouchableOpacity>
             </View>
-            <Text style={styles.changeText}>{login2.forgote} </Text>
+            <Text style={styles.changeText}>{login2.continue} </Text>
             <View style={styles.viewIcon}>
                 <Image
                     style={styles.googleIcon}
@@ -251,7 +250,6 @@ const styles = StyleSheet.create({
         height: 25,
         bottom: 93,
         left: -70,
-        // backgroundColor: 'black',
         zIndex: 9999999999,
     },
     facebookIcon: {
@@ -259,7 +257,6 @@ const styles = StyleSheet.create({
         height: 25,
         bottom: 168,
         right: -102,
-        // backgroundColor: 'black',
         zIndex: 9999999999,
     },
     accounText: {

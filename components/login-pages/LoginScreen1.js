@@ -130,7 +130,6 @@ const styles = StyleSheet.create({
   circle: {
     left: 120,
     bottom: 380,
-    // zIndex: 999999999,
 
   },
   input: {
@@ -146,7 +145,6 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 12,
     paddingVertical: 12,
     backgroundColor: AppColor.lightGrey,
-    // textAlign: "center",
   },
   inputext: {
     bottom: -120,
