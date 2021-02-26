@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
         fontSize: 50,
         textAlign: 'center',
         fontWeight: 'bold',
-        marginBottom: 10,
+        marginBottom: -28,
         margin: 12,
     },
     inputext1: {

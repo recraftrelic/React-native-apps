@@ -17,6 +17,8 @@
     "react-native-cli": "^2.0.1",
     "react-native-git-upgrade": "^0.2.7",
     "react-native-paper": "^4.7.2",
+    "react-native-svg": "^12.1.0",
+    "react-native-svg-uri": "^1.2.3",
     "react-router-dom": "^5.2.0",
     "react-router-native": "^5.2.0"
   },
@@ -35,4 +37,5 @@
   "jest": {
     "preset": "react-native"
   }
+
 }
