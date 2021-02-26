@@ -5,7 +5,7 @@ import LoginScreen2 from './components/LoginScreen2';
 import Screen1 from './AllScreens/Screen1/Screen1';
 import Screen2 from './AllScreens/Screen2/Screen2';
 import Screen5 from './AllScreens/Screen5/Screen5';
-import Screen6 from './AllScreens/Screen5/Screen6';
+import Screen6 from './AllScreens/Screen6/Screen6';
 import {
   SafeAreaView,
   StyleSheet,
