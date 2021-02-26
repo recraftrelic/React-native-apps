@@ -74,12 +74,7 @@ const LoginScreen2 = () => {
                     style={styles.button}
                     onPress={() => onLogin(email, password)}
                 >
-                    <Text
-                        style={{
-                            color: 'white',
-                            fontSize: 20
-                        }}
-                    >Sign In</Text>
+                    <Text style={styles.loginText}>Sign In</Text>
                 </TouchableOpacity>
             </View>
             <Text style={styles.changeText}>{login2.forgote} </Text>
@@ -186,6 +181,10 @@ const styles = StyleSheet.create({
         height: 50,
         borderRadius: 12,
         backgroundColor: '#2945FF',
+    },
+    loginText: {
+        color: 'white',
+        fontSize: 20
     },
     checkbox: {
         bottom: 20,
