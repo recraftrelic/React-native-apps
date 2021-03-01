@@ -71,14 +71,14 @@ const styles = StyleSheet.create({
         fontSize:15,
         fontWeight:'400',
         textAlign:'center',
-        color:'#ffffff',
+        color:'#696969',
         fontFamily:'WorkSans-VariableFont'
     },
     number: {
         fontSize:15,
         fontWeight:'400',
         textAlign:'center',
-        color:'#ffffff',
+        color:'#696969',
         height:36,
         marginTop:-8,
         fontFamily:'WorkSans-VariableFont'
@@ -89,15 +89,15 @@ const styles = StyleSheet.create({
         marginTop:27,
         marginLeft:85,
         fontWeight:'400',
-        fontSize:16,
+        fontSize:14,
         color:'#ffffff',
         fontFamily:'WorkSans-VariableFont'
     },
     emailIcon: {
-        width: 17,
-        height: 14,
+        width: 15,
+        height: 12,
         marginLeft:50,
-        marginTop:-17,   
+        marginTop:-22,   
     },
     childView: {
         marginTop:15,
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
         marginLeft:200,
         fontWeight:'400',
         fontSize:14,
-        color:'#ffffff',
+        color:'#696969',
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
         height:50,
         marginTop:15,
         marginLeft:40,
-        backgroundColor:"blue",
+        backgroundColor:'#2945FF',
         borderRadius:10
     },
     button: {
@@ -145,15 +145,15 @@ const styles = StyleSheet.create({
         width:55,
         height:20,
         marginTop:10,
-        marginLeft:225,
+        marginLeft:215,
         position:'absolute',
-        color:'#4E49FF',
+        color:'#202D7E',
         fontSize:15,
         fontFamily:'WorkSans-VariableFont'
     },
     image1: {
-        width:316,
-        height: 516,
+        width:206,
+        height: 306,
         top:125,
         opacity:30,
         position:'absolute',   
