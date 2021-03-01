@@ -69,6 +69,7 @@ const styles = StyleSheet.create({
        fontWeight:'400',
         fontSize: 23,
         lineHeight: 26,
+        
       },
       container1: {
           width:140,
