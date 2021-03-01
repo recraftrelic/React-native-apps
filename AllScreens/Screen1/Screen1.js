@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from "react-native";
 import screen1 from "./screen1.json";
+import { AppColor } from '../AppUtil';
 
 const Screen1 = () => {
 
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
         marginTop:176,
         marginLeft:40,
         borderRadius:40,
-        backgroundColor:'#000000',
+        backgroundColor:AppColor.black,
         position:'absolute'
     },
     login: {
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
         marginLeft:116,
         fontWeight:'400',
         fontSize:34,
-        color:'#ffff', 
+        color:AppColor.white, 
         fontFamily:'AbrilFatface-Regular',
     },
     email: {
@@ -71,14 +72,14 @@ const styles = StyleSheet.create({
         fontSize:15,
         fontWeight:'400',
         textAlign:'center',
-        color:'#696969',
+        color:AppColor.blackGrey,
         fontFamily:'WorkSans-VariableFont'
     },
     number: {
         fontSize:15,
         fontWeight:'400',
         textAlign:'center',
-        color:'#696969',
+        color:AppColor.blackGrey,
         height:36,
         marginTop:-8,
         fontFamily:'WorkSans-VariableFont'
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
         marginLeft:85,
         fontWeight:'400',
         fontSize:14,
-        color:'#ffffff',
+        color:AppColor.white,
         fontFamily:'WorkSans-VariableFont'
     },
     emailIcon: {
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
         height: 0,
         marginLeft:40,
         borderBottomWidth :1,
-        borderBottomColor: '#393F45',     
+        borderBottomColor: AppColor.lineGrey     
     },
     forgotPassword: {
         width:140,
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
         marginLeft:200,
         fontWeight:'400',
         fontSize:14,
-        color:'#696969',
+        color:AppColor.blackGrey,
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
@@ -122,13 +123,13 @@ const styles = StyleSheet.create({
         height:50,
         marginTop:15,
         marginLeft:40,
-        backgroundColor:'#2945FF',
+        backgroundColor:AppColor.darkSky,
         borderRadius:10
     },
     button: {
         paddingTop:15,
         textAlign:'center',
-        color:'#ffff',
+        color:AppColor.white,
         fontSize:17,
         fontFamily:'WorkSans-VariableFont'
     },
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
         height:20,
         marginTop:10,
         marginLeft:75,
-        color:'#ffff',
+        color:AppColor.white,
         fontSize:15,
         fontFamily:'WorkSans-VariableFont'
     },
@@ -147,7 +148,7 @@ const styles = StyleSheet.create({
         marginTop:10,
         marginLeft:215,
         position:'absolute',
-        color:'#202D7E',
+        color:AppColor.blackBlue,
         fontSize:15,
         fontFamily:'WorkSans-VariableFont'
     },
