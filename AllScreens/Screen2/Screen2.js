@@ -21,11 +21,11 @@ const Screen2 = () => {
                 <Text style={styles.container2}>{screen2.container2}</Text>
             </View>
             <View style={[styles.boxShadow, shadow]}>
-                <TextInput  placeholder="Email or number phone"/>
+                <TextInput style={styles.email} placeholder="Email or number phone"/>
                 <Image style={styles.emailIcon} source={require('../Images/email2.png')} />
                 </View>
             <View style={[styles.boxShadow1, shadow]}>
-                <TextInput placeholder="Password"/>
+                <TextInput style={styles.password0} placeholder="Password"/>
                 <Image style={styles.password1} source={require('../Images/password1.png')} />
             </View>
             <View>
@@ -48,7 +48,7 @@ const Screen2 = () => {
 };
 const shadow = {
    
-    color: '#000000',
+    color: AppColor.black,
     shadowRadius: 10, 
     shadowOpacity: 0.6,
     elevation:5,
@@ -69,6 +69,7 @@ const styles = StyleSheet.create({
        fontWeight:'400',
         fontSize: 23,
         lineHeight: 26,
+        
       },
       container1: {
           width:140,
@@ -81,30 +82,30 @@ const styles = StyleSheet.create({
       container2: {
         width:500,
         marginLeft:32,
-        fontSize: 20,
-        color: AppColor.grey
+        fontSize: 18,
+        color: AppColor.lightGrey
     },
     boxShadow: {
         width: 330,
         height: 69,
         marginTop:308,
         marginLeft:35,
-        backgroundColor:'#ffff',
+        backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
         paddingLeft:80,
-        borderRadius: 50,
+        borderRadius: 25,
       },
       boxShadow1: {
         width: 330,
         height: 69,
         marginTop:400,
         marginLeft:35,
-        backgroundColor:'#ffff',
+        backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
         paddingLeft:110,
-        borderRadius: 50,
+        borderRadius: 25,
       },
       password: {
           width:122,
@@ -114,66 +115,84 @@ const styles = StyleSheet.create({
           opacity:50,
           fontSize:15,
           fontWeight:'500',
+          color:AppColor.black
       },
       loginButton: {
-          width:250,
-          height:70,
-          marginTop:35,
-          marginLeft:75,
-          borderRadius:40,
-          backgroundColor:"blue",
-          borderRadius:10
+        width:301,
+        height:56,
+        marginTop:35,
+        marginLeft:55,
+        backgroundColor:AppColor.darkSky,
+        borderRadius:10,
+      
       },
    
     button: {
-         paddingTop:20,
+        paddingTop:15,
         textAlign:'center',
-        color:'#ffff',
-        fontSize:25,     
-          },
+        color:AppColor.white,
+        fontSize:17,     
+     },
       account: {
-          width:200,
-          height:20,
-          marginTop:20,
-          marginLeft:85,
-          color:'#000000',
+        width:200,
+        height:20,
+        marginTop:20,
+        marginLeft:105,
+        color:AppColor.black,
       },
       Sign: {
-          width:51,
-          height:20,
-          marginTop:20,
-          marginLeft:265,
-          position:'absolute',
-          color:'#4E49FF'
+        width:55,
+        height:20,
+        marginTop:20,
+        marginLeft:250,
+        position:'absolute',
+        color:AppColor.lightBlue
       },
       image1: {
-          position:'absolute',
-          left:300,
+        position:'absolute',
+        left:300,
       },
       circle2: {
-          position:'absolute',
-          top:96,
-          left:310,
+        position:'absolute',
+        top:96,
+        left:310,
       },
       arrow1: {
-          position:'absolute',
-          left:285,
-          top:110
+        position:'absolute',
+        left:285,
+        top:110
       },
       mark1: {
-          position:'absolute',
-          left:30,
-          top:70
+        position:'absolute',
+        left:30,
+        top:70
       },
       emailIcon: {
-        width:13,
-        height:14,
-        top:-25,
-        left:-28,
+        width:17,
+        height:18,
+        // top:-25,
+        left:35,
+        position:'absolute'
+    },
+    email: {
+        width: 172,
+        height:56,
+        marginLeft:-10,
+        fontWeight:'400',
+        fontSize:14,
     },
     password1:{
-        top:-33,
-        left:-50,
+        width:14,
+        height:16,
+        left:35,
+        position:'absolute'
+    },
+    password0:{
+        width: 172,
+        height:56,
+        marginLeft:-38,
+        fontWeight:'400',
+        fontSize:14,
     }
     
 });
