@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "headername": "Welcome Back",
     "header": "Sign in for continue",
     "remember": "Remember me",
@@ -7,4 +8,20 @@
     "account": "Don’t Have an Account?",
     "signup": "Sign Up",
     "Facebook": "Facebook"
+=======
+    "headername": "Sign in to your continue",
+    "header": "account",
+    "remember": "Remember me",
+    "continue": "Or continue with",
+    "forgote": "Forgot your password?",
+    "account": "Don’t Have an Account?",
+    "signup": "Sign Up",
+    "Facebook": "Facebook",
+    "signIn": "LOGIN",
+    "ORSign": "Or sign in with",
+    "welcome": "Welcome Back !",
+    "subHead": "Sign in to your continue",
+    "subHead2": "account",
+    "reset": "Reset here"
+>>>>>>> main_screen
 }

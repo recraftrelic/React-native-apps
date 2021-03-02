@@ -1,278 +1,192 @@
 import React, { useState } from 'react';
 import {
-    Text,
-    Alert,
-    View,
-    StyleSheet,
-    Image,
-    TouchableOpacity,
-    CheckBox
+  Text,
+  View,
+  SafeAreaView,
+  TextInput,
+  Image,
+  TouchableOpacity,
 } from 'react-native';
-import { TextInput } from 'react-native-paper';
-import login2 from './login2.json';
+import { RFValue } from 'react-native-responsive-fontsize';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import {
+  moderateScale,
+} from 'react-native-size-matters';
 
-const onLogin = (email, password) => {
-    Alert.alert('Credentials', `${email} + ${password}`);
-    console.log("title pressed");
-};
+import login2 from './login2.json';
+import { styles } from './loginStyle2';
+import { images, fonts } from './utilities/images';
+
+
 
 const LoginScreen2 = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [isSelected, setSelection] = useState(false);
-    return (
-        <View style={styles.container}>
-            <Image
-                style={styles.logo}
-                source={require('../images/logo.png')}
-            />
-            <Text style={styles.inputext}> {login2.headername} </Text>
-            <Text style={styles.inputext1}> {login2.header}</Text>
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [check, setCheckStatus] = useState(false);
+  const [showHidePassword, setShowHidePassword] = useState(true);
 
-            <Image
-                style={styles.tinyLogo}
-                source={require('../images/email.jpg')}
-            />
-            <Image
-                style={styles.ellipse}
-                source={require('../images/Ellipse.png')}
-            />
-            <TextInput
-                value={email}
-                onChangeText={(email) => setEmail(email)}
-                label='Enter your email'
-                theme={{ colors: { primary: 'blue' } }}
-                style={styles.input}
-            />
-            <Image
-                style={styles.Logo}
-                source={require('../images/lock.png')}
-            />
-            <Image
-                style={styles.eye}
-                source={require('../images/Hide.png')}
-            />
-            <TextInput
-                value={password}
-                onChangeText={(password) => setPassword(password)}
-                label='Password'
-                theme={{ colors: { primary: 'blue' } }}
-                secureTextEntry={true}
-                style={styles.input}
-            />
-            <CheckBox
-                value={isSelected}
-                onValueChange={setSelection}
-                style={styles.checkbox}
-            />
-            <Text style={styles.rememberText}> {login2.remember}</Text>
+  const onLogin = () => {
+    alert(`${email} + ${password}`);
+  };
 
-            <Text style={styles.signupText}>{login2.forgote} </Text>
 
-            <View style={styles.viewStyle}>
-            <TouchableOpacity style={styles.button}
-            onPress={() => onLogin(email, password)}
-            >
-            <Text style={styles.loginText}>Sign In</Text>
-                </TouchableOpacity>
-            </View>
-            <Text style={styles.changeText}>{login2.continue} </Text>
-            <View style={styles.viewIcon}>
-                <Image
-                    style={styles.googleIcon}
-                    source={require('../images/Vector.png')}
+  return (
+
+    <SafeAreaView style={styles.container}>
+      <View style={styles.headText}>
+        <Image source={images.logo} />
+      </View>
+
+      <View style={styles.borderBox}>
+        <KeyboardAwareScrollView enableOnAndroid={true}
+          keyboardShouldPersistTaps='handled'
+          showsVerticalScrollIndicator={false}
+        >
+
+          <View style={styles.headText}>
+            <Text style={{
+              fontSize: RFValue(24),
+              marginTop: moderateScale(10),
+              fontFamily: fonts.extraBold,
+              fontWeight: 'bold',
+
+            }}>
+              {login2.welcome}
+            </Text>
+
+            <Text style={styles.headerStyle}>
+              {login2.subHead}
+            </Text>
+            <Text style={styles.headerStyle}>
+              {login2.subHead2}
+            </Text>
+            <View style={styles.inputView}>
+
+              <View>
+                <TextInput
+                  value={email}
+                  onChangeText={(email) => setEmail(email)}
+                  placeholder='Enter your email'
+                  style={styles.emailInput}
                 />
+              </View>
+
+              <View>
+                <TextInput
+                  value={password}
+                  onChangeText={(password) => setPassword(password)}
+                  placeholder='Enter password here.'
+                  secureTextEntry={showHidePassword}
+                  style={styles.passwordInput}
+                />
+
                 <TouchableOpacity
-                    style={styles.googleButton}
-                    onPress={() => onLogin(email, password)}
+                  onPress={() => setShowHidePassword(!showHidePassword)}
+                  style={styles.checkBoxbtn}
+                  hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
                 >
-                    <Text style={styles.googleText}>Google</Text>
-                    <Text style={styles.signupAccountText}>{login2.account} </Text>
-                    <Text style={styles.accounText}> {login2.signup} </Text>
+                  {
+                    showHidePassword ?
+                      <Image
+                        source={images.HideIcon}
+                      />
+                      :
+                      <Image
+                        source={images.ic_ad_view}
+                      />
+                  }
 
                 </TouchableOpacity>
-                <Image
-                    style={styles.facebookIcon}
-                    source={require('../images/Shape.png')}
-                />
-                <TouchableOpacity
-                    style={styles.FacebookButton}
-                    onPress={() => onLogin(email, password)}
-                >
-                    <Text style={styles.FacebookLogo}>{login2.Facebook}</Text>
-                </TouchableOpacity>
+
+
+              </View>
+
             </View>
-        </View>
-    );
+
+            <View style={styles.checkBoxView}>
+              <TouchableOpacity style={styles.checkBoxTouch}
+                onPress={() => setCheckStatus(!check)}
+              >
+                {
+                  check ? <Image source={images.checkbox}
+                    style={styles.checkBox} /> :
+                    <Image source={images.checkIcon} />
+                }
+
+                <Text style={styles.remember}>
+                  {login2.remember}
+                </Text>
+
+              </TouchableOpacity>
+
+              <Text style={styles.forgote}>
+                {login2.forgote}
+              </Text>
+
+            </View>
+            <View style={styles.signInBtnView}>
+              <TouchableOpacity style={styles.signInBtn}
+                onPress={onLogin}
+
+              >
+                <Text style={styles.signInText}>
+                  {login2.signIn}
+                </Text>
+
+              </TouchableOpacity>
+
+            </View>
+            <Image source={images.oroptional} style={{ alignSelf: 'center', marginTop: moderateScale(20) }} />
+            <View style={styles.googleView}>
+
+              <View style={styles.googleInnerView}>
+                <TouchableOpacity style={styles.googlebtn}>
+
+                  <Image source={images.Google} />
+
+                  <Text style={styles.googleTxt}>
+                    {login2.google}
+                  </Text>
+
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.facebookImg}>
+
+                  <Image source={images.Shape} />
+                  <Text style={styles.facebookText}>
+                    {login2.Facebook}
+                  </Text>
+                </TouchableOpacity>
+
+              </View>
+
+              <View style={styles.regularTxt}>
+
+                <Text style={styles.regularStyle}>
+                  {login2.account}
+                </Text>
+
+                <TouchableOpacity
+                  onPress={() => console.log('SignUp')}
+                  hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+                >
+                  <Text
+
+                    style={styles.signUpTxt}
+                  >
+                    {login2.signup}
+                  </Text>
+                </TouchableOpacity>
+
+
+              </View>
+            </View>
+          </View>
+        </KeyboardAwareScrollView>
+      </View>
+    </SafeAreaView>
+
+  );
 };
 
 export default LoginScreen2;
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'white',
-    },
-    btnSize: {
-        width: "100%"
-    },
-    logo: {
-        bottom: -90,
-    },
-    ellipse: {
-        left: 160,
-        bottom: 200,
-
-    },
-    input: {
-        width: 320,
-        height: 44,
-        padding: 15,
-        bottom: 50,
-        borderWidth: 2,
-        borderColor: '#E5E5E5',
-        marginBottom: -15,
-        textAlign: "left",
-        backgroundColor: 'white',
-        borderRadius: 15,
-        borderTopRightRadius: 12,
-        borderTopLeftRadius: 12,
-    },
-    inputext: {
-        bottom: -80,
-        fontSize: 50,
-        textAlign: 'center',
-        fontWeight: 'bold',
-        marginBottom: -28,
-        margin: 12,
-    },
-    inputext1: {
-        bottom: -80,
-        fontSize: 20,
-        color: 'grey',
-        textAlign: 'center',
-        marginBottom: 10,
-    },
-    tinyLogo: {
-        top: 135,
-        right: 145,
-        zIndex: 9999999999,
-    },
-    Logo: {
-        display: "flex",
-        top: 25,
-        right: 145,
-        zIndex: 9999999999,
-    },
-    eye: {
-        width: 25,
-        height: 25,
-        bottom: 2,
-        right: -120,
-        zIndex: 9999999999,
-    },
-    button: {
-        alignItems: "center",
-        padding: 10,
-        width: 300,
-        height: 50,
-        borderRadius: 12,
-        backgroundColor: '#2945FF',
-    },
-    loginText: {
-        color: 'white',
-        fontSize: 20
-    },
-    checkbox: {
-        bottom: 20,
-        right: 130,
-    },
-    rememberText: {
-        color: '#ABB3BB',
-        bottom: 48,
-        right: 60,
-        fontSize: 15,
-    },
-    signupText: {
-        color: '#2945FF',
-        fontSize: 16,
-        bottom: 70,
-        left: 90,
-    },
-
-    viewStyle: {
-        height: 100,
-        marginTop: -40,
-    },
-    viewIcon: {
-        height: 100,
-        marginTop: 90,
-    },
-
-    changeText: {
-        textAlign: "center",
-        color: 'grey',
-        bottom: 30,
-        fontSize: 18,
-    },
-    googleButton: {
-        alignItems: "center",
-        backgroundColor: "#FC6A57",
-        padding: 10,
-        bottom: 130,
-        width: 150,
-        height: 50,
-        right: 80,
-        borderRadius: 12,
-    },
-    googleText: {
-        color: 'white',
-        fontSize: 20
-    },
-    FacebookButton: {
-        alignItems: "center",
-        backgroundColor: "#298FFF",
-        padding: 10,
-        bottom: 205,
-        width: 150,
-        height: 50,
-        left: 100,
-        borderRadius: 12,
-    },
-    FacebookLogo: {
-        color: 'white',
-        fontSize: 20
-    },
-    googleIcon: {
-        width: 25,
-        height: 25,
-        bottom: 93,
-        left: -70,
-        zIndex: 9999999999,
-    },
-    facebookIcon: {
-        width: 25,
-        height: 25,
-        bottom: 168,
-        right: -102,
-        zIndex: 9999999999,
-    },
-    accounText: {
-        color: '#2945FF',
-        fontSize: 14,
-        bottom: 5,
-        left: 160,
-        lineHeight: 14,
-        textAlign: "center",
-    },
-    signupAccountText: {
-        fontSize: 16,
-        top: 20,
-        left: 50,
-        width: 200,
-        lineHeight: 40,
-
-    }
-});

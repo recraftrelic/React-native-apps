@@ -6,5 +6,14 @@
     "forgote": "Forgot Password?",
     "account": "Don’t Have an Account?",
     "signup": "Sign Up",
+<<<<<<< HEAD
     "Facebook": "Facebook"
+=======
+    "Facebook": "Facebook",
+    "signIn": "Sign In",
+    "google": "Google",
+    "welcome": "Welcome Back !",
+    "subHead": "Sign in to your continue",
+    "subHead2": "account"
+>>>>>>> main_screen
 }
