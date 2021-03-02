@@ -1,40 +1,28 @@
-import React from 'react';
-import { NativeRouter, Route, Router, Switch } from 'react-router-native';
-import MainScreen from './AllScreens/MainScreen/MainScreen';
-import 'react-native-gesture-handler';
-// import { createAppContainer } from 'react-navigation';
-// import { createStackNavigator} from 'react-navigation';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Screen1 from './AllScreens/Screen1';
-import LoginScreen1 from './components/login-pages/LoginScreen1'
-import LoginScreen10 from './components/LoginScreen10';
-import LoginScreen from './components/LoginScreen';
-import LoginScreen8 from './components/LoginScreen8';
-import LoginScreen4 from './components/LoginScreen4';
-//import Screen1 from "./AllScreens/Screen1"
-const Stack = createStackNavigator();
-const App  = () => {
-  
-  return (
-    // <LoginScreen/>
-    <LoginScreen1/>
-    // <LoginScreen10/>
-    // <LoginScreen8/>
-    // <LoginScreen4/>
-    // <NavigationContainer>
-    //  <Stack.Navigator>
-    //     <Stack.Screen
-    //        name="page1"
-    //       component={MainScreen}
-    //       options={{ title: 'Press to go to the Screen' }}
-    //     />
-    //     <Stack.Screen name="screen1" component ={LoginScreen2}/>
-    //     </Stack.Navigator>
-    // </NavigationContainer>
-    
-  );
+import {Route, Switch, NativeRouter} from 'react-router-native';
+import LoginScreen1 from './components/login-pages/LoginScreen1';
+import LoginScreen2 from './components/LoginScreen2';
+import Screen1 from './AllScreens/Screen1/Screen1';
+import Screen2 from './AllScreens/Screen2/Screen2';
+import Screen5 from './AllScreens/Screen5/Screen5';
+import Screen6 from './AllScreens/Screen6/Screen6';
+import Screen9 from './AllScreens/Screen9/Screen9';
 
+
+const App = () => {
+  return (
+    <NativeRouter>
+      <Switch>
+        {/* <Route exact path="/" component={LoginScreen2} /> */}
+        {/* <Route exact path="/base/" component={BaseNext} />  */}
+        {/* <Route exact path="/" component={Screen2}></Route> */}
+        <Route exact path="/" component={Screen1}></Route>
+        {/* <Route exact path="/" component={Screen5}></Route> */}
+        {/* <Route exact path="/" component={Screen6}></Route> */}
+        {/* <Route exact path="/" component={Screen9}></Route> */}
+        {/* <Route exact path="/" component={Screen6}></Route> */}
+      </Switch>
+    </NativeRouter>
+  );
 };
 
 
