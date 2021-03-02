@@ -7,4 +7,8 @@ export const AppColor = {
     blackGrey:'#696969',
     lineGrey:'#393F45',
     blackBlue:'#202D7E',
+    borderColor:'#36455A',
+    violet:'#03014C',
+    purple:'#8F70FF',
+    background:'#CCCCCC'
 }
