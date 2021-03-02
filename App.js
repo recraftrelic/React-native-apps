@@ -15,8 +15,8 @@ const App = () => {
       <Switch>
         {/* <Route exact path="/" component={LoginScreen2} /> */}
         {/* <Route exact path="/base/" component={BaseNext} />  */}
-        <Route exact path="/" component={Screen2}></Route>
-        {/* <Route exact path="/" component={Screen1}></Route> */}
+        {/* <Route exact path="/" component={Screen2}></Route> */}
+        <Route exact path="/" component={Screen1}></Route>
         {/* <Route exact path="/" component={Screen5}></Route> */}
         {/* <Route exact path="/" component={Screen6}></Route> */}
         {/* <Route exact path="/" component={Screen9}></Route> */}
