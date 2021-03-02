@@ -18,7 +18,7 @@ const App  = () => {
         <Stack.Screen
            name="page1"
           component={MainScreen}
-          options={{ title: 'Welcome' }}
+          options={{ title: 'Press to go to the Screen' }}
         />
         <Stack.Screen name="screen1" component ={LoginScreen2}/>
         </Stack.Navigator>

@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Image, ScrollView, StyleSheet, Text, TouchableHighlight, View } from "react-native";
+//import { black } from 'react-native-paper/lib/typescript/styles/colors';
 // import { NavigationContainer } from '@react-navigation/native';
 // import { createStackNavigator } from '@react-navigation/stack';
 
 const MainScreen = (props) => {
-  console.log(props.navigation.navigate,"props")
+  console.log(props.navigation.navigate, "props")
   const [openModal, setOpenModal] = useState(false)
   const changeColor = () => {
     props.navigation.navigate('screen1')
     // props.navigate('screen1');
     // useHistory.push('/screen1');
-     // navigate('Screen1', { name: 'Jane' })
-     }
-    //console.log("anything")
+    // navigate('Screen1', { name: 'Jane' })
+  }
+  //console.log("anything")
   const modalOpen = () => {
     console.log(openModal)
     setOpenModal(!openModal)
@@ -61,7 +62,7 @@ const MainScreen = (props) => {
               </View>
             </TouchableHighlight>
             < TouchableHighlight onPress={modalOpen}>
-              <Image style={styles.img} source={require('../../images/logo3.png')} />
+              <Image style={styles.img} source={require('../../images/logo4.png')} />
             </TouchableHighlight>
           </View>
           <View style={styles.containers}>
@@ -71,7 +72,7 @@ const MainScreen = (props) => {
               </View>
             </TouchableHighlight>
             < TouchableHighlight onPress={modalOpen}>
-              <Image style={styles.img} source={require('../../images/logo3.png')} />
+              <Image style={styles.img} source={require('../../images/logo5.png')} />
             </TouchableHighlight>
           </View>
           <View style={styles.containers}>
@@ -131,13 +132,14 @@ const MainScreen = (props) => {
 };
 const styles = StyleSheet.create({
   body: {
-    backgroundColor: "black",
+    backgroundColor: "white",
   },
   containers: {
-    backgroundColor: 'white',
+    //backgroundColor: 'black',
     //    width:233,
     //    height:20,
     margin: 15,
+    marginLeft:0,
     borderRadius: 10,
     flex: 1,
     flexDirection: 'row',
@@ -147,8 +149,10 @@ const styles = StyleSheet.create({
     height: 70,
     width: 70,
     borderRadius: 30,
-    marginLeft: 15,
-    marginTop: 5
+    marginLeft: 25,
+    marginTop: 5,
+    opacity:30,
+    borderColor:'black'
   },
   screen1: {
     // color:'#0a0a0a',
