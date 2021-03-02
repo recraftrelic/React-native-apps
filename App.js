@@ -19,8 +19,8 @@ const App = () => {
         {/* <Route exact path="/" component={Screen1}></Route> */}
         {/* <Route exact path="/" component={Screen5}></Route> */}
         {/* <Route exact path="/" component={Screen6}></Route> */}
-        {/* <Route exact path="/" component={Screen9}></Route> */}
-        <Route exact path="/" component={Screen6}></Route>
+        <Route exact path="/" component={Screen9}></Route>
+        {/* <Route exact path="/" component={Screen6}></Route> */}
       </Switch>
     </NativeRouter>
   );

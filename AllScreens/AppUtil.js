@@ -1,5 +1,4 @@
 export const AppColor = {
-<<<<<<< HEAD
     lightGrey:'#C8CACC',
     white:'#ffff',
     black:'#000000',
@@ -16,12 +15,4 @@ export const AppColor = {
     greyContent:'#6A6F7D',
     blueBorder:"#2DDA93",
     colorContent:"#7E5DF6"
-=======
-    grey:'#393F45',
-    lightGrey: '#F5F5F5',
-    black: '#393F45',
-    textGrey: '#D0D0D0',
-    blue: '#2945FF',
-    hexGrey: '#ABB3BB',
->>>>>>> 45cf61aa404d01a24ed78980be9ea57c67e3fdb4
 }
