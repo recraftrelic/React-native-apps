@@ -1,52 +1,36 @@
 import React from 'react';
-<<<<<<< HEAD
-import { Route, Switch, NativeRouter } from "react-router-native";
-import LoginScreen1 from './components/login-pages/LoginScreen1';
-import LoginScreen2 from './components/LoginScreen2';
-
-const App = () => {
-    return (
-      <NativeRouter>
-      <Switch>
-      <Route exact path="/" component={LoginScreen2} />
-      {/* <Route exact path="/base/" component={BaseNext} />  */}
-      </Switch>
-      </NativeRouter>
-    );
-};
-
-export default App;
-=======
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 import { NativeRouter, Route, Router, Switch } from 'react-router-native';
+import MainScreen from './AllScreens/MainScreen/MainScreen';
+import 'react-native-gesture-handler';
+// import { createAppContainer } from 'react-navigation';
+// import { createStackNavigator} from 'react-navigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Screen1 from './AllScreens/Screen1';
-import Screen2 from './AllScreens/Screen2';
-
+import LoginScreen2 from './components/LoginScreen';
+//import Screen1 from "./AllScreens/Screen1"
+const Stack = createStackNavigator();
 const App  = () => {
+  
   return (
-  <NativeRouter>
+    <NavigationContainer>
+     <Stack.Navigator>
+        <Stack.Screen
+           name="page1"
+          component={MainScreen}
+          options={{ title: 'Welcome' }}
+        />
+        <Stack.Screen name="screen1" component ={LoginScreen2}/>
+        </Stack.Navigator>
+    </NavigationContainer>
+  // <NativeRouter>
    
-    <Switch>
-      <Route exact path="/" component={Screen2}></Route>
-      {/* <Route exact path="/" component={Screen1}></Route> */}
-    </Switch>
+  //   <Switch>
+  //     <Route exact path="/" component={MainScreen}></Route>
+  //     {/* <Route exact path="/" component={Screen1}></Route> */}
+  //   </Switch>
    
-    </NativeRouter>
+  //   </NativeRouter>
     
   );
 
@@ -54,4 +38,3 @@ const App  = () => {
 
 
 export default App;
->>>>>>> 535b887739bf4dc9a398665b47b85239cd7137a0
