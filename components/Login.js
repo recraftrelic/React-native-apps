@@ -13,15 +13,14 @@ import {
     moderateScale,
 } from 'react-native-size-matters';
 
-import { styles } from "./loginStyle1";
-import login1 from './login1.json';
+import { styles } from './loginStyle3';
+import login3 from './login3.json';
 import { images, fonts } from "./utilities/images";
 
 
-const LoginScreen1 = () => {
+const LoginScreen3 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [check, setCheckStatus] = useState(false);
     const [showHidePassword, setShowHidePassword] = useState(true);
 
     const onLogin = () => {
@@ -35,45 +34,26 @@ const LoginScreen1 = () => {
                     keyboardShouldPersistTaps='handled'
                     showsVerticalScrollIndicator={false}
                 >
-
-                    <Image source={images.Ellipse} style={styles.headLogo} />
-
-                    <Image source={images.EllipseCrcl} style={styles.crcl} />
-                    <Image source={images.zigzag} style={styles.zigzag} />
-
-
+                <Image source={images.logo} 
+                style={styles.logo}
+                />
                     <View style={styles.headText}>
-                        <Image source={images.logo}
-                        style={styles.logo}
-                        />
+
 
                         <Text style={{
-                            fontSize: RFValue(24),
-                            marginTop: moderateScale(160),
-                            fontFamily: fonts.bold,
-                            right: moderateScale(120),
-                            color: '#393F45',
-
-
+                            fontSize: RFValue(18),
+                            marginTop: moderateScale(130),
+                            fontFamily: fonts.regular,
+                            right: moderateScale(50)
 
                         }}>
-                            {login1.name}
+                            {login3.headername}
                         </Text>
 
                         <Text style={styles.headerStyle}>
-                            {login1.header}
+                            {login3.header}
                         </Text>
                     </View>
-
-                    <View style={styles.signintxt}>
-                        <Text style={styles.signintxt1}>
-                        {login1.signing}
-                    </Text>
-
-                        <Text style={styles.siguptxt}>
-                        {login1.headerSigning}
-                    </Text>
-                </View>
 
 
                     <View style={styles.inputView}>
@@ -85,10 +65,6 @@ const LoginScreen1 = () => {
                                 placeholder='Enter your email'
                                 style={styles.emailInput}
                             />
-                            <Image
-                                style={styles.emailIcon}
-                                source={images.at}
-                            />
                         </View>
 
                         <View>
@@ -98,10 +74,6 @@ const LoginScreen1 = () => {
                                 placeholder='Enter password here.'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
-                            />
-                            <Image
-                                style={styles.lockImage}
-                                source={images.lock}
                             />
 
                             <TouchableOpacity
@@ -124,25 +96,8 @@ const LoginScreen1 = () => {
 
 
                         </View>
-                        <Image
-                                style={styles.vector}
-                                source={images.Vector}
-                            />
-                            <Image
-                                style={styles.vector1}
-                                source={images.Vector}
-                            />
 
                     </View>
-                    <View style={styles.forgotetext}>
-                    <Text style={styles.forgote}>
-                    {login1.forgote}
-                </Text>
-
-                    <Text style={styles.reset}>
-                    {login1.reset}
-                </Text>
-                     </View>
 
                     <View style={styles.signInBtnView}>
                         <TouchableOpacity style={styles.signInBtn}
@@ -150,17 +105,32 @@ const LoginScreen1 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login1.login}
+                            {login3.signIn}
                         </Text>
 
                         </TouchableOpacity>
 
                     </View>
 
-                    <Text style={styles.skip}>
-                            {login1.skip}
+                    <View style={styles.checkBoxView}>
+
+                        <Text style={styles.forgote}>
+                            {login3.forgote}
+                        </Text>
+                        <Text style={styles.reset}>
+                        {login3.reset}
+                    </Text>
+
+                    </View>
+
+                    <View style={styles.signInBtnView}>
+                        
+                            <Text style={styles.signInText1}>
+                            {login3.ORSign}
                         </Text>
 
+
+                    </View>
 
                 </KeyboardAwareScrollView>
             </View>
@@ -169,4 +139,4 @@ const LoginScreen1 = () => {
     );
 };
 
-export default LoginScreen1;
+export default LoginScreen3;

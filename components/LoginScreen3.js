@@ -13,14 +13,15 @@ import {
     moderateScale,
 } from 'react-native-size-matters';
 
-import { styles } from './loginStyle3';
-import login3 from './login3.json';
+import { styles } from "./loginStyles";
+import login2 from './login2.json';
 import { images, fonts } from "./utilities/images";
 
 
-const LoginScreen3 = () => {
+const LoginScreen = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [check, setCheckStatus] = useState(false);
     const [showHidePassword, setShowHidePassword] = useState(true);
 
     const onLogin = () => {
@@ -34,24 +35,25 @@ const LoginScreen3 = () => {
                     keyboardShouldPersistTaps='handled'
                     showsVerticalScrollIndicator={false}
                 >
-                <Image source={images.logo} 
-                style={styles.logo}
-                />
-                    <View style={styles.headText}>
 
+                    <Image source={images.Ellipse} style={styles.headLogo} />
+
+                    <View style={styles.headText}>
+                        <Image source={images.logo}
+                        style={styles.logo}
+                        />
 
                         <Text style={{
-                            fontSize: RFValue(18),
-                            marginTop: moderateScale(130),
-                            fontFamily: fonts.regular,
-                            right: moderateScale(50)
+                            fontSize: RFValue(24),
+                            marginTop: moderateScale(10),
+                            fontFamily: fonts.bold
 
                         }}>
-                            {login3.headername}
+                            {login2.headername}
                         </Text>
 
                         <Text style={styles.headerStyle}>
-                            {login3.header}
+                            {login2.header}
                         </Text>
                     </View>
 
@@ -65,6 +67,10 @@ const LoginScreen3 = () => {
                                 placeholder='Enter your email'
                                 style={styles.emailInput}
                             />
+                            <Image
+                                style={styles.emailIcon}
+                                source={images.emailIcon}
+                            />
                         </View>
 
                         <View>
@@ -74,6 +80,10 @@ const LoginScreen3 = () => {
                                 placeholder='Enter password here.'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
+                            />
+                            <Image
+                                style={styles.lockImage}
+                                source={images.lock}
                             />
 
                             <TouchableOpacity
@@ -99,39 +109,87 @@ const LoginScreen3 = () => {
 
                     </View>
 
+                    <View style={styles.checkBoxView}>
+                        <TouchableOpacity style={styles.checkBoxTouch}
+                            onPress={() => setCheckStatus(!check)}
+                        >
+                            {
+                                check ? <Image source={images.checkbox}
+                                    style={styles.checkBox} /> :
+                                    <Image source={images.checkIcon} />
+                            }
+
+                            <Text style={styles.remember}>
+                                {login2.remember}
+                            </Text>
+
+                        </TouchableOpacity>
+
+                        <Text style={styles.forgote}>
+                            {login2.forgote}
+                        </Text>
+
+                    </View>
+
                     <View style={styles.signInBtnView}>
                         <TouchableOpacity style={styles.signInBtn}
                             onPress={onLogin}
 
                         >
                             <Text style={styles.signInText}>
-                            {login3.signIn}
+                            {login2.signIn}
                         </Text>
 
                         </TouchableOpacity>
 
                     </View>
 
-                    <View style={styles.checkBoxView}>
+                    <Image source={images.contine} style={{ alignSelf: 'center', marginTop: moderateScale(10) }} />
 
-                        <Text style={styles.forgote}>
-                            {login3.forgote}
-                        </Text>
-                        <Text style={styles.reset}>
-                        {login3.reset}
-                    </Text>
+                    <View style={styles.googleView}>
 
+                        <View style={styles.googleInnerView}>
+                            <TouchableOpacity style={styles.googlebtn}>
+
+                                <Image source={images.Google} />
+
+                                <Text style={styles.googleTxt}>
+                                {login2.google}
+                            </Text>
+
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.facebookImg}>
+
+                                <Image source={images.Shape} />
+                                <Text style={styles.facebookText}>
+                                {login2.Facebook}
+                            </Text>
+                            </TouchableOpacity>
+
+                        </View>
+
+                        <View style={styles.regularTxt}>
+
+                            <Text style={styles.regularStyle}>
+                            {login2.account}
+                            </Text>
+
+                            <TouchableOpacity
+                                onPress={() => console.log('SignUp')}
+                                hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+                            >
+                                <Text
+
+                                    style={styles.signUpTxt}
+                                >
+                            {login2.signup}
+                            </Text>
+                            </TouchableOpacity>
+
+
+                        </View>
                     </View>
-
-                    <View style={styles.signInBtnView}>
-                        
-                            <Text style={styles.signInText1}>
-                            {login3.ORSign}
-                        </Text>
-
-
-                    </View>
-
                 </KeyboardAwareScrollView>
             </View>
         </SafeAreaView>
@@ -139,4 +197,4 @@ const LoginScreen3 = () => {
     );
 };
 
-export default LoginScreen3;
+export default LoginScreen;
