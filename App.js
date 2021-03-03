@@ -1,20 +1,12 @@
 
-import {Route, Switch, NativeRouter} from 'react-router-native';
-import Screen1 from './AllScreens/Screen1/Screen1';
+import React from 'react';
+import { View } from "react-native";
+import LoginScreen2 from './components/LoginScreen2';
 
-
-
-const App = () => {
-  return (
-    <NativeRouter>
-      <Switch>
-
-        <Route exact path="/" component={Screen1}></Route>
-
-      </Switch>
-    </NativeRouter>
-  );
-};
-
-
-export default App;
+export default App = () => {
+    return (
+        <View style={{flex:1}}>
+        <LoginScreen2 />
+        </View>
+    )
+}
