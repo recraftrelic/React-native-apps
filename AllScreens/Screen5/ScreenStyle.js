@@ -4,8 +4,7 @@ import { AppColor } from '../AppUtil'
 
 export const styles = StyleSheet.create({
     container:{
-        backgroundColor:AppColor.backBlue,
-        // height:100
+        backgroundColor:AppColor.borderBlue,
     },
     style1:{
         borderTopLeftRadius:30,
@@ -25,7 +24,8 @@ export const styles = StyleSheet.create({
         height:91,
         top:165,
         left:58,
-        fontSize:15
+        fontSize:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     MainContainer: {
  
@@ -66,24 +66,26 @@ export const styles = StyleSheet.create({
         height:91,
         top:180,
         left:58,
-        fontSize:15
+        fontSize:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     man: {
         top:95,
         left:-105
     },
-    View:{
+    View5:{
         borderRadius: 10,
         borderWidth: 2, 
-        borderColor: AppColor.borderBlue, 
-       paddingRight:10,
-       paddingLeft:10,
-       padding:2,
+        paddingRight:10,
+        paddingLeft:10,
+        padding:3,
         top:105,
         left:105,
         textAlign:'center',
+        borderColor:AppColor.borderBlue,
         color:AppColor.borderBlue,
-        backgroundColor:AppColor.lightPurple
+        backgroundColor:AppColor.lightPurple,
+        fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
         width:240,
@@ -98,6 +100,7 @@ export const styles = StyleSheet.create({
       textAlign:'center',
       color:AppColor.white,
       fontSize:15,
+      fontFamily:'WorkSans-VariableFont'
    },
    account: {
         width:200,
@@ -105,6 +108,7 @@ export const styles = StyleSheet.create({
         marginTop:25,
         marginLeft:105,
         color:AppColor.black,
+        fontFamily:'WorkSans-VariableFont'
     },
    Sign: {
         width:51,
@@ -112,6 +116,7 @@ export const styles = StyleSheet.create({
         marginTop:25,
         marginLeft:240,
         position:'absolute',
-        color:AppColor.lightBlue
+        color:AppColor.lightBlue,
+        fontFamily:'WorkSans-VariableFont'
     },
 })

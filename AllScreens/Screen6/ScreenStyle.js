@@ -31,7 +31,8 @@ export  const styles = StyleSheet.create({
           left:45,
           fontWeight:'700',
           fontSize:30,
-          lineHeight:35
+          lineHeight:35,
+          fontFamily:'WorkSans-VariableFont'
       },
       state:{
           width:237,
@@ -41,7 +42,8 @@ export  const styles = StyleSheet.create({
           fontWeight:'400',
           fontSize:16,
           position:'absolute',
-          color:AppColor.content
+          color:AppColor.content,
+          fontFamily:'WorkSans-VariableFont'
       },
       user: {
           width:60,
@@ -52,6 +54,7 @@ export  const styles = StyleSheet.create({
           fontSize:12,
           position:'absolute',
           color:AppColor.greyContent,
+          fontFamily:'WorkSans-VariableFont'
       },
       name:{
           width:96,
@@ -62,7 +65,8 @@ export  const styles = StyleSheet.create({
           fontWeight:'500',
           fontSize:17,
           lineHeight:19,
-          color:AppColor.borderColor
+          color:AppColor.borderColor,
+          fontFamily:'WorkSans-VariableFont'
       },
       tick: {
           position:'absolute',
@@ -87,7 +91,8 @@ export  const styles = StyleSheet.create({
          fontWeight:'400',
          fontSize:12,
          lineHeight:14,
-         color:AppColor.greyContent
+         color:AppColor.greyContent,
+         fontFamily:'WorkSans-VariableFont'
         },
     childView1: {
         width:293,
@@ -113,7 +118,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:12,
-        color:AppColor.greyContent
+        color:AppColor.greyContent,
+        fontFamily:'WorkSans-VariableFont'
     },
     forgot: {
         width:101,
@@ -123,7 +129,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:12,
-        color:AppColor.greyContent
+        color:AppColor.greyContent,
+        fontFamily:'WorkSans-VariableFont'
     },
     button:{
         width:330,
@@ -141,7 +148,8 @@ export  const styles = StyleSheet.create({
         lineHeight:17,
         color:AppColor.white,
         left:135,
-        top:15
+        top:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     account:{
         width:122,
@@ -151,7 +159,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:13,
         lineHeight:14,
-        color:AppColor.greyContent
+        color:AppColor.greyContent,
+        fontFamily:'WorkSans-VariableFont'
     },
     sign: {
         width:45,
@@ -162,7 +171,8 @@ export  const styles = StyleSheet.create({
         fontSize:12,
         lineHeight:14,
         position:'absolute',
-        color:AppColor.colorContent
+        color:AppColor.colorContent,
+        fontFamily:'WorkSans-VariableFont'
     }
 
 })

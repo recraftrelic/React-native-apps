@@ -38,7 +38,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:14,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     email1: {
         width:181,
@@ -48,7 +49,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'500',
         fontSize:14,
         lineHeight:16,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     childView: {
         width:262,
@@ -65,7 +67,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:14,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     password1: {
         width:162,
@@ -75,7 +78,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'500',
         fontSize:14,
         lineHeight:16,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     childView1: {
         width:262,
@@ -114,7 +118,8 @@ export  const styles = StyleSheet.create({
         color:AppColor.white,
         paddingLeft:75,
         fontSize:16,
-        fontWeight:'500'
+        fontWeight:'500',
+        fontFamily:'Rubik-VariableFont'
     },
     forgot: {
         width:134,
@@ -124,7 +129,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:16,
         lineHeight:19,
-        color:AppColor.purple
+        color:AppColor.purple,
+        fontFamily:'Rubik-VariableFont'
     },
     child: {
         width:135,
