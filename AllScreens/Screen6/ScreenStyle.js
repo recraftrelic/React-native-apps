@@ -5,16 +5,16 @@ import { AppColor } from "../AppUtil"
 export  const styles = StyleSheet.create({
     image1: {
         position:'absolute',
-        left:300,
+        left:315,
       },
       circle2: {
         position:'absolute',
         top:96,
-        left:310,
+        left:320,
       },
       arrow1: {
         position:'absolute',
-        left:285,
+        left:295,
         top:110
       },
       logo: {
@@ -73,11 +73,11 @@ export  const styles = StyleSheet.create({
           width:18,
           height:21,
           top:395,
-          left:311,
+          left:321,
       },
       childView: {
           position:'absolute',
-          width:293,
+          width:313,
           top:413,
           left:46,
           borderBottomColor:AppColor.purple,
@@ -95,7 +95,7 @@ export  const styles = StyleSheet.create({
          fontFamily:'WorkSans-VariableFont'
         },
     childView1: {
-        width:293,
+        width:313,
         top:460,
         left:49,
         borderBottomWidth: 0.58,
@@ -136,7 +136,7 @@ export  const styles = StyleSheet.create({
         width:330,
         height:50,
         top:581,
-        left:35,
+        left:45,
         borderRadius:10,
         position:'absolute',
         backgroundColor:AppColor.purple
@@ -152,10 +152,10 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     account:{
-        width:122,
+        width:132,
         height:15,
         top:571,
-        left:103,
+        left:113,
         fontWeight:'400',
         fontSize:13,
         lineHeight:14,
@@ -166,7 +166,7 @@ export  const styles = StyleSheet.create({
         width:45,
         height:15,
         top:646,
-        left:230,
+        left:240,
         fontWeight:'400',
         fontSize:12,
         lineHeight:14,

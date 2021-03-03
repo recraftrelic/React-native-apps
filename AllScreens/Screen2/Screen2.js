@@ -6,6 +6,7 @@ import { View } from 'react-native';
 import { Text } from "react-native";
 import { styles } from './ScreenStyle';
 import { shadow } from 'react-native-paper';
+
 const Screen2 = () => {
 
     return (

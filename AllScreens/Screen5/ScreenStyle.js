@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
         width:62,
         height:110,
         top:111,
-        left:156,
+        left:160,
     },
     userName:{
         width:318,
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
         top:145,
         left:8,
         height:65,
-        width:318,
+        width:348,
         borderRadius: 10,
         borderWidth: 2,
         borderColor: AppColor.borderBlue,
@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
         top:160,
         left:8,
         height:65,
-        width:318,
+        width:348,
         borderRadius: 10,
         borderWidth: 2,
         borderColor: AppColor.white,
@@ -88,10 +88,10 @@ export const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
-        width:240,
+        width:320,
         height:50,
         marginTop:205,
-        marginLeft:85,
+        marginLeft:65,
         backgroundColor:AppColor.darkSky,
         borderRadius:10
     },
@@ -106,7 +106,7 @@ export const styles = StyleSheet.create({
         width:200,
         height:20,
         marginTop:25,
-        marginLeft:105,
+        marginLeft:125,
         color:AppColor.black,
         fontFamily:'WorkSans-VariableFont'
     },
@@ -114,7 +114,7 @@ export const styles = StyleSheet.create({
         width:51,
         height:20,
         marginTop:25,
-        marginLeft:240,
+        marginLeft:260,
         position:'absolute',
         color:AppColor.lightBlue,
         fontFamily:'WorkSans-VariableFont'

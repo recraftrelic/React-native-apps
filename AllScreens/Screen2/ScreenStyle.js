@@ -60,7 +60,7 @@ export  const styles = StyleSheet.create({
           opacity:50,
           fontSize:15,
           fontWeight:'500',
-          color:AppColor.black,
+          color:AppColor.lineGrey,
           fontFamily:'WorkSans-VariableFont'
       },
       loginButton: {
@@ -97,16 +97,16 @@ export  const styles = StyleSheet.create({
       },
       image1: {
         position:'absolute',
-        left:300,
+        left:315,
       },
       circle2: {
         position:'absolute',
         top:96,
-        left:310,
+        left:320,
       },
       arrow1: {
         position:'absolute',
-        left:285,
+        left:295,
         top:110
       },
       mark1: {
@@ -141,7 +141,7 @@ export  const styles = StyleSheet.create({
         fontSize:14,
     },
     shadow: {
-        color: AppColor.black,
+        shadowColor: AppColor.black,
         shadowRadius: 10, 
         shadowOpacity: 0.6,
         elevation:5,
