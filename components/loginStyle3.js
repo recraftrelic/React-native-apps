@@ -4,10 +4,12 @@ import {
     Platform
 } from 'react-native';
 import { fonts } from "./utilities/images";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 import {
     moderateScale,
 } from 'react-native-size-matters';
+import { color } from 'react-native-reanimated';
 const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
@@ -31,10 +33,24 @@ export const styles = StyleSheet.create({
     container: {
         marginTop: Platform.OS == 'ios' ? 50 : 0,
         flex: 1,
-        backgroundColor: '#E5E5E5'
+        backgroundColor: 'white'
     },
     signInBtnView: {
-        marginTop: moderateScale(20),
+        marginTop: moderateScale(30),
+        flex: 0.1,
+    },
+    signInText1: {
+        marginTop: moderateScale(30),
+        left: moderateScale(45),
+        color: '#36455A',
+        fontFamily: fonts.regular,
+
+    },
+    OpacitySignInText: {
+        color: '#8F70FF'
+    },
+    opacitybtn: {
+        marginTop: moderateScale(30),
         flex: 0.1,
     },
     signInBtn:
@@ -47,6 +63,18 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 10
 
+    },
+    opacitySignBtn:{
+        backgroundColor: 'white',
+        height: moderateScale(48),
+        width: width - 80,
+        alignSelf: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: moderateScale(10),
+        borderColor: '#8F70FF',
+        borderWidth: 0.5,
+        marginTop: moderateScale(20)
     },
     googleView: {
         flex: 0.2,
@@ -101,9 +129,15 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.regular,
     },
     forgote: {
-        color: '#FC6D5B',
+        color: 'grey',
         marginBottom: moderateScale(2),
-        left: moderateScale(60),
+        left: moderateScale(70),
+        fontFamily: fonts.regular
+    },
+    reset: {
+        color: '#8F70FF',
+        marginBottom: moderateScale(2),
+        right: moderateScale(77),
         fontFamily: fonts.regular
     },
     remember: {
@@ -129,37 +163,51 @@ export const styles = StyleSheet.create({
     },
     checkBoxbtn: {
         position: 'absolute',
-        top: moderateScale(30),
-        right: moderateScale(30)
+        top: moderateScale(33),
+        right: moderateScale(51)
     },
     lockImage: {
         position: 'absolute',
         top: moderateScale(28),
         left: moderateScale(30)
     },
+    textStyle: {
+        color: '#8F70FF',
+        fontFamily: fonts.regular,
+    },
     passwordInput: {
+        backgroundColor: '#EAEAEA',
         height: moderateScale(44),
         width: width - 80,
         alignSelf: 'center',
-        borderRadius: moderateScale(10),
-        borderColor: '#7957F3',
+        borderRadius: moderateScale(15),
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
-        marginTop: moderateScale(20)
+        marginTop: moderateScale(20),
+        fontFamily: fonts.regular,
+
     },
+    logo: {
+        position: 'absolute',
+        top: moderateScale(55),
+        left: moderateScale(30),
+    },
+
     emailIcon: {
         position: 'absolute',
         top: moderateScale(15),
         left: moderateScale(30)
     },
     emailInput: {
+        backgroundColor: '#EAEAEA',
         height: moderateScale(44),
         width: width - 80,
         alignSelf: 'center',
-        borderRadius: moderateScale(10),
-        borderColor: '#7957F3',
+        borderRadius: moderateScale(15),
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(25)
+        paddingHorizontal: moderateScale(25),
+        fontFamily: fonts.regular,
+
     },
     inputView: {
         flex: 0.2,
@@ -186,6 +234,18 @@ export const styles = StyleSheet.create({
     headerStyle: {
         marginTop: moderateScale(10),
         color: '#393F45',
-        fontFamily: fonts.regular
-    }
+        fontFamily: fonts.regular,
+        right: moderateScale(127),
+        fontSize: RFValue(18),
+
+    },
+
+    headtextStyle: {
+        fontSize: RFValue(18),
+        marginTop: moderateScale(145),
+        fontFamily: fonts.regular,
+        right: moderateScale(59),
+        flex: 0.3
+    },
+    
 });
