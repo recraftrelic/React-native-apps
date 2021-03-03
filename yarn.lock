@@ -5192,10 +5192,10 @@ map-visit@^1.0.0:
     "clone-deep" "^0.2.4"
     "kind-of" "^3.0.2"
 
-merge-stream@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/merge-stream/-/merge-stream-1.0.1.tgz"
-  integrity sha1-QEEgLVCKNCugAXQAjfDCUbjBNeE=
+"merge-stream@^1.0.1":
+  "integrity" "sha1-QEEgLVCKNCugAXQAjfDCUbjBNeE="
+  "resolved" "https://registry.npmjs.org/merge-stream/-/merge-stream-1.0.1.tgz"
+  "version" "1.0.1"
   dependencies:
     readable-stream "^2.0.1"
 
@@ -7343,10 +7343,10 @@ sane@^4.0.3:
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
 
-symbol-tree@^3.2.2:
-  version "3.2.4"
-  resolved "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz"
-  integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+"symbol-tree@^3.2.2":
+  "integrity" "sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw=="
+  "resolved" "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz"
+  "version" "3.2.4"
 
 table@^5.2.3:
   version "5.4.6"
