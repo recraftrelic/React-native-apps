@@ -42,9 +42,9 @@ const LoginScreen3 = () => {
 
                         <Text style={{
                             fontSize: RFValue(18),
-                            marginTop: moderateScale(10),
-                            fontFamily: fonts.bold,
-                            left: moderateScale(12)
+                            marginTop: moderateScale(130),
+                            fontFamily: fonts.regular,
+                            right: moderateScale(50)
 
                         }}>
                             {login3.headername}

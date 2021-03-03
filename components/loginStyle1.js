@@ -8,20 +8,31 @@ import { fonts } from "./utilities/images";
 import {
     moderateScale,
 } from 'react-native-size-matters';
+import { RFValue } from 'react-native-responsive-fontsize';
+
 const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
-
+    logo: {
+        position: 'absolute',
+        top: moderateScale(55),
+        left: moderateScale(30),
+    },
     signInBtn:
     {
-        backgroundColor: '#2945FF',
-        height: moderateScale(44),
+        backgroundColor: '#3D57FF',
+        height: moderateScale(58),
         width: width - 50,
         alignSelf: 'center',
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10
 
+    },
+    skip: {
+        marginTop: moderateScale(33),
+        left: moderateScale(160),
+        flex: 0.1,
     },
     signInText: {
         color: 'white',
@@ -43,8 +54,8 @@ export const styles = StyleSheet.create({
     googleInnerView: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: 20,
-        paddingTop: 0
+        padding: moderateScale (50),
+        paddingTop: 0,
     },
     googlebtn: {
         borderRadius: 10,
@@ -55,6 +66,36 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#FC6A57',
         padding: moderateScale(10)
+    },
+    signintxt: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: moderateScale (50),
+        paddingTop: 0,
+        top: moderateScale(12)
+    },
+    reset: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        padding: moderateScale (50),
+        paddingTop: 0,
+        top: moderateScale(12)
+    },
+    signintxt1: {
+        color: '#393F45',
+        marginRight: moderateScale(185),
+        fontFamily: fonts.regular,
+        fontSize: RFValue(18),
+
+    },
+
+    siguptxt: {
+        color: '#D0D0D0',
+        marginLeft: moderateScale(10),
+        fontFamily: fonts.regular,
+        right: moderateScale(155),
+        fontSize: RFValue(18),
+
     },
     facebookImg: {
         borderRadius: 10,
@@ -86,9 +127,22 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.regular
     },
     forgote: {
-        color: 'blue',
-        marginBottom: moderateScale(2),
-        fontFamily: fonts.regular
+        color: '#393F45',
+        // marginBottom: moderateScale(2),
+        fontFamily: fonts.regular,
+        top: moderateScale(10),
+        left: moderateScale(25),
+        fontSize: RFValue(14),
+
+    },
+    reset: {
+        // marginBottom: moderateScale(72),
+        fontFamily: fonts.regular,
+        bottom: moderateScale(10),
+        left: moderateScale(150),
+        fontSize: RFValue(14),
+        color: '#D0D0D0'
+
     },
     remember: {
         marginLeft: moderateScale(10),
@@ -117,36 +171,51 @@ export const styles = StyleSheet.create({
     },
     lockImage: {
         position: 'absolute',
-        top: moderateScale(28),
-        left: moderateScale(30)
+        top: moderateScale(33),
+        left: moderateScale(26)
     },
     passwordInput: {
-        height: moderateScale(44),
+        height: moderateScale(53),
         width: width - 50,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(35),
-        marginTop: moderateScale(20)
+        paddingHorizontal: moderateScale(39),
+        marginTop: moderateScale(20),
+        backgroundColor: '#F5F5F5'
+
     },
     emailIcon: {
         position: 'absolute',
-        top: moderateScale(15),
-        left: moderateScale(30)
+        top: moderateScale(21),
+        left: moderateScale(30),
+        
+    },
+    vector: {
+        position: 'absolute',
+        top: moderateScale(18),
+        left: moderateScale(52),
+        
+    },
+    vector1: {
+        position: 'absolute',
+        top: moderateScale(94),
+        left: moderateScale(52)
     },
     emailInput: {
-        height: moderateScale(44),
+        height: moderateScale(56),
         width: width - 50,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(35)
+        paddingHorizontal: moderateScale(39),
+        backgroundColor: '#F5F5F5'
     },
     inputView: {
         flex: 0.2,
-        marginTop: moderateScale(10)
+        marginTop: moderateScale(5)
     },
     headText: {
         marginTop: moderateScale(40),
@@ -158,6 +227,16 @@ export const styles = StyleSheet.create({
         top: moderateScale(-30),
         right: moderateScale(-10)
     },
+    crcl: {
+        position: 'absolute',
+        top: moderateScale(60),
+        right: moderateScale(60),
+    },
+    zigzag: {
+        position: 'absolute',
+        top: moderateScale(72),
+        right: moderateScale(75),
+    },
     logoView: {
         flex: 1
     },
@@ -167,8 +246,10 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.bold
     },
     headerStyle: {
-        marginTop: moderateScale(10),
+        fontSize: RFValue(24),
+        marginTop: moderateScale(5),
         color: '#393F45',
-        fontFamily: fonts.regular
+        fontFamily: fonts.bold,
+        right: moderateScale(45),
     }
 });

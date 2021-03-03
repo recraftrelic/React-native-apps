@@ -31,21 +31,21 @@ const LoginScreen4 = () => {
     }
     return (
         <SafeAreaView style={styles.container}>
-        <KeyboardAwareScrollView enableOnAndroid={true}
-                    keyboardShouldPersistTaps='handled'
-                    showsVerticalScrollIndicator={false}
-                >
-                
-            <View style={styles.logoView}>
-                <Image source={images.group}
-                    style={styles.groupLogo}
-                />
-                <Image source={images.logo}
-                    style={styles.logo}
-                />
-            </View>
-            <View>
-                
+            <KeyboardAwareScrollView enableOnAndroid={true}
+                keyboardShouldPersistTaps='handled'
+                showsVerticalScrollIndicator={false}
+            >
+
+                <View style={styles.logoView}>
+                    <Image source={images.group}
+                        style={styles.groupLogo}
+                    />
+                    <Image source={images.logo}
+                        style={styles.logo}
+                    />
+                </View>
+                <View>
+
 
                     <View style={styles.headText}>
 
@@ -59,10 +59,10 @@ const LoginScreen4 = () => {
                         </Text>
                     </View>
                     <View style={styles.inputView}>
-                            <Text style={styles.emailtxt}
-                            >
-                            Email Addres
-                            </Text>
+                        <Text style={styles.emailtxt}
+                        >
+                            {login4.EmailAddress}
+                        </Text>
                         <View>
                             <TextInput
                                 value={email}
@@ -73,10 +73,12 @@ const LoginScreen4 = () => {
                         </View>
 
                         <View>
-                        <Text style={styles.passtxt}
-                        >
-                        Password
-                        </Text>
+                            <Text style={styles.passtxt}
+                            >
+                                {login4.Password}
+
+
+                            </Text>
                             <TextInput
                                 value={password}
                                 onChangeText={(password) => setPassword(password)}
@@ -114,8 +116,8 @@ const LoginScreen4 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login4.signIn}
-                        </Text>
+                                {login4.signIn}
+                            </Text>
 
                         </TouchableOpacity>
 
@@ -123,26 +125,26 @@ const LoginScreen4 = () => {
 
                     <View style={styles.regularTxt}>
 
-                    <Text style={styles.regularStyle}>
-                    {login4.account}
-                    </Text>
+                        <Text style={styles.regularStyle}>
+                            {login4.account}
+                        </Text>
 
-                    <TouchableOpacity
-                        onPress={() => console.log('SignUp')}
-                        hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
-                    >
-                        <Text
-
-                            style={styles.signUpTxt}
+                        <TouchableOpacity
+                            onPress={() => console.log('SignUp')}
+                            hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
                         >
-                    {login4.signup}
-                    </Text>
-                    </TouchableOpacity>
+                            <Text
+
+                                style={styles.signUpTxt}
+                            >
+                                {login4.signup}
+                            </Text>
+                        </TouchableOpacity>
 
 
+                    </View>
                 </View>
-                </View>
-                </KeyboardAwareScrollView>
+            </KeyboardAwareScrollView>
         </SafeAreaView>
 
     );

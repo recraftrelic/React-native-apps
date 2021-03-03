@@ -80,11 +80,12 @@ const LoginScreen8 = () => {
                                 {
                                     showHidePassword ?
                                         <Text style={styles.textStyle}>
-                                        SHOW
+                                        {login3.Show}
                                         </Text>
                                         :
                                         <Text style={styles.textStyle}>
-                                        HIDE
+                                        {login3.Hide}
+                                        
                                         </Text>
                                         
                                 }

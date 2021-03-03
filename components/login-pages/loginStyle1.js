@@ -3,7 +3,7 @@ import {
     Dimensions,
     Platform
 } from "react-native";
-import { fonts } from "./utilities/images";
+// import { fonts } from "./utilities/images";
 
 import {
     moderateScale,
@@ -11,7 +11,6 @@ import {
 const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
-
     signInBtn:
     {
         backgroundColor: '#2945FF',
@@ -168,6 +167,16 @@ export const styles = StyleSheet.create({
     },
     headerStyle: {
         marginTop: moderateScale(10),
+        color: '#393F45',
+        fontFamily: fonts.regular
+    },
+    headerStyle1: {
+        marginTop: moderateScale(20),
+        color: '#393F45',
+        fontFamily: fonts.regular
+    },
+    headerStyle2: {
+        marginTop: moderateScale(30),
         color: '#393F45',
         fontFamily: fonts.regular
     }
