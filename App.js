@@ -7,7 +7,9 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Screen1 from './AllScreens/Screen1';
-import LoginScreen2 from './components/LoginScreen';
+import LoginScreen from './components/LoginScreen';
+import LoginScreen2 from './components/LoginScreen2';
+import LoginScreen3 from './components/LoginScreen3';
 //import Screen1 from "./AllScreens/Screen1"
 const Stack = createStackNavigator();
 const App  = () => {
@@ -18,9 +20,18 @@ const App  = () => {
         <Stack.Screen
            name="page1"
           component={MainScreen}
-          options={{ title: 'Press to go to the Screen' }}
+          options={{headerShown: false}}
         />
-        <Stack.Screen name="screen1" component ={LoginScreen2}/>
+        <Stack.Screen name="screen1" component ={LoginScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="screen2" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen3" component ={LoginScreen3} options={{headerShown: false}}/>
+        <Stack.Screen name="screen4" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen5" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen6" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen7" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen8" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen9" component ={LoginScreen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen10" component ={LoginScreen2} options={{headerShown: false}}/>
         </Stack.Navigator>
     </NavigationContainer>
   // <NativeRouter>
