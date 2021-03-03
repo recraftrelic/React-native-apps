@@ -11,6 +11,7 @@ export  const styles = StyleSheet.create({
        fontWeight:'400',
         fontSize: 23,
         lineHeight: 26,
+        fontFamily:'WorkSans-VariableFont'
         
       },
       container1: {
@@ -20,12 +21,14 @@ export  const styles = StyleSheet.create({
           marginLeft:30,
           fontSize: 32,
           fontWeight:"700",
+          fontFamily:'WorkSans-VariableFont'
       },
       container2: {
         width:500,
         marginLeft:32,
         fontSize: 18,
-        color: AppColor.lightGrey
+        color: AppColor.lightGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     boxShadow: {
         width: 330,
@@ -57,7 +60,8 @@ export  const styles = StyleSheet.create({
           opacity:50,
           fontSize:15,
           fontWeight:'500',
-          color:AppColor.black
+          color:AppColor.lineGrey,
+          fontFamily:'WorkSans-VariableFont'
       },
       loginButton: {
         width:301,
@@ -66,21 +70,21 @@ export  const styles = StyleSheet.create({
         marginLeft:55,
         backgroundColor:AppColor.darkSky,
         borderRadius:10,
-      
       },
-   
-    button: {
+      button: {
         paddingTop:15,
         textAlign:'center',
         color:AppColor.white,
-        fontSize:17,     
-     },
+        fontSize:17,  
+        fontFamily:'WorkSans-VariableFont'   
+      },
       account: {
         width:200,
         height:20,
         marginTop:20,
         marginLeft:105,
         color:AppColor.black,
+        fontFamily:'WorkSans-VariableFont'
       },
       Sign: {
         width:55,
@@ -88,20 +92,21 @@ export  const styles = StyleSheet.create({
         marginTop:20,
         marginLeft:250,
         position:'absolute',
-        color:AppColor.lightBlue
+        color:AppColor.lightBlue,
+        fontFamily:'WorkSans-VariableFont'
       },
       image1: {
         position:'absolute',
-        left:300,
+        left:315,
       },
       circle2: {
         position:'absolute',
         top:96,
-        left:310,
+        left:320,
       },
       arrow1: {
         position:'absolute',
-        left:285,
+        left:295,
         top:110
       },
       mark1: {
@@ -112,7 +117,6 @@ export  const styles = StyleSheet.create({
       emailIcon: {
         width:17,
         height:18,
-        // top:-25,
         left:35,
         position:'absolute'
     },
@@ -136,16 +140,14 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:14,
     },
-   shadow: {
-   
-        color: AppColor.black,
+    shadow: {
+        shadowColor: AppColor.black,
         shadowRadius: 10, 
         shadowOpacity: 0.6,
         elevation:5,
         shadowOffset: {
-            height : 11,
-            width: 0,
-             
+        height : 11,
+        width: 0,     
         },
     }
 });
