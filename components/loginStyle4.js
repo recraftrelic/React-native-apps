@@ -163,7 +163,7 @@ export const styles = StyleSheet.create({
     logo: {
         position: 'absolute',
         top: moderateScale(95),
-        left: moderateScale(162),
+        left: moderateScale(155),
 
     },
     groupLogo: {
@@ -222,7 +222,7 @@ export const styles = StyleSheet.create({
 
     headtextStyle: {
         marginTop: moderateScale(10),
-        color: '#36455A',
+        color: 'grey',
         fontFamily: fonts.regular,
         marginRight: moderateScale(140),
         width: width - 20
