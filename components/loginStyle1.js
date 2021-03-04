@@ -18,6 +18,14 @@ export const styles = StyleSheet.create({
         top: moderateScale(55),
         left: moderateScale(30),
     },
+    name: {
+        fontSize: RFValue(24),
+        marginTop: moderateScale(160),
+        fontFamily: fonts.bold,
+        right: moderateScale(120),
+        color: '#393F45',
+
+    },
     signInBtn:
     {
         backgroundColor: '#3D57FF',
@@ -37,11 +45,12 @@ export const styles = StyleSheet.create({
     signInText: {
         color: 'white',
         fontSize: moderateScale(16),
-        fontFamily: fonts.bold
+        fontFamily: fonts.semiBold
     },
     container: {
         marginTop: Platform.OS == "ios" ? 50 : 0,
         flex: 1,
+        backgroundColor: 'white'
     },
     signInBtnView: {
         marginTop: moderateScale(20),
@@ -169,6 +178,10 @@ export const styles = StyleSheet.create({
         top: moderateScale(30),
         right: moderateScale(40)
     },
+    hideIcon: {
+        top: moderateScale(5)
+    },
+
     lockImage: {
         position: 'absolute',
         top: moderateScale(33),
