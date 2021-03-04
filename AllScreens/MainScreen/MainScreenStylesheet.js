@@ -5,9 +5,6 @@ export const styles = StyleSheet.create({
         backgroundColor: "white",
     },
     containers: {
-        //backgroundColor: 'black',
-        //    width:233,
-        //    height:20,
         margin: 15,
         marginLeft: 0,
         borderRadius: 10,

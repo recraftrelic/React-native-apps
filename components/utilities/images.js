@@ -10,6 +10,8 @@ import emailIcon from "../../images/icons/email.png";
 import lock from "../../images/icons/lock.png";
 import HideIcon from "../../images/icons/Hide.png";
 import ic_ad_view from "../../images/icons/ic_ad_view.png";
+import group from "../../images/icons/Group.png";
+
 
 
 const images = {
@@ -23,7 +25,8 @@ const images = {
     emailIcon,
     lock,
     HideIcon,
-    ic_ad_view
+    ic_ad_view,
+    group
 }
 
 const fonts = Platform.select({

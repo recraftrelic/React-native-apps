@@ -6,7 +6,7 @@ import 'react-native-gesture-handler';
 // import { createStackNavigator} from 'react-navigation';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Screen1 from './AllScreens/Screen1';
+import Screen1 from './AllScreens/Screen1/Screen1';
 import LoginScreen from './components/LoginScreen';
 import LoginScreen2 from './components/LoginScreen2';
 import LoginScreen3 from './components/LoginScreen3';
@@ -34,6 +34,8 @@ const App  = () => {
         <Stack.Screen name="screen10" component ={LoginScreen2} options={{headerShown: false}}/>
         </Stack.Navigator>
     </NavigationContainer>
+
+   
   // <NativeRouter>
    
   //   <Switch>
@@ -46,6 +48,15 @@ const App  = () => {
   );
 
 };
-
-
 export default App;
+// import React from 'react';
+// import { View } from "react-native";
+// import LoginScreen2 from './components/LoginScreen2';
+
+// export default App = () => {
+//     return (
+//         <View style={{flex:1}}>
+//         <LoginScreen2 />
+//         </View>
+//     )
+// }
