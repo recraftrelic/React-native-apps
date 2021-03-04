@@ -7,21 +7,16 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import {
-    moderateScale,
-} from 'react-native-size-matters';
 
 import { styles } from "./loginStyle1";
 import login1 from './login1.json';
-import { images, fonts } from "./utilities/images";
+import { images } from "./utilities/images";
 
 
 const LoginScreen1 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [check, setCheckStatus] = useState(false);
     const [showHidePassword, setShowHidePassword] = useState(true);
 
     const onLogin = () => {
@@ -44,19 +39,10 @@ const LoginScreen1 = () => {
 
                     <View style={styles.headText}>
                         <Image source={images.logo}
-                        style={styles.logo}
+                            style={styles.logo}
                         />
 
-                        <Text style={{
-                            fontSize: RFValue(24),
-                            marginTop: moderateScale(160),
-                            fontFamily: fonts.bold,
-                            right: moderateScale(120),
-                            color: '#393F45',
-
-
-
-                        }}>
+                        <Text style={styles.name}>
                             {login1.name}
                         </Text>
 
@@ -67,13 +53,13 @@ const LoginScreen1 = () => {
 
                     <View style={styles.signintxt}>
                         <Text style={styles.signintxt1}>
-                        {login1.signing}
-                    </Text>
+                            {login1.signing}
+                        </Text>
 
                         <Text style={styles.siguptxt}>
-                        {login1.headerSigning}
-                    </Text>
-                </View>
+                            {login1.headerSigning}
+                        </Text>
+                    </View>
 
 
                     <View style={styles.inputView}>
@@ -113,6 +99,7 @@ const LoginScreen1 = () => {
                                     showHidePassword ?
                                         <Image
                                             source={images.HideIcon}
+                                            style={styles.hideIcon}
                                         />
                                         :
                                         <Image
@@ -125,24 +112,24 @@ const LoginScreen1 = () => {
 
                         </View>
                         <Image
-                                style={styles.vector}
-                                source={images.Vector}
-                            />
-                            <Image
-                                style={styles.vector1}
-                                source={images.Vector}
-                            />
+                            style={styles.vector}
+                            source={images.Vector}
+                        />
+                        <Image
+                            style={styles.vector1}
+                            source={images.Vector}
+                        />
 
                     </View>
                     <View style={styles.forgotetext}>
-                    <Text style={styles.forgote}>
-                    {login1.forgote}
-                </Text>
+                        <Text style={styles.forgote}>
+                            {login1.forgote}
+                        </Text>
 
-                    <Text style={styles.reset}>
-                    {login1.reset}
-                </Text>
-                     </View>
+                        <Text style={styles.reset}>
+                            {login1.reset}
+                        </Text>
+                    </View>
 
                     <View style={styles.signInBtnView}>
                         <TouchableOpacity style={styles.signInBtn}
@@ -150,16 +137,16 @@ const LoginScreen1 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login1.login}
-                        </Text>
+                                {login1.login}
+                            </Text>
 
                         </TouchableOpacity>
 
                     </View>
 
                     <Text style={styles.skip}>
-                            {login1.skip}
-                        </Text>
+                        {login1.skip}
+                    </Text>
 
 
                 </KeyboardAwareScrollView>

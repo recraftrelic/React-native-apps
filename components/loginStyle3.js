@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     signInText: {
         color: 'white',
         fontSize: moderateScale(16),
-        fontFamily: fonts.bold
+        fontFamily: fonts.semiBold
     },
     container: {
         marginTop: Platform.OS == 'ios' ? 50 : 0,
@@ -40,17 +40,19 @@ export const styles = StyleSheet.create({
         flex: 0.1,
     },
     signInText1: {
-        marginTop: moderateScale(30),
+        marginTop: moderateScale(15),
         left: moderateScale(45),
         color: '#36455A',
         fontFamily: fonts.regular,
 
     },
     OpacitySignInText: {
-        color: '#8F70FF'
+        color: '#8F70FF',
+        fontFamily: fonts.semiBold,
+
     },
     opacitybtn: {
-        marginTop: moderateScale(30),
+        marginTop: moderateScale(15),
         flex: 0.1,
     },
     signInBtn:
@@ -138,7 +140,7 @@ export const styles = StyleSheet.create({
         color: '#8F70FF',
         marginBottom: moderateScale(2),
         right: moderateScale(77),
-        fontFamily: fonts.regular
+        fontFamily: fonts.semiBold
     },
     remember: {
         marginLeft: moderateScale(10),
@@ -173,7 +175,7 @@ export const styles = StyleSheet.create({
     },
     textStyle: {
         color: '#8F70FF',
-        fontFamily: fonts.regular,
+        fontFamily: fonts.semiBold,
     },
     passwordInput: {
         backgroundColor: '#EAEAEA',
@@ -244,7 +246,7 @@ export const styles = StyleSheet.create({
         fontSize: RFValue(18),
         marginTop: moderateScale(145),
         fontFamily: fonts.regular,
-        right: moderateScale(59),
+        right: moderateScale(50),
         flex: 0.3
     },
     

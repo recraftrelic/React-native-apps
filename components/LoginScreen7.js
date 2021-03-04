@@ -7,23 +7,17 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import {
-    moderateScale,
-} from 'react-native-size-matters';
 
 import { styles } from './loginStyle4';
 import login4 from './login4.json';
-import { images, fonts } from "./utilities/images";
+import { images } from "./utilities/images";
 
 
 const LoginScreen4 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showHidePassword, setShowHidePassword] = useState(true);
-
-    const [invalidAddress, setInvalidAddress] =useState('')
 
     const onLogin = () => {
         alert(`${email} + ${password}`);
@@ -65,7 +59,6 @@ const LoginScreen4 = () => {
                         </Text>
                         <View>
                             <TextInput
-                            maxLength={5}
                                 value={email}
                                 onChangeText={(email) => setEmail(email)}
                                 placeholder='Enter your email'
@@ -97,6 +90,8 @@ const LoginScreen4 = () => {
                                     showHidePassword ?
                                         <Image
                                             source={images.HideIcon}
+
+                                            style={styles.HideIcon}
                                         />
                                         :
                                         <Image

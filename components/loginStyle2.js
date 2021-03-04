@@ -2,78 +2,86 @@ import {
     StyleSheet,
     Dimensions,
     Platform
-} from "react-native";
+} from 'react-native';
 import { fonts } from "./utilities/images";
-import { RFValue } from 'react-native-responsive-fontsize';
 
 import {
     moderateScale,
 } from 'react-native-size-matters';
+import { RFValue } from 'react-native-responsive-fontsize';
 const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
+    borderBox:
+    {
+        height: moderateScale(480),
+        width: moderateScale(315),
+        backgroundColor: 'white',
+        position: 'absolute', 
+        zIndex: 99,
+        top: moderateScale(130),
+        left: moderateScale(28),
+        borderRadius: 12
 
+    },
+    signInText: {
+        color: 'white',
+        fontSize: moderateScale(16),
+        fontFamily: fonts.semiBold
+    },
+    container: {
+        marginTop: Platform.OS == 'ios' ? 50 : 0,
+        flex: 1,
+        backgroundColor: '#E5E5E5'
+    },
+    signInBtnView: {
+        marginTop: moderateScale(20),
+        flex: 0.1,
+    },
     signInBtn:
     {
-        backgroundColor: '#2945FF',
-        height: moderateScale(44),
-        width: width - 50,
+        backgroundColor: '#8F70FF',
+        height: moderateScale(48),
+        width: width - 80,
         alignSelf: 'center',
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10
 
     },
-    signInText: {
-        color: 'white',
-        fontSize: moderateScale(16),
-        fontFamily: fonts.regular
-    },
-    container: {
-        marginTop: Platform.OS == "ios" ? 50 : 0,
-        flex: 1,
-        backgroundColor: 'white'
-
-    },
-    signInBtnView: {
-        marginTop: moderateScale(20),
-        flex: 0.1,
-    },
     googleView: {
         flex: 0.2,
-        marginTop: moderateScale(5)
+        marginTop: moderateScale(20)
     },
     googleInnerView: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 20,
         paddingTop: 0,
-        top: moderateScale(25)
-    },
-    continue: {
-        alignSelf: 'center',
-        marginTop: moderateScale(20),
-        color: '#ABB3BB'
+        bottom: moderateScale(8)
     },
     googlebtn: {
         borderRadius: 10,
         height: moderateScale(44),
-        width: width / 2 - 40,
+        width: width / 2 - 60,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#FC6A57',
-        padding: moderateScale(10)
+        padding: moderateScale(10),
+        right: moderateScale(15)
+
     },
     facebookImg: {
         borderRadius: 10,
         height: moderateScale(44),
-        width: width / 2 - 40,
+        width: width / 2 - 60,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#298FFF',
-        padding: moderateScale(10)
+        padding: moderateScale(10),
+        left: moderateScale(12)
     },
     facebookText: {
         color: 'white',
@@ -83,7 +91,7 @@ export const styles = StyleSheet.create({
     regularTxt: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: moderateScale(40)
+        marginTop: moderateScale(610),
     },
     regularStyle: {
         color: '#092C4C',
@@ -92,11 +100,12 @@ export const styles = StyleSheet.create({
     signUpTxt: {
         color: 'blue',
         marginLeft: moderateScale(5),
-        fontFamily: fonts.semiBold
+        fontFamily: fonts.regular,
     },
     forgote: {
-        color: '#2945FF',
+        color: '#FC6D5B',
         marginBottom: moderateScale(2),
+        left: moderateScale(50),
         fontFamily: fonts.regular
     },
     remember: {
@@ -108,81 +117,81 @@ export const styles = StyleSheet.create({
     checkBox: {
         height: moderateScale(22),
         width: moderateScale(22),
-        borderRadius: 5
+        borderRadius: 5,
+
     },
+
     checkBoxView: {
         marginTop: moderateScale(20),
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'flex-end',
+        right: moderateScale(28),
     },
     checkBoxTouch: {
         flexDirection: 'row',
+        left: moderateScale(8)
+
     },
     checkBoxbtn: {
         position: 'absolute',
         top: moderateScale(30),
-        right: moderateScale(40)
+        right: moderateScale(15)
     },
     lockImage: {
         position: 'absolute',
         top: moderateScale(28),
-        left: moderateScale(27)
+        left: moderateScale(30)
     },
     passwordInput: {
         height: moderateScale(44),
-        width: width - 50,
+        width: width - 80,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(38),
+        paddingHorizontal: moderateScale(25),
         marginTop: moderateScale(20),
         fontFamily: fonts.regular
 
     },
     emailIcon: {
         position: 'absolute',
-        top: moderateScale(18),
+        top: moderateScale(15),
         left: moderateScale(30)
     },
     emailInput: {
-        height: moderateScale(50),
-        width: width - 50,
+        height: moderateScale(44),
+        width: width - 80,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(38),
+        paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular
 
     },
     inputView: {
         flex: 0.2,
-        marginTop: moderateScale(10)
+        marginTop: moderateScale(20)
     },
     headText: {
-        marginTop: moderateScale(40),
+        marginTop: moderateScale(25),
         flex: 0.3,
         alignItems: 'center',
     },
-    logo: {
-        marginTop: moderateScale(40),
-
-    },
-    headName: {
+    headTxt: {
         fontSize: RFValue(24),
         marginTop: moderateScale(10),
-        fontFamily: fonts.bold
+        fontFamily: fonts.bold,
     },
     headLogo: {
         position: 'absolute',
         top: moderateScale(-30),
-        right: moderateScale(-10)
+        right: moderateScale(-10),
     },
     logoView: {
         flex: 1,
-
     },
     googleTxt: {
         color: 'white',
@@ -191,7 +200,7 @@ export const styles = StyleSheet.create({
     },
     headerStyle: {
         marginTop: moderateScale(10),
-        color: 'grey',
+        color: '#393F45',
         fontFamily: fonts.regular
     }
 });

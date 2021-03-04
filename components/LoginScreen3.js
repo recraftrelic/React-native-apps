@@ -7,15 +7,11 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import {
-    moderateScale,
-} from 'react-native-size-matters';
 
 import { styles } from "./loginStyles";
 import login2 from './login2.json';
-import { images, fonts } from "./utilities/images";
+import { images } from "./utilities/images";
 
 
 const LoginScreen3 = () => {
@@ -43,12 +39,7 @@ const LoginScreen3 = () => {
                         style={styles.logo}
                         />
 
-                        <Text style={{
-                            fontSize: RFValue(24),
-                            marginTop: moderateScale(10),
-                            fontFamily: fonts.bold
-
-                        }}>
+                        <Text style={styles.headName}>
                             {login2.headername}
                         </Text>
 
@@ -77,7 +68,7 @@ const LoginScreen3 = () => {
                             <TextInput
                                 value={password}
                                 onChangeText={(password) => setPassword(password)}
-                                placeholder='Enter password here.'
+                                placeholder='password.'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
                             />
@@ -144,7 +135,7 @@ const LoginScreen3 = () => {
 
                     </View>
 
-                    <Image source={images.contine} style={{ alignSelf: 'center', marginTop: moderateScale(10) }} />
+                    <Image source={images.contine} style={styles.continue} />
 
                     <View style={styles.googleView}>
 
