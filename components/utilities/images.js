@@ -11,7 +11,10 @@ import lock from "../../images/icons/lock.png";
 import HideIcon from "../../images/icons/Hide.png";
 import ic_ad_view from "../../images/icons/ic_ad_view.png";
 import group from "../../images/icons/Group.png";
-
+import at from "../../images/icons/at.png";
+import Vector from "../../images/icons/Vector.png";
+import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
+import zigzag from "../../images/icons/zigzag.png";
 
 
 const images = {
@@ -26,7 +29,11 @@ const images = {
     lock,
     HideIcon,
     ic_ad_view,
-    group
+    group,
+    at,
+    Vector,
+    EllipseCrcl,
+    zigzag
 }
 
 const fonts = Platform.select({

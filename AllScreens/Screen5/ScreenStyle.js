@@ -4,8 +4,7 @@ import { AppColor } from '../AppUtil'
 
 export const styles = StyleSheet.create({
     container:{
-        backgroundColor:AppColor.backBlue,
-        // height:100
+        backgroundColor:AppColor.borderBlue,
     },
     style1:{
         borderTopLeftRadius:30,
@@ -18,14 +17,15 @@ export const styles = StyleSheet.create({
         width:62,
         height:110,
         top:111,
-        left:156,
+        left:160,
     },
     userName:{
         width:318,
         height:91,
         top:165,
         left:58,
-        fontSize:15
+        fontSize:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     MainContainer: {
  
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
         top:145,
         left:8,
         height:65,
-        width:318,
+        width:348,
         borderRadius: 10,
         borderWidth: 2,
         borderColor: AppColor.borderBlue,
@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
         top:160,
         left:8,
         height:65,
-        width:318,
+        width:348,
         borderRadius: 10,
         borderWidth: 2,
         borderColor: AppColor.white,
@@ -66,30 +66,32 @@ export const styles = StyleSheet.create({
         height:91,
         top:180,
         left:58,
-        fontSize:15
+        fontSize:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     man: {
         top:95,
         left:-105
     },
-    View:{
+    View5:{
         borderRadius: 10,
         borderWidth: 2, 
-        borderColor: AppColor.borderBlue, 
-       paddingRight:10,
-       paddingLeft:10,
-       padding:2,
+        paddingRight:10,
+        paddingLeft:10,
+        padding:3,
         top:105,
         left:105,
         textAlign:'center',
+        borderColor:AppColor.borderBlue,
         color:AppColor.borderBlue,
-        backgroundColor:AppColor.lightPurple
+        backgroundColor:AppColor.lightPurple,
+        fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
-        width:240,
+        width:320,
         height:50,
         marginTop:205,
-        marginLeft:85,
+        marginLeft:65,
         backgroundColor:AppColor.darkSky,
         borderRadius:10
     },
@@ -98,20 +100,23 @@ export const styles = StyleSheet.create({
       textAlign:'center',
       color:AppColor.white,
       fontSize:15,
+      fontFamily:'WorkSans-VariableFont'
    },
    account: {
         width:200,
         height:20,
         marginTop:25,
-        marginLeft:105,
+        marginLeft:125,
         color:AppColor.black,
+        fontFamily:'WorkSans-VariableFont'
     },
    Sign: {
         width:51,
         height:20,
         marginTop:25,
-        marginLeft:240,
+        marginLeft:260,
         position:'absolute',
-        color:AppColor.lightBlue
+        color:AppColor.lightBlue,
+        fontFamily:'WorkSans-VariableFont'
     },
 })

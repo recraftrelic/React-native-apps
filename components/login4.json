@@ -13,5 +13,7 @@
     "subHead": "Sign in to your continue",
     "subHead2": "account",
     "reset": "Reset here",
-    "CreateAcconut": "CREATE ACCOUNT"
+    "CreateAcconut": "CREATE ACCOUNT",
+    "EmailAddress": "Email Addres",
+    "Password": "Password"
 }

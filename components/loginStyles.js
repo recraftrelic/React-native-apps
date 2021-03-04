@@ -11,6 +11,7 @@ import {
 const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
+
     signInBtn:
     {
         backgroundColor: '#2945FF',
