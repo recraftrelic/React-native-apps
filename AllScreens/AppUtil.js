@@ -1,5 +1,5 @@
 export const AppColor = {
-    lightGrey:'#C8CACC',
+    lightGrey:'#F5F5F5',
     white:'#ffff',
     black:'#000000',
     lightBlue:'#4E49FF',

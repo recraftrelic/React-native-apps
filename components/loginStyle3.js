@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
     signInBtn:
     {
         backgroundColor: '#8F70FF',
-        height: moderateScale(48),
+        height: moderateScale(52),
         width: width - 80,
         alignSelf: 'center',
         alignItems: 'center',
@@ -177,10 +177,10 @@ export const styles = StyleSheet.create({
     },
     passwordInput: {
         backgroundColor: '#EAEAEA',
-        height: moderateScale(44),
+        height: moderateScale(50),
         width: width - 80,
         alignSelf: 'center',
-        borderRadius: moderateScale(15),
+        borderRadius: moderateScale(25),
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
         marginTop: moderateScale(20),
@@ -200,10 +200,10 @@ export const styles = StyleSheet.create({
     },
     emailInput: {
         backgroundColor: '#EAEAEA',
-        height: moderateScale(44),
+        height: moderateScale(50),
         width: width - 80,
         alignSelf: 'center',
-        borderRadius: moderateScale(15),
+        borderRadius: moderateScale(20),
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular,
@@ -235,7 +235,7 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(10),
         color: '#393F45',
         fontFamily: fonts.regular,
-        right: moderateScale(127),
+        right: moderateScale(122),
         fontSize: RFValue(18),
 
     },

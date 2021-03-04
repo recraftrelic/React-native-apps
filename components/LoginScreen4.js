@@ -13,56 +13,71 @@ import {
     moderateScale,
 } from 'react-native-size-matters';
 
-import { styles } from './loginStyle4';
-import login4 from './login4.json';
+import { styles } from "./loginStyle1";
+import login1 from './login1.json';
 import { images, fonts } from "./utilities/images";
 
 
-const LoginScreen4 = () => {
+const LoginScreen1 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [check, setCheckStatus] = useState(false);
     const [showHidePassword, setShowHidePassword] = useState(true);
 
     const onLogin = () => {
         alert(`${email} + ${password}`);
     };
-    const CreateAcconut = () => {
-        alert('Account Create +')
-    }
+
     return (
         <SafeAreaView style={styles.container}>
-        <KeyboardAwareScrollView enableOnAndroid={true}
+            <View style={styles.logoView}>
+                <KeyboardAwareScrollView enableOnAndroid={true}
                     keyboardShouldPersistTaps='handled'
                     showsVerticalScrollIndicator={false}
                 >
-                
-            <View style={styles.logoView}>
-                <Image source={images.group}
-                    style={styles.groupLogo}
-                />
-                <Image source={images.logo}
-                    style={styles.logo}
-                />
-            </View>
-            <View>
-                
+
+                    <Image source={images.Ellipse} style={styles.headLogo} />
+
+                    <Image source={images.EllipseCrcl} style={styles.crcl} />
+                    <Image source={images.zigzag} style={styles.zigzag} />
+
 
                     <View style={styles.headText}>
+                        <Image source={images.logo}
+                        style={styles.logo}
+                        />
+
+                        <Text style={{
+                            fontSize: RFValue(24),
+                            marginTop: moderateScale(160),
+                            fontFamily: fonts.bold,
+                            right: moderateScale(120),
+                            color: '#393F45',
+
+
+
+                        }}>
+                            {login1.name}
+                        </Text>
 
                         <Text style={styles.headerStyle}>
-                            {login4.header}
-                        </Text>
-
-
-                        <Text style={styles.headtextStyle}>
-                            {login4.headername}
+                            {login1.header}
                         </Text>
                     </View>
+
+                    <View style={styles.signintxt}>
+                        <Text style={styles.signintxt1}>
+                        {login1.signing}
+                    </Text>
+
+                        <Text style={styles.siguptxt}>
+                        {login1.headerSigning}
+                    </Text>
+                </View>
+
+
                     <View style={styles.inputView}>
-                            <Text style={styles.emailtxt}
-                            >
-                            Email Addres
-                            </Text>
+
                         <View>
                             <TextInput
                                 value={email}
@@ -70,19 +85,23 @@ const LoginScreen4 = () => {
                                 placeholder='Enter your email'
                                 style={styles.emailInput}
                             />
+                            <Image
+                                style={styles.emailIcon}
+                                source={images.at}
+                            />
                         </View>
 
                         <View>
-                        <Text style={styles.passtxt}
-                        >
-                        Password
-                        </Text>
                             <TextInput
                                 value={password}
                                 onChangeText={(password) => setPassword(password)}
                                 placeholder='Enter password here.'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
+                            />
+                            <Image
+                                style={styles.lockImage}
+                                source={images.lock}
                             />
 
                             <TouchableOpacity
@@ -99,53 +118,55 @@ const LoginScreen4 = () => {
                                         <Image
                                             source={images.ic_ad_view}
                                         />
-
                                 }
 
                             </TouchableOpacity>
 
 
                         </View>
+                        <Image
+                                style={styles.vector}
+                                source={images.Vector}
+                            />
+                            <Image
+                                style={styles.vector1}
+                                source={images.Vector}
+                            />
 
                     </View>
+                    <View style={styles.forgotetext}>
+                    <Text style={styles.forgote}>
+                    {login1.forgote}
+                </Text>
+
+                    <Text style={styles.reset}>
+                    {login1.reset}
+                </Text>
+                     </View>
+
                     <View style={styles.signInBtnView}>
                         <TouchableOpacity style={styles.signInBtn}
                             onPress={onLogin}
 
                         >
                             <Text style={styles.signInText}>
-                            {login4.signIn}
+                            {login1.login}
                         </Text>
 
                         </TouchableOpacity>
 
                     </View>
 
-                    <View style={styles.regularTxt}>
-
-                    <Text style={styles.regularStyle}>
-                    {login4.account}
-                    </Text>
-
-                    <TouchableOpacity
-                        onPress={() => console.log('SignUp')}
-                        hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
-                    >
-                        <Text
-
-                            style={styles.signUpTxt}
-                        >
-                    {login4.signup}
-                    </Text>
-                    </TouchableOpacity>
+                    <Text style={styles.skip}>
+                            {login1.skip}
+                        </Text>
 
 
-                </View>
-                </View>
                 </KeyboardAwareScrollView>
+            </View>
         </SafeAreaView>
 
     );
 };
 
-export default LoginScreen4;
+export default LoginScreen1;
