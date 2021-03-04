@@ -144,7 +144,9 @@ export const styles = StyleSheet.create({
         top: moderateScale(33),
         right: moderateScale(51)
     },
-
+    HideIcon: {
+        top: moderateScale(18)
+    },
     textStyle: {
         color: '#8F70FF',
         fontFamily: fonts.regular,
