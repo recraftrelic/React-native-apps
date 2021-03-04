@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, View, TextInput } from 'react-native';
 import { styles } from '../Screen9/ScreenStyle';
 import screen from '../Screen9/Screen9.json'
  
@@ -14,10 +14,10 @@ const Screen9 = () => {
                <Text style={styles.sign}>{screen.sign}</Text>
                 <Image style={styles.logo} source={require('../Images/Screen9logo.png')}></Image>
                 <Text style={styles.email}>{screen.email}</Text>
-                <Text style={styles.email1}>{screen.email1}</Text>
+                <TextInput style={styles.email1} placeholderTextColor="grey" placeholder="Youraddress@email.com"/>
                 <View style={styles.childView}></View>
                 <Text style={styles.password}>{screen.password}</Text>
-                <Text style={styles.password1}>{screen.password1}</Text>
+                <TextInput style={styles.password1} placeholderTextColor="grey" placeholder="Enter your password"/>
                 <Image style={styles.eyes} source={require('../Images/Eyes.png')}></Image>
                 <View style={styles.childView1}></View>
                 <Image style={styles.print} source={require('../Images/print.png')}></Image>

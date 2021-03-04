@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, View } from "react-native";
+import { Image, Text, View, TextInput } from "react-native";
 import screen1 from "./screen1.json";
 import { styles } from './ScreenStyle';
 
@@ -21,13 +21,13 @@ const Screen1 = () => {
                 <Text style={styles.email}>{screen1.email}</Text>
                 <Text style={styles.number}>{screen1.number}</Text>
             <View>
-            <Text style={styles.inputEmail}>{screen1.email2}</Text>
+            <TextInput style={styles.inputEmail} placeholderTextColor="white" placeholder="Email or number phone"/>
             <Image style={styles.emailIcon} source={require('../Images/Vector.png')} />
                     <View style={styles.childView}>
                     </View>
             </View>
             <View >
-                <Text style={styles.inputEmail}>{screen1.password}</Text>
+                <TextInput style={styles.inputEmail} placeholderTextColor="white" placeholder="Password"/>
                 <Image style={styles.emailIcon} source={require('../Images/bx_bx-lock-open.png')} />
                     <View style={styles.childView}>
                     </View>

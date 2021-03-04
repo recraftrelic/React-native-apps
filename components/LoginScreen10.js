@@ -13,13 +13,17 @@ import {
 } from 'react-native-size-matters';
 
 import login2 from './login2.json';
-<<<<<<< HEAD
+
+// import { styles } from './loginStyle2';
+
+
 //import { styles } from './loginStyle2';
-import { images, fonts } from './utilities/images';
-=======
+
+// import { images, fonts } from './utilities/images';
+
 import { styles } from './loginStyle2';
-import { images } from './utilities/images';
->>>>>>> 01755a9f447ed959e87b5d822292ef7938b5374a
+import {images } from './utilities/images';
+
 
 
 

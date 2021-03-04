@@ -80,7 +80,7 @@ export const styles = StyleSheet.create({
         paddingLeft:10,
         padding:3,
         top:105,
-        left:105,
+        left:125,
         textAlign:'center',
         borderColor:AppColor.borderBlue,
         color:AppColor.borderBlue,
@@ -88,10 +88,10 @@ export const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
-        width:320,
+        width:340,
         height:50,
         marginTop:205,
-        marginLeft:65,
+        marginLeft:45,
         backgroundColor:AppColor.darkSky,
         borderRadius:10
     },
