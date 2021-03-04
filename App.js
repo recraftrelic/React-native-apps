@@ -1,30 +1,69 @@
 import React from 'react';
-import {Route, Switch, NativeRouter} from 'react-router-native';
+import MainScreen from './AllScreens/MainScreen/MainScreen';
+import 'react-native-gesture-handler';
+// import { createAppContainer } from 'react-navigation';
+// import { createStackNavigator} from 'react-navigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Screen1 from './AllScreens/Screen1/Screen1';
 import Screen2 from './AllScreens/Screen2/Screen2';
 import Screen5 from './AllScreens/Screen5/Screen5';
-import Screen6  from './AllScreens/Screen6/Screen6';
-import Screen9 from './AllScreens/Screen9/Screen9'
-
-
-const App = () => {
+import Screen6 from './AllScreens/Screen6/Screen6';
+// import LoginScreen from './components/LoginScreen';
+import LoginScreen4 from './components/LoginScreen4';
+import LoginScreen3 from './components/LoginScreen3';
+import LoginScreen7 from './components/LoginScreen7';
+import LoginScreen8 from './components/LoginScreen8';
+import LoginScreen10 from './components/LoginScreen10';
+import Screen9 from "./AllScreens/Screen9/Screen9";
+//import Screen1 from "./AllScreens/Screen1"
+const Stack = createStackNavigator();
+const App  = () => {
+  
   return (
-    <NativeRouter>
-      <Switch>
-        {/* <Route exact path="/" component={LoginScreen2} /> */}
-        {/* <Route exact path="/base/" component={BaseNext} />  */}
-        <Route exact path="/" component={Screen2}></Route>
-        {/* <Route exact path="/" component={Screen1}></Route> */}
-        {/* <Route exact path="/" component={Screen5}></Route> */}
-        {/* <Route exact path="/" component={Screen6}></Route> */}
-        {/* <Route exact path="/" component={Screen9}></Route> */}
+    <NavigationContainer>
+     <Stack.Navigator>
+        <Stack.Screen
+           name="page1"
+          component={MainScreen}
+          options={{headerShown: false}}
+        />
+        
+        <Stack.Screen name="screen1" component ={Screen1} options={{headerShown: false}}/>
+        <Stack.Screen name="screen2" component ={Screen2} options={{headerShown: false}}/>
+        <Stack.Screen name="screen3" component ={LoginScreen3} options={{headerShown: false}}/>
+        <Stack.Screen name="screen4" component ={LoginScreen4} options={{headerShown: false}}/>
+        <Stack.Screen name="screen5" component ={Screen5} options={{headerShown: false}}/>
+        <Stack.Screen name="screen6" component ={Screen6} options={{headerShown: false}}/>
+        <Stack.Screen name="screen7" component ={LoginScreen7} options={{headerShown: false}}/>
+        <Stack.Screen name="screen8" component ={LoginScreen8} options={{headerShown: false}}/>
+        <Stack.Screen name="screen9" component ={Screen9} options={{headerShown: false}}/>
+        <Stack.Screen name="screen10" component ={LoginScreen10} options={{headerShown: false}}/>
+        </Stack.Navigator>
+    </NavigationContainer>
 
-       
-
-      </Switch>
-    </NativeRouter>
+   
+  // <NativeRouter>
+   
+  //   <Switch>
+  //     <Route exact path="/" component={MainScreen}></Route>
+  //     {/* <Route exact path="/" component={Screen1}></Route> */}
+  //   </Switch>
+   
+  //   </NativeRouter>
+    
   );
+
 };
-
-
 export default App;
+// import React from 'react';
+// import { View } from "react-native";
+// import LoginScreen2 from './components/LoginScreen2';
+
+// export default App = () => {
+//     return (
+//         <View style={{flex:1}}>
+//         <LoginScreen2 />
+//         </View>
+//     )
+// }
