@@ -70,7 +70,7 @@ export const styles = StyleSheet.create({
         marginLeft:200,
         fontWeight:'400',
         fontSize:14,
-        color:AppColor.blackGrey,
+        color:AppColor.white,
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
@@ -103,7 +103,7 @@ export const styles = StyleSheet.create({
         marginTop:10,
         marginLeft:215,
         position:'absolute',
-        color:AppColor.blackBlue,
+        color:AppColor.darkSky,
         fontSize:15,
         fontFamily:'WorkSans-VariableFont'
     },
