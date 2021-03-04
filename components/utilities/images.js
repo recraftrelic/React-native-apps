@@ -15,6 +15,8 @@ import at from "../../images/icons/at.png";
 import Vector from "../../images/icons/Vector.png";
 import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
 import zigzag from "../../images/icons/zigzag.png";
+import contine from "../../images/icons/contine.png";
+
 
 
 const images = {
@@ -33,7 +35,8 @@ const images = {
     at,
     Vector,
     EllipseCrcl,
-    zigzag
+    zigzag,
+    contine
 }
 
 const fonts = Platform.select({

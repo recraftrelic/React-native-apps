@@ -7,15 +7,23 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import {
   moderateScale,
 } from 'react-native-size-matters';
 
 import login2 from './login2.json';
+
 // import { styles } from './loginStyle2';
-import { images, fonts } from './utilities/images';
+
+
+//import { styles } from './loginStyle2';
+
+// import { images, fonts } from './utilities/images';
+
+import { styles } from './loginStyle2';
+import {images } from './utilities/images';
+
 
 
 
@@ -44,13 +52,7 @@ const LoginScreen10 = () => {
         >
 
           <View style={styles.headText}>
-            <Text style={{
-              fontSize: RFValue(24),
-              marginTop: moderateScale(10),
-              fontFamily: fonts.extraBold,
-              fontWeight: 'bold',
-
-            }}>
+            <Text style={styles.headTxt}>
               {login2.welcome}
             </Text>
 
@@ -68,6 +70,7 @@ const LoginScreen10 = () => {
                   onChangeText={(email) => setEmail(email)}
                   placeholder='Enter your email'
                   style={styles.emailInput}
+                  
                 />
               </View>
 
@@ -110,7 +113,8 @@ const LoginScreen10 = () => {
                 {
                   check ? <Image source={images.checkbox}
                     style={styles.checkBox} /> :
-                    <Image source={images.checkIcon} />
+                    <Image source={images.checkIcon}
+                    style={styles.checkBoxIcon}/>
                 }
 
                 <Text style={styles.remember}>
@@ -159,30 +163,30 @@ const LoginScreen10 = () => {
                 </TouchableOpacity>
 
               </View>
-
-              <View style={styles.regularTxt}>
-
-                <Text style={styles.regularStyle}>
-                  {login2.account}
-                </Text>
-
-                <TouchableOpacity
-                  onPress={() => console.log('SignUp')}
-                  hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
-                >
-                  <Text
-
-                    style={styles.signUpTxt}
-                  >
-                    {login2.signup}
-                  </Text>
-                </TouchableOpacity>
-
-
-              </View>
             </View>
+
           </View>
         </KeyboardAwareScrollView>
+      </View>
+      <View style={styles.regularTxt}>
+
+        <Text style={styles.regularStyle}>
+          {login2.account}
+        </Text>
+
+        <TouchableOpacity
+          onPress={() => console.log('SignUp')}
+          hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+        >
+          <Text
+
+            style={styles.signUpTxt}
+          >
+            {login2.signup}
+          </Text>
+        </TouchableOpacity>
+
+
       </View>
     </SafeAreaView>
 

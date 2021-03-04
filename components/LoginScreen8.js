@@ -7,15 +7,11 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import {
-    moderateScale,
-} from 'react-native-size-matters';
 
 import { styles } from './loginStyle3';
 import login3 from './login3.json';
-import { images, fonts } from "./utilities/images";
+import { images } from "./utilities/images";
 
 
 const LoginScreen8 = () => {
@@ -67,7 +63,7 @@ const LoginScreen8 = () => {
                             <TextInput
                                 value={password}
                                 onChangeText={(password) => setPassword(password)}
-                                placeholder='Enter password here.'
+                                placeholder='Password'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
                             />
