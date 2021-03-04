@@ -14,7 +14,7 @@ import {
 } from 'react-native-size-matters';
 
 import login2 from './login2.json';
-import { styles } from './loginStyle2';
+// import { styles } from './loginStyle2';
 import { images, fonts } from './utilities/images';
 
 

@@ -42,9 +42,7 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     email1: {
-        width:181,
-        height:19,
-        top:356,
+        top:346,
         left:49,
         fontWeight:'500',
         fontSize:14,
@@ -54,7 +52,7 @@ export  const styles = StyleSheet.create({
     },
     childView: {
         width:292,
-        top:375,
+        top:356,
         left:49,
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor
@@ -62,7 +60,7 @@ export  const styles = StyleSheet.create({
     password: {
         width:63,
         height:13,
-        top:420,
+        top:380,
         left:49,
         fontWeight:'400',
         fontSize:12,
@@ -71,19 +69,17 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     password1: {
-        width:162,
-        height:20,
-        top:434,
+        top:384,
         left:49,
         fontWeight:'500',
         fontSize:14,
         lineHeight:16,
         color:AppColor.blackGrey,
-        fontFamily:'WorkSans-VariableFont'
+        fontFamily:'WorkSans-VariableFont',
     },
     childView1: {
         width:292,
-        top:445,
+        top:395,
         left:49,
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor
@@ -99,7 +95,7 @@ export  const styles = StyleSheet.create({
     print: {
         width:58,
         height:58,
-        top:573,
+        top:553,
         left:63,
         position:'absolute',
     },
@@ -107,7 +103,7 @@ export  const styles = StyleSheet.create({
         position:'absolute',
         width:220,
         height:61,
-        top:573,
+        top:553,
         borderRadius:10,
         left:131,
         backgroundColor:AppColor.purple,
@@ -124,7 +120,7 @@ export  const styles = StyleSheet.create({
     forgot: {
         width:134,
         height:19,
-        top:605,
+        top:505,
         left:141,
         fontWeight:'400',
         fontSize:16,

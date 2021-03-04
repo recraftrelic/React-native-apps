@@ -57,16 +57,14 @@ export  const styles = StyleSheet.create({
           fontFamily:'WorkSans-VariableFont'
       },
       name:{
-          width:96,
-          height:20,
-          top:391,
+          top:385,
           left:45,
           position:'absolute',
-          fontWeight:'500',
-          fontSize:17,
-          lineHeight:19,
-          color:AppColor.borderColor,
-          fontFamily:'WorkSans-VariableFont'
+          fontWeight:'400',
+          fontSize:12,
+          lineHeight:14,
+          color:AppColor.greyContent,
+          fontFamily:'WorkSans-VariableFont',
       },
       tick: {
           position:'absolute',
@@ -84,19 +82,20 @@ export  const styles = StyleSheet.create({
           borderBottomWidth:1
         },
     password: {
-         width:56,
-         height:15,
-         top:443,
+        //  width:56,
+        //  height:15,
+         top:413,
          left:50,
          fontWeight:'400',
          fontSize:12,
          lineHeight:14,
          color:AppColor.greyContent,
-         fontFamily:'WorkSans-VariableFont'
+         fontFamily:'WorkSans-VariableFont',
+        //  backgroundColor:'red'
         },
     childView1: {
         width:313,
-        top:460,
+        top:410,
         left:49,
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor,
@@ -104,7 +103,7 @@ export  const styles = StyleSheet.create({
     rectangle: {
         width:13,
         height:13,
-        top:540,
+        top:530,
         left:56,
         borderRadius:1,
         position:'absolute',
@@ -113,7 +112,7 @@ export  const styles = StyleSheet.create({
     remember: {
         width:81,
         height:13,
-        top:490,
+        top:445,
         left:86,
         fontWeight:'400',
         fontSize:12,
@@ -124,7 +123,7 @@ export  const styles = StyleSheet.create({
     forgot: {
         width:101,
         height:13,
-        top:477,
+        top:435,
         left:256,
         fontWeight:'400',
         fontSize:12,
@@ -135,7 +134,7 @@ export  const styles = StyleSheet.create({
     button:{
         width:330,
         height:50,
-        top:581,
+        top:571,
         left:45,
         borderRadius:10,
         position:'absolute',
@@ -154,7 +153,7 @@ export  const styles = StyleSheet.create({
     account:{
         width:132,
         height:15,
-        top:571,
+        top:521,
         left:113,
         fontWeight:'400',
         fontSize:13,
@@ -165,7 +164,7 @@ export  const styles = StyleSheet.create({
     sign: {
         width:45,
         height:15,
-        top:646,
+        top:630,
         left:240,
         fontWeight:'400',
         fontSize:12,

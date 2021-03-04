@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { AppColor } from "../AppUtil";
+import { AppColor } from "../AppUtil"
 
 export const styles = StyleSheet.create({
     container:{
@@ -40,20 +40,19 @@ export const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     inputEmail:{
-        width: 172,
-        height:26,
-        marginTop:27,
-        marginLeft:85,
+        color:AppColor.white,
+        width: 192,
+        height:60,
+        marginLeft:80,
         fontWeight:'400',
         fontSize:14,
-        color:AppColor.white,
-        fontFamily:'WorkSans-VariableFont'
+        // marginTop:5,
     },
     emailIcon: {
         width: 15,
         height: 12,
         marginLeft:50,
-        marginTop:-22,   
+        marginTop:-34,   
     },
     childView: {
         marginTop:15,
