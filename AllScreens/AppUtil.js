@@ -14,5 +14,9 @@ export const AppColor = {
     content:'#495566',
     greyContent:'#6A6F7D',
     blueBorder:"#2DDA93",
-    colorContent:"#7E5DF6"
+    colorContent:"#7E5DF6",
+    borderBlue:"#5E73FF",
+    cream:"#F5F5F5",
+    lightPurple:"#D6DBFD",
+   
 }

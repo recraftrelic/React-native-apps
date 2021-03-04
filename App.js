@@ -1,17 +1,32 @@
-
 import React from 'react';
-import { View } from "react-native";
-import LoginScreen7 from './components/LoginScreen7';
-import LoginScreen8 from './components/LoginScreen8';
-import LoginScreen10 from './components/LoginScreen10';
-import LoginScreen3 from './components/LoginScreen3';
-import LoginScreen4 from './components/LoginScreen4';
+import {Route, Switch, NativeRouter} from 'react-router-native';
+import Screen1 from './AllScreens/Screen1/Screen1';
+import Screen2 from './AllScreens/Screen2/Screen2';
+import Screen5 from './AllScreens/Screen5/Screen5';
+import Screen6  from './AllScreens/Screen6/Screen6';
+import Screen9 from './AllScreens/Screen9/Screen9'
+import LoginScreen4 from './components/LoginScreen7';
 
 
-export default App = () => {
-    return (
-        <View style={{flex:1}}>
-        <LoginScreen4 />
-        </View>
-    )
-}
+
+const App = () => {
+  return (
+    <NativeRouter>
+      <Switch>
+        {/* <Route exact path="/" component={LoginScreen2} /> */}
+        {/* <Route exact path="/base/" component={BaseNext} />  */}
+        <Route exact path="/" component={LoginScreen4}></Route>
+        {/* <Route exact path="/" component={Screen1}></Route> */}
+        {/* <Route exact path="/" component={Screen5}></Route> */}
+        {/* <Route exact path="/" component={Screen6}></Route> */}
+        {/* <Route exact path="/" component={Screen9}></Route> */}
+
+       
+
+      </Switch>
+    </NativeRouter>
+  );
+};
+
+
+export default App;

@@ -2,7 +2,6 @@ import React from 'react';
 import { Text, TextInput } from 'react-native';
 import { Image, View } from 'react-native';
 import screen5 from './screen5.json';
-// import { styles } from './ScreenStyle';
 import { styles } from './ScreenStyle';
 import picture from "../images"
 
@@ -24,7 +23,7 @@ const Screen5 = () => {
            <Text style={styles.pass}>{screen5.pass}</Text>
            <View style={styles.MainContainer}>
                 <TextInput style={styles.password} placeholder="password"/>
-               <Text style={styles.View}>{screen5.View}</Text>
+               <Text style={styles.View5}>{screen5.View}</Text>
                 </View > 
                 <View style={styles.loginButton}>            
                 <Text style={styles.button} >{screen5.button}</Text>            

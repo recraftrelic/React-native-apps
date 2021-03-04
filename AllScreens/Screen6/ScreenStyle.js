@@ -5,16 +5,16 @@ import { AppColor } from "../AppUtil"
 export  const styles = StyleSheet.create({
     image1: {
         position:'absolute',
-        left:300,
+        left:315,
       },
       circle2: {
         position:'absolute',
         top:96,
-        left:310,
+        left:320,
       },
       arrow1: {
         position:'absolute',
-        left:285,
+        left:295,
         top:110
       },
       logo: {
@@ -31,7 +31,8 @@ export  const styles = StyleSheet.create({
           left:45,
           fontWeight:'700',
           fontSize:30,
-          lineHeight:35
+          lineHeight:35,
+          fontFamily:'WorkSans-VariableFont'
       },
       state:{
           width:237,
@@ -41,7 +42,8 @@ export  const styles = StyleSheet.create({
           fontWeight:'400',
           fontSize:16,
           position:'absolute',
-          color:AppColor.content
+          color:AppColor.content,
+          fontFamily:'WorkSans-VariableFont'
       },
       user: {
           width:60,
@@ -52,6 +54,7 @@ export  const styles = StyleSheet.create({
           fontSize:12,
           position:'absolute',
           color:AppColor.greyContent,
+          fontFamily:'WorkSans-VariableFont'
       },
       name:{
           width:96,
@@ -62,18 +65,19 @@ export  const styles = StyleSheet.create({
           fontWeight:'500',
           fontSize:17,
           lineHeight:19,
-          color:AppColor.borderColor
+          color:AppColor.borderColor,
+          fontFamily:'WorkSans-VariableFont'
       },
       tick: {
           position:'absolute',
           width:18,
           height:21,
           top:395,
-          left:311,
+          left:321,
       },
       childView: {
           position:'absolute',
-          width:293,
+          width:313,
           top:413,
           left:46,
           borderBottomColor:AppColor.purple,
@@ -87,10 +91,11 @@ export  const styles = StyleSheet.create({
          fontWeight:'400',
          fontSize:12,
          lineHeight:14,
-         color:AppColor.greyContent
+         color:AppColor.greyContent,
+         fontFamily:'WorkSans-VariableFont'
         },
     childView1: {
-        width:293,
+        width:313,
         top:460,
         left:49,
         borderBottomWidth: 0.58,
@@ -113,7 +118,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:12,
-        color:AppColor.greyContent
+        color:AppColor.greyContent,
+        fontFamily:'WorkSans-VariableFont'
     },
     forgot: {
         width:101,
@@ -123,13 +129,14 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:12,
-        color:AppColor.greyContent
+        color:AppColor.greyContent,
+        fontFamily:'WorkSans-VariableFont'
     },
     button:{
         width:330,
         height:50,
         top:581,
-        left:35,
+        left:45,
         borderRadius:10,
         position:'absolute',
         backgroundColor:AppColor.purple
@@ -141,28 +148,31 @@ export  const styles = StyleSheet.create({
         lineHeight:17,
         color:AppColor.white,
         left:135,
-        top:15
+        top:15,
+        fontFamily:'WorkSans-VariableFont'
     },
     account:{
-        width:122,
+        width:132,
         height:15,
         top:571,
-        left:103,
+        left:113,
         fontWeight:'400',
         fontSize:13,
         lineHeight:14,
-        color:AppColor.greyContent
+        color:AppColor.greyContent,
+        fontFamily:'WorkSans-VariableFont'
     },
     sign: {
         width:45,
         height:15,
         top:646,
-        left:230,
+        left:240,
         fontWeight:'400',
         fontSize:12,
         lineHeight:14,
         position:'absolute',
-        color:AppColor.colorContent
+        color:AppColor.colorContent,
+        fontFamily:'WorkSans-VariableFont'
     }
 
 })

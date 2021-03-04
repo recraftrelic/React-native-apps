@@ -38,7 +38,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:14,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     email1: {
         width:181,
@@ -48,10 +49,11 @@ export  const styles = StyleSheet.create({
         fontWeight:'500',
         fontSize:14,
         lineHeight:16,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     childView: {
-        width:262,
+        width:292,
         top:375,
         left:49,
         borderBottomWidth: 0.58,
@@ -65,7 +67,8 @@ export  const styles = StyleSheet.create({
         fontWeight:'400',
         fontSize:12,
         lineHeight:14,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     password1: {
         width:162,
@@ -75,28 +78,29 @@ export  const styles = StyleSheet.create({
         fontWeight:'500',
         fontSize:14,
         lineHeight:16,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     childView1: {
-        width:262,
-        top:450,
+        width:292,
+        top:445,
         left:49,
         borderBottomWidth: 0.58,
-        borderColor:AppColor.borderColor,
+        borderColor:AppColor.borderColor
     },
     eyes:{
         position:'absolute',
         width:19,
         height:16,
         top:477,
-        left:292,
+        left:305,
         color:AppColor.violet
     },
     print: {
         width:58,
         height:58,
         top:573,
-        left:53,
+        left:63,
         position:'absolute',
     },
     continue: {
@@ -105,7 +109,7 @@ export  const styles = StyleSheet.create({
         height:61,
         top:573,
         borderRadius:10,
-        left:121,
+        left:131,
         backgroundColor:AppColor.purple,
         
     },
@@ -114,23 +118,25 @@ export  const styles = StyleSheet.create({
         color:AppColor.white,
         paddingLeft:75,
         fontSize:16,
-        fontWeight:'500'
+        fontWeight:'500',
+        fontFamily:'Rubik-VariableFont'
     },
     forgot: {
         width:134,
         height:19,
         top:605,
-        left:131,
+        left:141,
         fontWeight:'400',
         fontSize:16,
         lineHeight:19,
-        color:AppColor.purple
+        color:AppColor.purple,
+        fontFamily:'Rubik-VariableFont'
     },
     child: {
         width:135,
         height:5,
         top:751,
-        left:130,
+        left:140,
         borderRadius:100,
         position:'absolute',
         backgroundColor:AppColor.background,

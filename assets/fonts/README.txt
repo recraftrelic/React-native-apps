@@ -1,36 +1,32 @@
-Work Sans Variable Font
-=======================
+Rubik Variable Font
+===================
 
-This download contains Work Sans as both variable fonts and static fonts.
+This download contains Rubik as both variable fonts and static fonts.
 
-Work Sans is a variable font with this axis:
+Rubik is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  WorkSans-VariableFont_wght.ttf
-  WorkSans-Italic-VariableFont_wght.ttf
+  Rubik-VariableFont_wght.ttf
+  Rubik-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Work Sans:
-  static/WorkSans-Thin.ttf
-  static/WorkSans-ExtraLight.ttf
-  static/WorkSans-Light.ttf
-  static/WorkSans-Regular.ttf
-  static/WorkSans-Medium.ttf
-  static/WorkSans-SemiBold.ttf
-  static/WorkSans-Bold.ttf
-  static/WorkSans-ExtraBold.ttf
-  static/WorkSans-Black.ttf
-  static/WorkSans-ThinItalic.ttf
-  static/WorkSans-ExtraLightItalic.ttf
-  static/WorkSans-LightItalic.ttf
-  static/WorkSans-Italic.ttf
-  static/WorkSans-MediumItalic.ttf
-  static/WorkSans-SemiBoldItalic.ttf
-  static/WorkSans-BoldItalic.ttf
-  static/WorkSans-ExtraBoldItalic.ttf
-  static/WorkSans-BlackItalic.ttf
+in those cases you can use the static font files for Rubik:
+  static/Rubik-Light.ttf
+  static/Rubik-Regular.ttf
+  static/Rubik-Medium.ttf
+  static/Rubik-SemiBold.ttf
+  static/Rubik-Bold.ttf
+  static/Rubik-ExtraBold.ttf
+  static/Rubik-Black.ttf
+  static/Rubik-LightItalic.ttf
+  static/Rubik-Italic.ttf
+  static/Rubik-MediumItalic.ttf
+  static/Rubik-SemiBoldItalic.ttf
+  static/Rubik-BoldItalic.ttf
+  static/Rubik-ExtraBoldItalic.ttf
+  static/Rubik-BlackItalic.ttf
 
 Get started
 -----------

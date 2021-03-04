@@ -23,12 +23,12 @@ const LoginScreen4 = () => {
     const [password, setPassword] = useState('');
     const [showHidePassword, setShowHidePassword] = useState(true);
 
+    const [invalidAddress, setInvalidAddress] =useState('')
+
     const onLogin = () => {
         alert(`${email} + ${password}`);
     };
-    const CreateAcconut = () => {
-        alert('Account Create +')
-    }
+
     return (
         <SafeAreaView style={styles.container}>
             <KeyboardAwareScrollView enableOnAndroid={true}
@@ -65,6 +65,7 @@ const LoginScreen4 = () => {
                         </Text>
                         <View>
                             <TextInput
+                            maxLength={5}
                                 value={email}
                                 onChangeText={(email) => setEmail(email)}
                                 placeholder='Enter your email'
