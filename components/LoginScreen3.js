@@ -18,7 +18,7 @@ import login2 from './login2.json';
 import { images, fonts } from "./utilities/images";
 
 
-const LoginScreen = () => {
+const LoginScreen3 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [check, setCheckStatus] = useState(false);
@@ -197,4 +197,4 @@ const LoginScreen = () => {
     );
 };
 
-export default LoginScreen;
+export default LoginScreen3;
