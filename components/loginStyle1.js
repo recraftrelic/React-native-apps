@@ -187,6 +187,18 @@ export const styles = StyleSheet.create({
         top: moderateScale(33),
         left: moderateScale(26)
     },
+    errorMessage: {
+        fontSize: 12,
+        color:"red",
+        marginLeft: moderateScale (30),
+        fontFamily: fonts.regular
+
+      },
+      tick: {
+        bottom: moderateScale(33),
+        left: moderateScale(300)
+
+    },
     passwordInput: {
         height: moderateScale(53),
         width: width - 50,

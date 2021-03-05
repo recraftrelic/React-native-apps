@@ -16,6 +16,12 @@ import Vector from "../../images/icons/Vector.png";
 import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
 import zigzag from "../../images/icons/zigzag.png";
 import contine from "../../images/icons/contine.png";
+<<<<<<< HEAD
+import tick from "../../images/icons/tick.png";
+
+
+
+=======
 import Ellipse1 from "../../AllScreens/Images/Ellipse1.png";
 import Circle1 from "../../AllScreens/Images/Circle1.png";
 import Ellipse2 from "../../AllScreens/Images/Ellipse2.png";
@@ -37,6 +43,7 @@ import Eyes from "../../AllScreens/Images/Eyes.png";
 import print from "../../AllScreens/Images/print.png";
 import arrow_backward from "../../AllScreens/Images/arrow_backward.png";
 import Screen9logo from "../../AllScreens/Images/Screen9logo.png"
+>>>>>>> c658192f9d034cd2a0c2bca5bef5702f064b95ff
 
 const images = {
     logo,
@@ -56,6 +63,9 @@ const images = {
     EllipseCrcl,
     zigzag,
     contine,
+<<<<<<< HEAD
+    tick
+=======
     Ellipse1,
     Circle1,
     Ellipse2,
@@ -77,6 +87,7 @@ const images = {
     print,
     arrow_backward,
     Screen9logo
+>>>>>>> c658192f9d034cd2a0c2bca5bef5702f064b95ff
 }
 
 const fonts = Platform.select({

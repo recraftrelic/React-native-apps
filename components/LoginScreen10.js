@@ -6,6 +6,7 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
+  Alert
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import {
@@ -22,10 +23,46 @@ const LoginScreen10 = () => {
   const [password, setPassword] = useState('');
   const [check, setCheckStatus] = useState(false);
   const [showHidePassword, setShowHidePassword] = useState(true);
+  const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
+  const [emailErrorStatus, setEmailErrorStatus] = useState(false);
+
+
+  const onEnterText = (password) => {
+    setPassword(password);
+    if (password.trim().length < 8) {
+      setPasswordErrorStatus(true);
+    } else {
+      setPasswordErrorStatus(false);
+    }
+  }
+
+  const onEnterEmail = (email) => {
+    setEmail(email);
+    let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    if (reg.test(email) === false) {
+      setEmailErrorStatus(true);
+      return false;
+    } else {
+      setEmailErrorStatus(false);
+    }
+  }
 
   const onLogin = () => {
-    alert(`${email} + ${password}`);
-  };
+    if (email == '') {
+      setEmailErrorStatus(true);
+    }
+    else {
+      setEmailErrorStatus(false);
+    }
+    if (password == '') {
+      setPasswordErrorStatus(true);
+    }
+    else {
+      setPasswordErrorStatus(false);
+      alert(`${email} + ${password}`);
+
+    }
+  }
 
 
   return (
@@ -57,21 +94,41 @@ const LoginScreen10 = () => {
               <View>
                 <TextInput
                   value={email}
-                  onChangeText={(email) => setEmail(email)}
+                  onChangeText={(email) => onEnterEmail(email)}
                   placeholder='Enter your email'
                   style={styles.emailInput}
-
                 />
+                {emailErrorStatus == true ? (
+                  <Text style={styles.errorMessage} >
+                    * Please include an '@' in the email address.
+                  </Text>
+                ) : null}
+                {
+                  !emailErrorStatus ?
+                    <Image
+                      source={images.tick}
+
+                      style={styles.tick}
+                    />
+                    :
+                    null
+                }
               </View>
 
               <View>
                 <TextInput
                   value={password}
-                  onChangeText={(password) => setPassword(password)}
+                  onChangeText={(password) => onEnterText(password)}
                   placeholder='Enter password here.'
                   secureTextEntry={showHidePassword}
                   style={styles.passwordInput}
+                  underlineColorAndroid="transparent"
                 />
+                {passwordErrorStatus == true ? (
+                  <Text style={styles.errorMessage} >
+                    * Password should be minimum 8 characters.
+                  </Text>
+                ) : null}
 
                 <TouchableOpacity
                   onPress={() => setShowHidePassword(!showHidePassword)}
@@ -130,7 +187,7 @@ const LoginScreen10 = () => {
               </TouchableOpacity>
 
             </View>
-            <Image source={images.oroptional} style={{ alignSelf: 'center', marginTop: moderateScale(20) }} />
+            <Image source={images.oroptional} style={{ alignSelf: 'center', marginTop: moderateScale(10) }} />
             <View style={styles.googleView}>
 
               <View style={styles.googleInnerView}>
