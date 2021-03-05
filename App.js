@@ -1,22 +1,18 @@
 import React from 'react';
 import MainScreen from './AllScreens/MainScreen/MainScreen';
 import 'react-native-gesture-handler';
-// import { createAppContainer } from 'react-navigation';
-// import { createStackNavigator} from 'react-navigation';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Screen1 from './AllScreens/Screen1/Screen1';
 import Screen2 from './AllScreens/Screen2/Screen2';
 import Screen5 from './AllScreens/Screen5/Screen5';
 import Screen6 from './AllScreens/Screen6/Screen6';
-// import LoginScreen from './components/LoginScreen';
 import LoginScreen4 from './components/LoginScreen4';
 import LoginScreen3 from './components/LoginScreen3';
 import LoginScreen7 from './components/LoginScreen7';
 import LoginScreen8 from './components/LoginScreen8';
 import LoginScreen10 from './components/LoginScreen10';
 import Screen9 from "./AllScreens/Screen9/Screen9";
-//import Screen1 from "./AllScreens/Screen1"
 const Stack = createStackNavigator();
 const App  = () => {
   

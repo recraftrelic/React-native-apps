@@ -36,7 +36,7 @@ const LoginScreen3 = () => {
 
                     <View style={styles.headText}>
                         <Image source={images.logo}
-                        style={styles.logo}
+                            style={styles.logo}
                         />
 
                         <Text style={styles.headName}>
@@ -128,8 +128,8 @@ const LoginScreen3 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login2.signIn}
-                        </Text>
+                                {login2.signIn}
+                            </Text>
 
                         </TouchableOpacity>
 
@@ -145,8 +145,8 @@ const LoginScreen3 = () => {
                                 <Image source={images.Google} />
 
                                 <Text style={styles.googleTxt}>
-                                {login2.google}
-                            </Text>
+                                    {login2.google}
+                                </Text>
 
                             </TouchableOpacity>
 
@@ -154,8 +154,8 @@ const LoginScreen3 = () => {
 
                                 <Image source={images.Shape} />
                                 <Text style={styles.facebookText}>
-                                {login2.Facebook}
-                            </Text>
+                                    {login2.Facebook}
+                                </Text>
                             </TouchableOpacity>
 
                         </View>
@@ -163,7 +163,7 @@ const LoginScreen3 = () => {
                         <View style={styles.regularTxt}>
 
                             <Text style={styles.regularStyle}>
-                            {login2.account}
+                                {login2.account}
                             </Text>
 
                             <TouchableOpacity
@@ -174,8 +174,8 @@ const LoginScreen3 = () => {
 
                                     style={styles.signUpTxt}
                                 >
-                            {login2.signup}
-                            </Text>
+                                    {login2.signup}
+                                </Text>
                             </TouchableOpacity>
 
 

@@ -13,18 +13,8 @@ import {
 } from 'react-native-size-matters';
 
 import login2 from './login2.json';
-
-// import { styles } from './loginStyle2';
-
-
-//import { styles } from './loginStyle2';
-
-// import { images, fonts } from './utilities/images';
-
 import { styles } from './loginStyle2';
-import {images } from './utilities/images';
-
-
+import { images } from './utilities/images';
 
 
 const LoginScreen10 = () => {
@@ -70,7 +60,7 @@ const LoginScreen10 = () => {
                   onChangeText={(email) => setEmail(email)}
                   placeholder='Enter your email'
                   style={styles.emailInput}
-                  
+
                 />
               </View>
 
@@ -114,7 +104,7 @@ const LoginScreen10 = () => {
                   check ? <Image source={images.checkbox}
                     style={styles.checkBox} /> :
                     <Image source={images.checkIcon}
-                    style={styles.checkBoxIcon}/>
+                      style={styles.checkBoxIcon} />
                 }
 
                 <Text style={styles.remember}>
