@@ -1,11 +1,12 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, View, TextInput } from 'react-native';
 import { styles } from './ScreenStyle';
 import screen from './Screen6.json'
 
 const Screen6 = () => {
     return (
         <>
+        
             <View>
             <Image style={styles.image1} source={require('../Images/Ellipse21.png')} />
             <Image style={styles.circle2} source={require('../Images/pCircle1.png')} />
@@ -15,10 +16,10 @@ const Screen6 = () => {
                 <Text style={styles.hello}>{screen.hello}</Text>
                 <Text style={styles.state}>{screen.state}</Text>
                 <Text style={styles.user}>{screen.user}</Text>
-                <Text style={styles.name}>{screen.name}</Text>
+                <TextInput style={styles.name} placeholderTextColor="grey" placeholder="Email"/>
                 <Image style={styles.tick} source={require('../Images/Tick.png')} />
                 <Text style={styles.childView}></Text>
-                <Text style={styles.password}>{screen.password}</Text>
+                <TextInput style={styles.password} placeholderTextColor="grey" placeholder="Password"/>
                 <View style={styles.childView1}></View>
                 <Image style={styles.rectangle} source={require('../Images/pRectangle.png')} />
                 <Text style={styles.remember}>{screen.remember}</Text>
