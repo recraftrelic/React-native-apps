@@ -39,27 +39,10 @@ const App  = () => {
     </NavigationContainer>
 
    
-  // <NativeRouter>
-   
-  //   <Switch>
-  //     <Route exact path="/" component={MainScreen}></Route>
-  //     {/* <Route exact path="/" component={Screen1}></Route> */}
-  //   </Switch>
-   
-  //   </NativeRouter>
+ 
     
   );
 
 };
 export default App;
-// import React from 'react';
-// import { View } from "react-native";
-// import LoginScreen2 from './components/LoginScreen2';
 
-// export default App = () => {
-//     return (
-//         <View style={{flex:1}}>
-//         <LoginScreen2 />
-//         </View>
-//     )
-// }

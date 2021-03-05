@@ -1,40 +1,46 @@
-import { StyleSheet } from 'react-native';
-import { AppColor } from '../AppUtil'
+import { Platform, StyleSheet } from 'react-native';
+import { AppColor } from '../AppUtil';
+import {
+  moderateScale,
+} from 'react-native-size-matters';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 export  const styles = StyleSheet.create({
     container: {
-        marginLeft: 32,
-        marginTop: 140,
-        height:25,
-        width:73,
+        marginLeft: moderateScale(32),
+        marginTop: moderateScale(120),
+        height:moderateScale(25),
+        width: moderateScale(73),
        fontWeight:'400',
-        fontSize: 23,
+        fontSize: RFValue(23),
         lineHeight: 26,
         fontFamily:'WorkSans-VariableFont'
         
       },
+      main: {
+        marginTop: Platform.OS == "ios" ? 50 : 0,
+        flex: 1,
+  
+    },
       container1: {
-          width:140,
-          height:55,
-          marginTop:10,
-          marginLeft:30,
-          fontSize: 32,
+          marginTop: moderateScale(10),
+          marginLeft: moderateScale(30),
+          fontSize:  RFValue(32),
           fontWeight:"700",
           fontFamily:'WorkSans-VariableFont'
       },
       container2: {
-        width:500,
-        marginLeft:32,
-        fontSize: 18,
-        color: AppColor.lightGrey,
+        marginLeft: moderateScale(32),
+        fontSize: RFValue(18),
+        color:AppColor.greyContent,
         fontFamily:'WorkSans-VariableFont'
     },
     boxShadow: {
-        width: 330,
-        height: 69,
-        marginTop:308,
-        marginLeft:35,
+        width: moderateScale(330),
+        height: moderateScale(69),
+        top: moderateScale(268),
+        left: moderateScale(25),
         backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
@@ -42,103 +48,80 @@ export  const styles = StyleSheet.create({
         borderRadius: 25,
       },
       boxShadow1: {
-        width: 330,
-        height: 69,
-        marginTop:400,
-        marginLeft:35,
+        width: moderateScale(330),
+        height: moderateScale(69),
+        top: moderateScale(358),
+        left: moderateScale(25),
         backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
-        paddingLeft:110,
+        paddingLeft:80,
         borderRadius: 25,
       },
       password: {
-          width:122,
-          height:20,
-          marginTop:250,
-          marginLeft:250,
-          opacity:50,
-          fontSize:15,
+          marginTop: moderateScale(230),
+          marginLeft: moderateScale(250),
+          fontSize: RFValue(15),
           fontWeight:'500',
           color:AppColor.lineGrey,
           fontFamily:'WorkSans-VariableFont'
       },
       loginButton: {
-        width:301,
-        height:56,
-        marginTop:35,
-        marginLeft:55,
+        width: moderateScale(311),
+        height: moderateScale(56),
+        marginTop: moderateScale(30),
+        marginLeft: moderateScale(45),
         backgroundColor:AppColor.darkSky,
         borderRadius:10,
       },
       button: {
-        paddingTop:15,
+        paddingTop: moderateScale(15),
         textAlign:'center',
         color:AppColor.white,
-        fontSize:17,  
+        fontSize: RFValue(17),  
         fontFamily:'WorkSans-VariableFont'   
       },
       account: {
-        width:200,
-        height:20,
-        marginTop:20,
-        marginLeft:105,
+        marginTop: moderateScale(20),
+        marginLeft: moderateScale(105),
         color:AppColor.black,
         fontFamily:'WorkSans-VariableFont'
       },
       Sign: {
-        width:55,
-        height:20,
-        marginTop:20,
-        marginLeft:250,
+        marginTop: moderateScale(20),
+        marginLeft:moderateScale(250),
         position:'absolute',
         color:AppColor.lightBlue,
         fontFamily:'WorkSans-VariableFont'
       },
       image1: {
         position:'absolute',
-        left:315,
+        left: moderateScale(250),
       },
       circle2: {
         position:'absolute',
-        top:96,
-        left:320,
+        top: moderateScale(80),
+        left: moderateScale(300),
       },
       arrow1: {
         position:'absolute',
-        left:295,
-        top:110
+        left: moderateScale(280),
+        top: moderateScale(95)
       },
       mark1: {
         position:'absolute',
-        left:30,
-        top:70
+        left: moderateScale(30),
+        top: moderateScale(70)
       },
       emailIcon: {
-        width:17,
-        height:18,
-        left:35,
+        width:moderateScale(17),
+        height:moderateScale(18),
+        left:moderateScale(35),
         position:'absolute'
-    },
-    email: {
-        width: 172,
-        height:56,
-        marginLeft:-10,
-        fontWeight:'400',
-        fontSize:14,
     },
     password1:{
-        width:14,
-        height:16,
-        left:35,
+        left: moderateScale(35),
         position:'absolute'
-    },
-    password0:{
-        width: 172,
-        height:56,
-        marginLeft:-38,
-        fontWeight:'400',
-        fontSize:14,
     },
     shadow: {
         shadowColor: AppColor.black,

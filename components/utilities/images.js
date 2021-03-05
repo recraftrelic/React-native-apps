@@ -16,10 +16,34 @@ import Vector from "../../images/icons/Vector.png";
 import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
 import zigzag from "../../images/icons/zigzag.png";
 import contine from "../../images/icons/contine.png";
+<<<<<<< HEAD
 import tick from "../../images/icons/tick.png";
 
 
 
+=======
+import Ellipse1 from "../../AllScreens/Images/Ellipse1.png";
+import Circle1 from "../../AllScreens/Images/Circle1.png";
+import Ellipse2 from "../../AllScreens/Images/Ellipse2.png";
+import Circle2 from "../../AllScreens/Images/Circle2.png";
+import Circle3 from "../../AllScreens/Images/Circle3.png";
+import Ellipse3 from "../../AllScreens/Images/Ellipse3.png";
+import Vector1 from "../../AllScreens/Images/Vector1.png";
+import open from "../../AllScreens/Images/open.png";
+import mark1 from "../../AllScreens/Images/mark1.png";
+import email2 from "../../AllScreens/Images/email2.png";
+import password1 from "../../AllScreens/Images/password1.png";
+import Ellipse21 from "../../AllScreens/Images/Ellipse21.png";
+import pCircle1 from "../../AllScreens/Images/pCircle1.png";
+import arrow1 from "../../AllScreens/Images/arrow1.png";
+import pLogo1 from "../../AllScreens/Images/pLogo1.png";
+import Tick from "../../AllScreens/Images/Tick.png";
+import pRectangle from "../../AllScreens/Images/pRectangle.png";
+import Eyes from "../../AllScreens/Images/Eyes.png";
+import print from "../../AllScreens/Images/print.png";
+import arrow_backward from "../../AllScreens/Images/arrow_backward.png";
+import Screen9logo from "../../AllScreens/Images/Screen9logo.png"
+>>>>>>> c658192f9d034cd2a0c2bca5bef5702f064b95ff
 
 const images = {
     logo,
@@ -39,7 +63,31 @@ const images = {
     EllipseCrcl,
     zigzag,
     contine,
+<<<<<<< HEAD
     tick
+=======
+    Ellipse1,
+    Circle1,
+    Ellipse2,
+    Circle2,
+    Circle3,
+    Ellipse3,
+    Vector1,
+    open,
+    mark1,
+    email2,
+    password1,
+    Ellipse21,
+    pCircle1,
+    arrow1,
+    pLogo1,
+    Tick,
+    pRectangle,
+    Eyes,
+    print,
+    arrow_backward,
+    Screen9logo
+>>>>>>> c658192f9d034cd2a0c2bca5bef5702f064b95ff
 }
 
 const fonts = Platform.select({
