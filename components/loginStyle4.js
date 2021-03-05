@@ -106,7 +106,7 @@ export const styles = StyleSheet.create({
     regularTxt: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: moderateScale(50),
+        marginTop: moderateScale(40),
     },
     regularStyle: {
         color: '#092C4C',
@@ -147,10 +147,23 @@ export const styles = StyleSheet.create({
     HideIcon: {
         top: moderateScale(18)
     },
+    tick: {
+        bottom: moderateScale(33),
+        left: moderateScale(300)
+
+    },
     textStyle: {
         color: '#8F70FF',
         fontFamily: fonts.regular,
     },
+    errorMessage: {
+        fontSize: 12,
+        color:"red",
+        marginLeft: moderateScale (40),
+        fontFamily: fonts.regular
+      },
+
+
     passwordInput: {
         height: moderateScale(44),
         width: width - 80,

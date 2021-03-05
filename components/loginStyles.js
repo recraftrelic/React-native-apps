@@ -146,6 +146,18 @@ export const styles = StyleSheet.create({
         top: moderateScale(18),
         left: moderateScale(30)
     },
+    errorMessage: {
+        fontSize: 12,
+        color:"red",
+        marginLeft: moderateScale (30),
+        fontFamily: fonts.regular
+
+      },
+      tick: {
+        bottom: moderateScale(33),
+        left: moderateScale(300)
+
+    },
     emailInput: {
         height: moderateScale(50),
         width: width - 50,

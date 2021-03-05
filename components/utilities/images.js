@@ -16,6 +16,8 @@ import Vector from "../../images/icons/Vector.png";
 import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
 import zigzag from "../../images/icons/zigzag.png";
 import contine from "../../images/icons/contine.png";
+import tick from "../../images/icons/tick.png";
+
 
 
 
@@ -36,7 +38,8 @@ const images = {
     Vector,
     EllipseCrcl,
     zigzag,
-    contine
+    contine,
+    tick
 }
 
 const fonts = Platform.select({

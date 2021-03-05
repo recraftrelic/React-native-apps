@@ -168,6 +168,18 @@ export const styles = StyleSheet.create({
         top: moderateScale(33),
         right: moderateScale(51)
     },
+    errorMessage: {
+        fontSize: 12,
+        color:"red",
+        marginLeft: moderateScale (50),
+        fontFamily: fonts.regular
+
+      },
+    tick: {
+        bottom: moderateScale(33),
+        left: moderateScale(300)
+
+    },
     lockImage: {
         position: 'absolute',
         top: moderateScale(28),
@@ -177,6 +189,7 @@ export const styles = StyleSheet.create({
         color: '#8F70FF',
         fontFamily: fonts.semiBold,
     },
+    
     passwordInput: {
         backgroundColor: '#EAEAEA',
         height: moderateScale(50),
@@ -205,7 +218,7 @@ export const styles = StyleSheet.create({
         height: moderateScale(50),
         width: width - 80,
         alignSelf: 'center',
-        borderRadius: moderateScale(20),
+        borderRadius: moderateScale(25),
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular,

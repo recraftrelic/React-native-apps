@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
         height: moderateScale(480),
         width: moderateScale(315),
         backgroundColor: 'white',
-        position: 'absolute', 
+        position: 'absolute',
         zIndex: 99,
         top: moderateScale(130),
         left: moderateScale(28),
@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around',
         padding: 20,
         paddingTop: 0,
-        bottom: moderateScale(8)
+        bottom: moderateScale(12)
     },
     googlebtn: {
         borderRadius: 10,
@@ -152,16 +152,20 @@ export const styles = StyleSheet.create({
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
         marginTop: moderateScale(20),
-        fontFamily: fonts.regular
-
+        fontFamily: fonts.regular,
     },
+    errorMessage: {
+        fontSize: 12,
+        color:"red",
+        fontFamily: fonts.regular
+      },
     emailIcon: {
         position: 'absolute',
         top: moderateScale(15),
         left: moderateScale(30)
     },
     emailInput: {
-        height: moderateScale(44),
+        height: moderateScale(40),
         width: width - 80,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
@@ -169,6 +173,11 @@ export const styles = StyleSheet.create({
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular
+
+    },
+    tick: {
+        bottom: moderateScale(33),
+        left: moderateScale(260)
 
     },
     inputView: {
@@ -184,6 +193,10 @@ export const styles = StyleSheet.create({
         fontSize: RFValue(24),
         marginTop: moderateScale(10),
         fontFamily: fonts.bold,
+    },
+    usernameInput: {
+        fontSize: 16,
+        padding: 15,
     },
     headLogo: {
         position: 'absolute',
