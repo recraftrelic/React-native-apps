@@ -4,11 +4,16 @@ import { Image, View } from 'react-native';
 import screen5 from './screen5.json';
 import { styles } from './ScreenStyle';
 import picture from "../images"
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 
 const Screen5 = () => {
     return (
         <>
+        <KeyboardAwareScrollView
+          enableOnAndroid={true}
+          keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
                 <View style={styles.style1}>
             <Image style={styles.logo1} source={picture.logo1} />
@@ -35,6 +40,7 @@ const Screen5 = () => {
            </View>
             </View>
             </View>
+            </KeyboardAwareScrollView>
         </>
     )
 };
