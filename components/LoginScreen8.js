@@ -32,9 +32,9 @@ const LoginScreen8 = () => {
                     keyboardShouldPersistTaps='handled'
                     showsVerticalScrollIndicator={false}
                 >
-                <Image source={images.logo} 
-                style={styles.logo}
-                />
+                    <Image source={images.logo}
+                        style={styles.logo}
+                    />
                     <View style={styles.headText}>
 
 
@@ -76,14 +76,14 @@ const LoginScreen8 = () => {
                                 {
                                     showHidePassword ?
                                         <Text style={styles.textStyle}>
-                                        {login3.Show}
+                                            {login3.Show}
                                         </Text>
                                         :
                                         <Text style={styles.textStyle}>
-                                        {login3.Hide}
-                                        
+                                            {login3.Hide}
+
                                         </Text>
-                                        
+
                                 }
 
                             </TouchableOpacity>
@@ -99,8 +99,8 @@ const LoginScreen8 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login3.signIn}
-                        </Text>
+                                {login3.signIn}
+                            </Text>
 
                         </TouchableOpacity>
 
@@ -112,14 +112,14 @@ const LoginScreen8 = () => {
                             {login3.forgote}
                         </Text>
                         <Text style={styles.reset}>
-                        {login3.reset}
-                    </Text>
+                            {login3.reset}
+                        </Text>
 
                     </View>
 
                     <View style={styles.signInBtnView}>
-                        
-                            <Text style={styles.signInText1}>
+
+                        <Text style={styles.signInText1}>
                             {login3.ORSign}
                         </Text>
 
@@ -132,8 +132,8 @@ const LoginScreen8 = () => {
 
                         >
                             <Text style={styles.OpacitySignInText}>
-                            {login3.CreateAcconut}
-                        </Text>
+                                {login3.CreateAcconut}
+                            </Text>
 
                         </TouchableOpacity>
 
