@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Image, Text, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import screen1 from './screen1.json';
@@ -7,6 +7,33 @@ import {images} from '../../components/utilities/images';
 import CommonInput from './Component/CommonInput';
 
 const Screen1 = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [emailErrorStatus, setEmailErrorStatus] = useState(false);
+  const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
+
+  const onChangeText = (password) => {
+    setPassword(password);
+    if (password.trim().length < 8) {
+      setPasswordErrorStatus(true);
+    } else {
+      setPasswordErrorStatus(false);
+    }
+  };
+
+  const onChangeEmail = (email) => {
+    setEmail(email);
+    
+    let reg =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!reg.test(email)) {
+      setEmailErrorStatus(true);
+      return
+    } else {
+      setEmailErrorStatus(false);
+    }
+
+  };
+
   return (
     <View style={styles.main}>
       <Image style={styles.image1} source={images.Ellipse1} />
@@ -30,22 +57,38 @@ const Screen1 = () => {
           <View>
             <CommonInput
               style={styles.inputEmail}
+              value={email}
               placeholderTextColor="white"
               placeholder="Email or phone number"
               imageStyle={styles.emailIcon}
               imageSource={images.Vector1}
               viewStyle={styles.childView}
+              onChangeText={(value)=>onChangeEmail(value)}
+              secureTextEntry={false}
             />
+            {emailErrorStatus  ? (
+              <Text style={styles.errorMessage}>
+                * Please include an '@' in the email address.
+              </Text>
+            ) : null}
           </View>
           <View>
             <CommonInput
               style={styles.inputEmail}
               placeholderTextColor="white"
               placeholder="Password"
+              value={password}
               imageStyle={styles.emailIcon}
               imageSource={images.open}
               viewStyle={styles.childView}
+              secureTextEntry={true}
+              onChangeText={(value) => onChangeText(value)}
             />
+            {passwordErrorStatus == true ? (
+              <Text style={styles.errorMessage}>
+                * Password should be minimum 8 characters.
+              </Text>
+            ) : null}
           </View>
           <View>
             <Text style={styles.forgotPassword}>{screen1.forgot}</Text>

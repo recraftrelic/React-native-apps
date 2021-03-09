@@ -145,6 +145,10 @@ export const styles = StyleSheet.create({
         position:'absolute',
         top: moderateScale(560),
         left: moderateScale(270)
+    },
+    errorMessage: {
+       color:AppColor.red,
+       textAlign:'center'
     }
     
 })

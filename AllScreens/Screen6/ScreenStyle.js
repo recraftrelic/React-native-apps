@@ -20,12 +20,12 @@ export  const styles = StyleSheet.create({
         top: moderateScale(105)
       },
       logo: {
-          top: moderateScale(109),
+          top: moderateScale(99),
           left: moderateScale(51),
           position:'absolute'
       },
       hello: {
-          top: moderateScale(240),
+          top: moderateScale(230),
           left: moderateScale(35),
           fontWeight:'700',
           fontSize: RFValue(30),
@@ -33,7 +33,7 @@ export  const styles = StyleSheet.create({
           fontFamily:'WorkSans-VariableFont'
       },
       state:{
-          top: moderateScale(287),
+          top: moderateScale(277),
           left: moderateScale(35),
           fontWeight:'400',
           fontSize: RFValue(16),
@@ -42,7 +42,7 @@ export  const styles = StyleSheet.create({
           fontFamily:'WorkSans-VariableFont'
       },
       user: {
-          top: moderateScale(332),
+          top: moderateScale(322),
           left: moderateScale(35),
           fontWeight:'400',
           fontSize: RFValue(12),
@@ -51,7 +51,7 @@ export  const styles = StyleSheet.create({
           fontFamily:'WorkSans-VariableFont'
       },
       name:{
-          top: moderateScale(355),
+          top: moderateScale(345),
           left: moderateScale(35),
           position:'absolute',
           fontWeight:'400',
@@ -60,10 +60,16 @@ export  const styles = StyleSheet.create({
           color:AppColor.greyContent,
           fontFamily:'WorkSans-VariableFont',
       },
+      tick: {
+          position:'absolute',
+          height: moderateScale(21),
+          top: moderateScale(355),
+          left: moderateScale(301),
+      },
       childView: {
           position:'absolute',
           width: moderateScale(313),
-          top: moderateScale(383),
+          top: moderateScale(373),
           left: moderateScale(35),
           borderBottomColor:AppColor.purple,
           borderBottomWidth:1
@@ -79,17 +85,22 @@ export  const styles = StyleSheet.create({
         },
     childView1: {
         width: moderateScale(313),
-        top: moderateScale(380),
+        top: moderateScale(370),
         left: moderateScale(35),
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor,
         },
     rectangle: {
-        top: moderateScale(480),
+        top: moderateScale(400),
         left: moderateScale(56),
         borderRadius:1,
         position:'absolute',
         borderColor:AppColor.greyContent
+    },
+    checkBox: {
+        height: moderateScale(22),
+        width: moderateScale(22),
+        borderRadius: 5
     },
     remember: {
         top: moderateScale(405),
@@ -144,6 +155,18 @@ export  const styles = StyleSheet.create({
         position:'absolute',
         color:AppColor.colorContent,
         fontFamily:'WorkSans-VariableFont'
-    }
+    },
+    errorMessage: {
+       top:moderateScale(390),
+       marginLeft:moderateScale(50),
+        position:'absolute',
+        color:AppColor.red
+    },
+    errorMessage1: {
+        top:moderateScale(450),
+        marginLeft:moderateScale(50),
+         position:'absolute',
+         color:AppColor.red
+     }
 
 })

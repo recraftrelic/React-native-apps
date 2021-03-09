@@ -9,6 +9,10 @@ const CommonInput = (props) => {
     placeholder,
     imageStyle,
     imageSource,
+    value,
+    onChangeText,
+    secureTextEntry,
+
   } = props;
 
   return (
@@ -17,13 +21,21 @@ const CommonInput = (props) => {
         style={style}
         placeholderTextColor={placeholderTextColor}
         placeholder={placeholder}
+        value={value}
+        onChangeText={onChangeText}
+        secureTextEntry={secureTextEntry}
       />
-      <Image style={imageStyle} source={imageSource} />
-      <TextInput
+      <Image
+       style={imageStyle} 
+       source={imageSource} 
+       />
+      {/* <TextInput
         style={imageStyle}
         placeholderTextColor={placeholderTextColor}
         placeholder={placeholder}
-      />
+        value={value}
+        onChangeText={onChangeText}
+      /> */}
     </>
   );
 };
