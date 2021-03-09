@@ -84,7 +84,7 @@ export const styles = StyleSheet.create({
     loginButton: {
         width: moderateScale(340),
         height:moderateScale(50),
-        marginTop:moderateScale(-45),
+        marginTop:moderateScale(-35),
         marginLeft:moderateScale(25),
         backgroundColor:AppColor.darkSky,
         borderRadius:10
@@ -107,4 +107,14 @@ export const styles = StyleSheet.create({
         color:AppColor.lightBlue,
         fontFamily:'WorkSans-VariableFont'
     },
+    errorMessage: {
+        color:'red',
+        position:'absolute',
+        top:moderateScale(135)
+    },
+    errorMessage1:{
+        color:'red',
+        position:'absolute',
+        top:moderateScale(55)
+    }
 })

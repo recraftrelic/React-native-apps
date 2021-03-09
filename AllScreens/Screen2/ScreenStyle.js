@@ -59,7 +59,7 @@ export  const styles = StyleSheet.create({
         borderRadius: 25,
       },
       password: {
-          marginTop: moderateScale(230),
+          marginTop: moderateScale(250),
           marginLeft: moderateScale(250),
           fontSize: RFValue(15),
           fontWeight:'500',
@@ -69,7 +69,7 @@ export  const styles = StyleSheet.create({
       loginButton: {
         width: moderateScale(311),
         height: moderateScale(56),
-        marginTop: moderateScale(30),
+        marginTop: moderateScale(10),
         marginLeft: moderateScale(45),
         backgroundColor:AppColor.darkSky,
         borderRadius:10,
@@ -82,13 +82,13 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'   
       },
       account: {
-        marginTop: moderateScale(20),
+        marginTop: moderateScale(10),
         marginLeft: moderateScale(105),
         color:AppColor.black,
         fontFamily:'WorkSans-VariableFont'
       },
       Sign: {
-        marginTop: moderateScale(20),
+        marginTop: moderateScale(10),
         marginLeft:moderateScale(250),
         position:'absolute',
         color:AppColor.lightBlue,
@@ -132,5 +132,18 @@ export  const styles = StyleSheet.create({
         height : 11,
         width: 0,     
         },
+        
+    },
+    errorMessage: {
+      left:moderateScale(50),
+      top:moderateScale(340),
+      color:AppColor.red,
+      position:'absolute'
+    },
+    errorMessage1: {
+      left:moderateScale(50),
+      top:moderateScale(70),
+      color:AppColor.red,
+      position:'absolute'
     }
 });

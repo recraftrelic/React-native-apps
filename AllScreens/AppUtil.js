@@ -18,5 +18,5 @@ export const AppColor = {
     borderBlue:"#5E73FF",
     cream:"#F5F5F5",
     lightPurple:"#D6DBFD",
-   
+    red: "#FF0000"
 }

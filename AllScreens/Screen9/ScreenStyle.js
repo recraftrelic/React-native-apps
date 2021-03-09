@@ -121,6 +121,18 @@ export  const styles = StyleSheet.create({
         position:'absolute',
         backgroundColor:AppColor.background,
         opacity:30
+    },
+    errorMessage: {
+        position:'absolute',
+        top:moderateScale(370),
+        left:moderateScale(70),
+        color:AppColor.red
+    },
+    errorMessage1: {
+        position:'absolute',
+        top:moderateScale(455),
+        left:moderateScale(70),
+        color:AppColor.red
     }
 
 });
