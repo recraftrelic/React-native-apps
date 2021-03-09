@@ -16,7 +16,6 @@ import Vector from "../../images/icons/Vector.png";
 import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
 import zigzag from "../../images/icons/zigzag.png";
 import contine from "../../images/icons/contine.png";
-import tick from "../../images/icons/tick.png";
 import Ellipse1 from "../../AllScreens/Images/Ellipse1.png";
 import Circle1 from "../../AllScreens/Images/Circle1.png";
 import Ellipse2 from "../../AllScreens/Images/Ellipse2.png";
@@ -58,7 +57,6 @@ const images = {
     EllipseCrcl,
     zigzag,
     contine,
-    tick,
     Ellipse1,
     Circle1,
     Ellipse2,
