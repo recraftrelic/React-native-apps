@@ -32,12 +32,13 @@ import Ellipse21 from "../../AllScreens/Images/Ellipse21.png";
 import pCircle1 from "../../AllScreens/Images/pCircle1.png";
 import arrow1 from "../../AllScreens/Images/arrow1.png";
 import pLogo1 from "../../AllScreens/Images/pLogo1.png";
-import Tick from "../../AllScreens/Images/Tick.png";
 import pRectangle from "../../AllScreens/Images/pRectangle.png";
 import Eyes from "../../AllScreens/Images/Eyes.png";
 import print from "../../AllScreens/Images/print.png";
 import arrow_backward from "../../AllScreens/Images/arrow_backward.png";
-import Screen9logo from "../../AllScreens/Images/Screen9logo.png"
+import Screen9logo from "../../AllScreens/Images/Screen9logo.png";
+import tick1 from "../../images/icons/tick1.png";
+
 
 const images = {
     logo,
@@ -73,12 +74,12 @@ const images = {
     pCircle1,
     arrow1,
     pLogo1,
-    Tick,
     pRectangle,
     Eyes,
     print,
     arrow_backward,
-    Screen9logo
+    Screen9logo,
+    tick1
 }
 
 const fonts = Platform.select({

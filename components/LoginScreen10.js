@@ -6,7 +6,6 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
-  Alert
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import {
@@ -36,15 +35,18 @@ const LoginScreen10 = () => {
     }
   }
 
-  const onEnterEmail = (email) => {
-    setEmail(email);
+  const onEnterEmail = (value) => {
+    console.log(value, "989898")
     let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-    if (reg.test(email) === false) {
-      setEmailErrorStatus(true);
-      return false;
-    } else {
+    if (reg.test(value)) {
       setEmailErrorStatus(false);
+    } else {
+      if (value !== "") {
+        setEmailErrorStatus(true);
+      }
     }
+
+    setEmail(value);
   }
 
   const onLogin = () => {
@@ -104,10 +106,9 @@ const LoginScreen10 = () => {
                   </Text>
                 ) : null}
                 {
-                  !emailErrorStatus ?
+                  email && !emailErrorStatus ?
                     <Image
-                      source={images.tick}
-
+                      source={images.tick1}
                       style={styles.tick}
                     />
                     :

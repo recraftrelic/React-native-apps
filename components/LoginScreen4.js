@@ -30,16 +30,20 @@ const LoginScreen1 = () => {
         }
     }
 
-    const onEnterEmail = (email) => {
-        setEmail(email);
+    const onEnterEmail = (value) => {
+        console.log(value, "989898")
         let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-        if (reg.test(email) === false) {
-            setEmailErrorStatus(true);
-            return false;
-        } else {
+        if (reg.test(value)) {
             setEmailErrorStatus(false);
+        } else {
+            if (value !== "") {
+                setEmailErrorStatus(true);
+            }
         }
+
+        setEmail(value);
     }
+
 
     const onLogin = () => {
         if (email == '') {
@@ -108,18 +112,17 @@ const LoginScreen1 = () => {
                             />
                             {emailErrorStatus == true ? (
                                 <Text style={styles.errorMessage} >
-                                * Please include an '@' in the email address.
+                                    * Please include an '@' in the email address.
                                 </Text>
                             ) : null}
                             {
-                                !emailErrorStatus ?
-                              <Image
-                              source={images.tick}
-
-                              style={styles.tick}
-                          />
-                              :
-                              null
+                                email && !emailErrorStatus ?
+                                    <Image
+                                        source={images.tick1}
+                                        style={styles.tick}
+                                    />
+                                    :
+                                    null
                             }
                             <Image
                                 style={styles.emailIcon}
@@ -137,7 +140,7 @@ const LoginScreen1 = () => {
                             />
                             {passwordErrorStatus == true ? (
                                 <Text style={styles.errorMessage} >
-                                * Password should be minimum 8 characters.
+                                    * Password should be minimum 8 characters.
                                 </Text>
                             ) : null}
                             <Image

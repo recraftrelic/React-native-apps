@@ -156,9 +156,16 @@ export const styles = StyleSheet.create({
     },
     errorMessage: {
         fontSize: 12,
-        color:"red",
+        color: "red",
         fontFamily: fonts.regular
-      },
+    },
+    tick: {
+        bottom: moderateScale(30),
+        left: moderateScale(260),
+        height: moderateScale(20),
+        width: moderateScale(20),
+
+    },
     emailIcon: {
         position: 'absolute',
         top: moderateScale(15),
@@ -173,11 +180,6 @@ export const styles = StyleSheet.create({
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular
-
-    },
-    tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(260)
 
     },
     inputView: {
