@@ -35,7 +35,9 @@ import pRectangle from "../../AllScreens/Images/pRectangle.png";
 import Eyes from "../../AllScreens/Images/Eyes.png";
 import print from "../../AllScreens/Images/print.png";
 import arrow_backward from "../../AllScreens/Images/arrow_backward.png";
-import Screen9logo from "../../AllScreens/Images/Screen9logo.png"
+import Screen9logo from "../../AllScreens/Images/Screen9logo.png";
+import tick1 from "../../images/icons/tick1.png";
+
 
 const images = {
     logo,
@@ -74,7 +76,8 @@ const images = {
     Eyes,
     print,
     arrow_backward,
-    Screen9logo
+    Screen9logo,
+    tick1
 }
 
 const fonts = Platform.select({

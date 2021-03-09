@@ -63,7 +63,7 @@ export const styles = StyleSheet.create({
     googleInnerView: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: moderateScale (50),
+        padding: moderateScale(50),
         paddingTop: 0,
     },
     googlebtn: {
@@ -79,14 +79,14 @@ export const styles = StyleSheet.create({
     signintxt: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: moderateScale (50),
+        padding: moderateScale(50),
         paddingTop: 0,
         top: moderateScale(12)
     },
     reset: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: moderateScale (50),
+        padding: moderateScale(50),
         paddingTop: 0,
         top: moderateScale(12)
     },
@@ -189,11 +189,18 @@ export const styles = StyleSheet.create({
     },
     errorMessage: {
         fontSize: 12,
-        color:"red",
-        marginLeft: moderateScale (30),
+        color: "red",
+        marginLeft: moderateScale(30),
         fontFamily: fonts.regular
 
-      },
+    },
+    tick: {
+        bottom: moderateScale(35),
+        left: moderateScale(310),
+        height: moderateScale(20),
+        width: moderateScale(20),
+
+    },
     passwordInput: {
         height: moderateScale(53),
         width: width - 50,
@@ -210,13 +217,13 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         top: moderateScale(21),
         left: moderateScale(30),
-        
+
     },
     vector: {
         position: 'absolute',
         top: moderateScale(18),
         left: moderateScale(52),
-        
+
     },
     vector1: {
         position: 'absolute',

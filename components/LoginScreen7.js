@@ -29,15 +29,18 @@ const LoginScreen4 = () => {
         }
     }
 
-    const onEnterEmail = (email) => {
-        setEmail(email);
+    const onEnterEmail = (value) => {
+        console.log(value, "989898")
         let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-        if (reg.test(email) === false) {
-            setEmailErrorStatus(true);
-            return false;
-        } else {
+        if (reg.test(value)) {
             setEmailErrorStatus(false);
+        } else {
+            if (value !== "") {
+                setEmailErrorStatus(true);
+            }
         }
+
+        setEmail(value);
     }
 
     const onLogin = () => {
@@ -100,9 +103,18 @@ const LoginScreen4 = () => {
                             />
                             {emailErrorStatus == true ? (
                                 <Text style={styles.errorMessage} >
-                                * Please include an '@' in the email address.
+                                    * Please include an '@' in the email address.
                                 </Text>
                             ) : null}
+                            {
+                                email && !emailErrorStatus ?
+                                    <Image
+                                        source={images.tick1}
+                                        style={styles.tick}
+                                    />
+                                    :
+                                    null
+                            }
                         </View>
 
                         <View>
@@ -121,7 +133,7 @@ const LoginScreen4 = () => {
                             />
                             {passwordErrorStatus == true ? (
                                 <Text style={styles.errorMessage} >
-                                * Password should be minimum 8 characters.
+                                    * Password should be minimum 8 characters.
                                 </Text>
                             ) : null}
 
@@ -140,6 +152,8 @@ const LoginScreen4 = () => {
                                         :
                                         <Image
                                             source={images.ic_ad_view}
+                                            style={styles.HideIcon}
+
                                         />
 
                                 }

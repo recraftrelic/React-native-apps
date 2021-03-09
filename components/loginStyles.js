@@ -148,12 +148,18 @@ export const styles = StyleSheet.create({
     },
     errorMessage: {
         fontSize: 12,
-        color:"red",
-        marginLeft: moderateScale (30),
+        color: "red",
+        marginLeft: moderateScale(30),
         fontFamily: fonts.regular
 
-      },
+    },
+    tick: {
+        bottom: moderateScale(35),
+        left: moderateScale(310),
+        height: moderateScale(20),
+        width: moderateScale(20),
 
+    },
     emailInput: {
         height: moderateScale(50),
         width: width - 50,
