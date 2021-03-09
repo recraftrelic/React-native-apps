@@ -82,7 +82,7 @@ const Screen2 = () => {
             secureTextEntry={true}
           />
           {passwordErrorStatus == true ? (
-              <Text style={styles.errorMessage}>
+              <Text style={styles.errorMessage1}>
                 * Password should be minimum 8 characters.
               </Text>
             ) : null}

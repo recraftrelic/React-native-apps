@@ -136,7 +136,13 @@ export  const styles = StyleSheet.create({
     },
     errorMessage: {
       left:moderateScale(50),
-      top:moderateScale(440),
+      top:moderateScale(340),
+      color:AppColor.red,
+      position:'absolute'
+    },
+    errorMessage1: {
+      left:moderateScale(50),
+      top:moderateScale(70),
       color:AppColor.red,
       position:'absolute'
     }
