@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, TextInput } from 'react-native';
 import { Image, View } from 'react-native';
 import screen5 from './screen5.json';
 import { styles } from './ScreenStyle';
 import picture from "../images"
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import { TouchableOpacity } from 'react-native';
 
 
 const Screen5 = () => {
+
+    const [showHidePassword, setShowHidePassword] = useState(true);
+    
     return (
         <>
         <KeyboardAwareScrollView
@@ -27,8 +31,27 @@ const Screen5 = () => {
            <View>
            <Text style={styles.pass}>{screen5.pass}</Text>
            <View style={styles.MainContainer}>
-                <TextInput style={styles.password} placeholder="password"/>
-               <Text style={styles.View5}>{screen5.View}</Text>
+                <TextInput style={styles.password} placeholder="password" secureTextEntry={showHidePassword}/>
+                <TouchableOpacity
+                                onPress={() => setShowHidePassword(!showHidePassword)}
+                                style={styles.View5}
+                                hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+                            >
+                                {
+                                    showHidePassword ?
+                                        <Text style={styles.textStyle}>
+                                            {screen5.Show}
+                                        </Text>
+                                        :
+                                        <Text style={styles.textStyle}>
+                                            {screen5.Hide}
+
+                                        </Text>
+
+                                }
+
+                            </TouchableOpacity>
+               {/* <Text style={styles.View5}>{screen5.View}</Text> */}
                 </View > 
                 <View style={styles.loginButton}>            
                 <Text style={styles.button} >{screen5.button}</Text>            
