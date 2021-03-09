@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
         height: moderateScale(480),
         width: moderateScale(315),
         backgroundColor: 'white',
-        position: 'absolute', 
+        position: 'absolute',
         zIndex: 99,
         top: moderateScale(130),
         left: moderateScale(28),
@@ -66,7 +66,7 @@ export const styles = StyleSheet.create({
         borderRadius: 10
 
     },
-    opacitySignBtn:{
+    opacitySignBtn: {
         backgroundColor: 'white',
         height: moderateScale(48),
         width: width - 80,
@@ -170,14 +170,16 @@ export const styles = StyleSheet.create({
     },
     errorMessage: {
         fontSize: 12,
-        color:"red",
-        marginLeft: moderateScale (50),
+        color: "red",
+        marginLeft: moderateScale(50),
         fontFamily: fonts.regular
 
-      },
+    },
     tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(300)
+        bottom: moderateScale(35),
+        left: moderateScale(285),
+        height: moderateScale(20),
+        width: moderateScale(20),
 
     },
     lockImage: {
@@ -189,7 +191,7 @@ export const styles = StyleSheet.create({
         color: '#8F70FF',
         fontFamily: fonts.semiBold,
     },
-    
+
     passwordInput: {
         backgroundColor: '#EAEAEA',
         height: moderateScale(50),
@@ -262,5 +264,5 @@ export const styles = StyleSheet.create({
         right: moderateScale(50),
         flex: 0.3
     },
-    
+
 });

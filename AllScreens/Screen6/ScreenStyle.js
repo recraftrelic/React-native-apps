@@ -60,12 +60,6 @@ export  const styles = StyleSheet.create({
           color:AppColor.greyContent,
           fontFamily:'WorkSans-VariableFont',
       },
-      tick: {
-          position:'absolute',
-          height: moderateScale(21),
-          top: moderateScale(365),
-          left: moderateScale(301),
-      },
       childView: {
           position:'absolute',
           width: moderateScale(313),
