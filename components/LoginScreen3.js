@@ -22,7 +22,6 @@ const LoginScreen3 = () => {
     const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
     const [emailErrorStatus, setEmailErrorStatus] = useState(false);
 
-
     const onEnterText = (password) => {
         setPassword(password);
         if (password.trim().length < 8) {
@@ -42,7 +41,6 @@ const LoginScreen3 = () => {
                 setEmailErrorStatus(true);
             }
         }
-
         setEmail(value);
     }
 
