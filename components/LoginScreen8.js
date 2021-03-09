@@ -95,16 +95,6 @@ const LoginScreen8 = () => {
                                 * Please include an '@' in the email address.
                                 </Text>
                             ) : null}
-                            {
-                                !emailErrorStatus ?
-                              <Image
-                              source={images.tick}
-
-                              style={styles.tick}
-                          />
-                              :
-                              null
-                            }
                         </View>
 
                         <View>

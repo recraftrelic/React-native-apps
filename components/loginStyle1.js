@@ -194,11 +194,6 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.regular
 
       },
-      tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(300)
-
-    },
     passwordInput: {
         height: moderateScale(53),
         width: width - 50,

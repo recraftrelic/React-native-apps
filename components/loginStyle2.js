@@ -175,11 +175,6 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.regular
 
     },
-    tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(260)
-
-    },
     inputView: {
         flex: 0.2,
         marginTop: moderateScale(20)

@@ -147,11 +147,7 @@ export const styles = StyleSheet.create({
     HideIcon: {
         top: moderateScale(18)
     },
-    tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(300)
 
-    },
     textStyle: {
         color: '#8F70FF',
         fontFamily: fonts.regular,

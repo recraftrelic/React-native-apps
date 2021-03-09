@@ -111,16 +111,6 @@ const LoginScreen1 = () => {
                                 * Please include an '@' in the email address.
                                 </Text>
                             ) : null}
-                            {
-                                !emailErrorStatus ?
-                              <Image
-                              source={images.tick}
-
-                              style={styles.tick}
-                          />
-                              :
-                              null
-                            }
                             <Image
                                 style={styles.emailIcon}
                                 source={images.at}

@@ -153,11 +153,7 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.regular
 
       },
-      tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(300)
 
-    },
     emailInput: {
         height: moderateScale(50),
         width: width - 50,

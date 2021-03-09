@@ -100,16 +100,6 @@ const LoginScreen3 = () => {
                                 </Text>
                             ) : null}
                             
-                            {
-                              !emailErrorStatus ?
-                              <Image
-                              source={images.tick}
-
-                              style={styles.tick}
-                          />
-                              :
-                              null
-                            }
                             <Image
                                 style={styles.emailIcon}
                                 source={images.emailIcon}

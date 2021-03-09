@@ -175,11 +175,6 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.regular
 
       },
-    tick: {
-        bottom: moderateScale(33),
-        left: moderateScale(300)
-
-    },
     lockImage: {
         position: 'absolute',
         top: moderateScale(28),

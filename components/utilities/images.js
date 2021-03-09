@@ -31,7 +31,6 @@ import Ellipse21 from "../../AllScreens/Images/Ellipse21.png";
 import pCircle1 from "../../AllScreens/Images/pCircle1.png";
 import arrow1 from "../../AllScreens/Images/arrow1.png";
 import pLogo1 from "../../AllScreens/Images/pLogo1.png";
-import Tick from "../../AllScreens/Images/Tick.png";
 import pRectangle from "../../AllScreens/Images/pRectangle.png";
 import Eyes from "../../AllScreens/Images/Eyes.png";
 import print from "../../AllScreens/Images/print.png";
@@ -56,7 +55,6 @@ const images = {
     EllipseCrcl,
     zigzag,
     contine,
-    tick,
     Ellipse1,
     Circle1,
     Ellipse2,
@@ -72,7 +70,6 @@ const images = {
     pCircle1,
     arrow1,
     pLogo1,
-    Tick,
     pRectangle,
     Eyes,
     print,
