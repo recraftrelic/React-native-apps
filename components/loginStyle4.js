@@ -161,7 +161,7 @@ export const styles = StyleSheet.create({
 
     tick: {
         bottom: moderateScale(35),
-        left: moderateScale(295),
+        left: moderateScale(300),
         height: moderateScale(20),
         width: moderateScale(20),
 
@@ -172,7 +172,6 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         borderBottomWidth: moderateScale(1),
         borderColor: 'grey',
-        // paddingHorizontal: moderateScale(25),
         marginTop: moderateScale(20),
         fontFamily: fonts.regular,
 
@@ -195,7 +194,6 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         borderColor: 'grey',
         borderBottomWidth: moderateScale(1),
-        // paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular,
 
     },

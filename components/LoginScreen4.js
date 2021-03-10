@@ -164,9 +164,7 @@ const LoginScreen1 = () => {
                                             source={images.ic_ad_view}
                                         />
                                 }
-
                             </TouchableOpacity>
-
 
                         </View>
                         <Image
