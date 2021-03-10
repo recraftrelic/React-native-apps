@@ -137,7 +137,6 @@ export const styles = StyleSheet.create({
     },
     forgote: {
         color: '#393F45',
-        // marginBottom: moderateScale(2),
         fontFamily: fonts.regular,
         top: moderateScale(10),
         left: moderateScale(25),
@@ -145,7 +144,6 @@ export const styles = StyleSheet.create({
 
     },
     reset: {
-        // marginBottom: moderateScale(72),
         fontFamily: fonts.regular,
         bottom: moderateScale(10),
         left: moderateScale(150),
@@ -189,7 +187,7 @@ export const styles = StyleSheet.create({
     },
     errorMessage: {
         fontSize: 12,
-        color: "red",
+        color: 'red',
         marginLeft: moderateScale(30),
         fontFamily: fonts.regular
 
@@ -228,7 +226,7 @@ export const styles = StyleSheet.create({
     vector1: {
         position: 'absolute',
         top: moderateScale(94),
-        left: moderateScale(52)
+        left: moderateScale(52),
     },
     emailInput: {
         height: moderateScale(56),
