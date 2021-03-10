@@ -82,10 +82,10 @@ export const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
-        width: moderateScale(340),
+        width: moderateScale(330),
         height:moderateScale(50),
         marginTop:moderateScale(-35),
-        marginLeft:moderateScale(25),
+        marginLeft:moderateScale(15),
         backgroundColor:AppColor.darkSky,
         borderRadius:10
     },

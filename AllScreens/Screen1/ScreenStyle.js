@@ -1,16 +1,16 @@
 import { Platform, StyleSheet } from "react-native";
 import { AppColor } from "../AppUtil";
 import {
-    moderateScale,
+    moderateScale, scale, verticalScale,
  } from 'react-native-size-matters';
  import { RFValue } from 'react-native-responsive-fontsize';
 
 export const styles = StyleSheet.create({
     container:{
-        width: moderateScale(331),
-        height: moderateScale(450),
-        top: moderateScale(90),
-        left: moderateScale(28),
+        width: scale(311),
+        height: verticalScale(450),
+        top: moderateScale(120),
+        left: moderateScale(20),
         borderRadius:40,
         backgroundColor:AppColor.black,
         position:'absolute'

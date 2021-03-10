@@ -1,7 +1,7 @@
 import { Platform, StyleSheet } from 'react-native';
 import { AppColor } from '../AppUtil';
 import {
-  moderateScale,
+  moderateScale, scale, verticalScale,
 } from 'react-native-size-matters';
 import { RFValue } from 'react-native-responsive-fontsize';
 
@@ -37,10 +37,10 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     boxShadow: {
-        width: moderateScale(330),
-        height: moderateScale(69),
+        width: scale(310),
+        height: verticalScale(75),
         top: moderateScale(268),
-        left: moderateScale(25),
+        left: moderateScale(20),
         backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
@@ -48,10 +48,10 @@ export  const styles = StyleSheet.create({
         borderRadius: 25,
       },
       boxShadow1: {
-        width: moderateScale(330),
-        height: moderateScale(69),
+        width: scale(310),
+        height: verticalScale(75),
         top: moderateScale(358),
-        left: moderateScale(25),
+        left: moderateScale(20),
         backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
@@ -59,18 +59,19 @@ export  const styles = StyleSheet.create({
         borderRadius: 25,
       },
       password: {
+         width:scale(300),
           marginTop: moderateScale(250),
-          marginLeft: moderateScale(250),
+          marginLeft: moderateScale(240),
           fontSize: RFValue(15),
           fontWeight:'500',
           color:AppColor.lineGrey,
           fontFamily:'WorkSans-VariableFont'
       },
       loginButton: {
-        width: moderateScale(311),
-        height: moderateScale(56),
+        width: scale(300),
+        height: verticalScale(55),
         marginTop: moderateScale(10),
-        marginLeft: moderateScale(45),
+        marginLeft: moderateScale(20),
         backgroundColor:AppColor.darkSky,
         borderRadius:10,
       },
@@ -113,6 +114,7 @@ export  const styles = StyleSheet.create({
         left: moderateScale(30),
         top: moderateScale(70)
       },
+      
       emailIcon: {
         width:moderateScale(17),
         height:moderateScale(18),
