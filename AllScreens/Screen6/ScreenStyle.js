@@ -43,7 +43,7 @@ export  const styles = StyleSheet.create({
       },
       user: {
           top: moderateScale(322),
-          left: moderateScale(35),
+          left: moderateScale(20),
           fontWeight:'400',
           fontSize: RFValue(12),
           position:'absolute',
@@ -52,7 +52,7 @@ export  const styles = StyleSheet.create({
       },
       name:{
           top: moderateScale(345),
-          left: moderateScale(35),
+          left: moderateScale(20),
           position:'absolute',
           fontWeight:'400',
           fontSize: RFValue(12),
@@ -70,13 +70,13 @@ export  const styles = StyleSheet.create({
           position:'absolute',
           width: moderateScale(313),
           top: moderateScale(373),
-          left: moderateScale(35),
+          left: moderateScale(20),
           borderBottomColor:AppColor.purple,
           borderBottomWidth:1
         },
     password: {
          top: moderateScale(373),
-         left: moderateScale(35),
+         left: moderateScale(20),
          fontWeight:'400',
          fontSize: RFValue(12),
          lineHeight:14,
@@ -86,13 +86,13 @@ export  const styles = StyleSheet.create({
     childView1: {
         width: moderateScale(313),
         top: moderateScale(370),
-        left: moderateScale(35),
+        left: moderateScale(20),
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor,
         },
     rectangle: {
         top: moderateScale(400),
-        left: moderateScale(56),
+        left: moderateScale(20),
         borderRadius:1,
         position:'absolute',
         borderColor:AppColor.greyContent
@@ -104,7 +104,7 @@ export  const styles = StyleSheet.create({
     },
     remember: {
         top: moderateScale(405),
-        left: moderateScale(86),
+        left: moderateScale(55),
         fontWeight:'400',
         fontSize: RFValue(12),
         lineHeight:12,
@@ -113,7 +113,7 @@ export  const styles = StyleSheet.create({
     },
     forgot: {
         top: moderateScale(395),
-        left: moderateScale(256),
+        left: moderateScale(236),
         fontWeight:'400',
         fontSize: RFValue(12),
         lineHeight:12,
@@ -121,25 +121,24 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     button:{
-        width: moderateScale(330),
+        width: moderateScale(320),
         height: moderateScale(50),
         top: moderateScale(511),
-        left:moderateScale(35),
+        left:moderateScale(20),
         borderRadius:10,
         position:'absolute',
         backgroundColor:AppColor.purple
     },
     login: {
         fontSize: RFValue(15),
-        lineHeight:17,
         color:AppColor.white,
-        left: moderateScale(140),
+        textAlign:'center',
         top: moderateScale(15),
         fontFamily:'WorkSans-VariableFont'
     },
     account:{
         top: moderateScale(471),
-        left: moderateScale(113),
+        left: moderateScale(80),
         fontWeight:'400',
         fontSize: RFValue(13),
         lineHeight:14,
@@ -147,8 +146,8 @@ export  const styles = StyleSheet.create({
         fontFamily:'WorkSans-VariableFont'
     },
     sign: {
-        top: moderateScale(570),
-        left: moderateScale(240),
+        top: moderateScale(575),
+        left: moderateScale(200),
         fontWeight:'400',
         fontSize: RFValue(12),
         lineHeight:14,

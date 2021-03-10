@@ -27,7 +27,7 @@ export  const styles = StyleSheet.create({
     },
     email: {
         top: moderateScale(302),
-        left: moderateScale(49),
+        left: moderateScale(19),
         fontWeight:'400',
         fontSize: RFValue(12),
         color:AppColor.blackGrey,
@@ -35,7 +35,7 @@ export  const styles = StyleSheet.create({
     },
     email1: {
         top: moderateScale(306),
-        left:49,
+        left:moderateScale(19),
         fontWeight:'500',
         fontSize: RFValue(14),
         lineHeight:16,
@@ -45,13 +45,13 @@ export  const styles = StyleSheet.create({
     childView: {
         width: moderateScale(292),
         top: moderateScale(306),
-        left: moderateScale(49),
+        left: moderateScale(19),
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor
     },
     password: {
         top: moderateScale(335),
-        left: moderateScale(49),
+        left: moderateScale(19),
         fontWeight:'400',
         fontSize: RFValue(12),
         lineHeight:14,
@@ -60,7 +60,7 @@ export  const styles = StyleSheet.create({
     },
     password1: {
         top: moderateScale(334),
-        left: moderateScale(49),
+        left: moderateScale(19),
         fontWeight:'500',
         fontSize: RFValue(14),
         lineHeight:16,
@@ -70,28 +70,28 @@ export  const styles = StyleSheet.create({
     childView1: {
         width: moderateScale(292),
         top: moderateScale(335),
-        left: moderateScale(49),
+        left: moderateScale(19),
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor
     },
     eyes:{
         position:'absolute',
         top: moderateScale(425),
-        left: moderateScale(305),
+        left: moderateScale(275),
         color:AppColor.violet
     },
     print: {
-        top: moderateScale(483),
-        left: moderateScale(63),
+        top: moderateScale(473),
+        left: moderateScale(43),
         position:'absolute',
     },
     continue: {
         position:'absolute',
         width: moderateScale(220),
         height: moderateScale(61),
-        top:moderateScale(483),
+        top:moderateScale(473),
         borderRadius:10,
-        left: moderateScale(131),
+        left: moderateScale(111),
         backgroundColor:AppColor.purple,
         
     },
@@ -104,18 +104,17 @@ export  const styles = StyleSheet.create({
         fontFamily:'Rubik-VariableFont'
     },
     forgot: {
-        top: moderateScale(435),
+        top: moderateScale(425),
         textAlign:'center',
         fontWeight:'400',
         fontSize: RFValue(16),
-        lineHeight:19,
         color:AppColor.purple,
         fontFamily:'Rubik-VariableFont'
     },
     child: {
         width: moderateScale(135),
         height:moderateScale(5),
-        top: moderateScale(595),
+        top: moderateScale(585),
         left: moderateScale(120),
         borderRadius:100,
         position:'absolute',
