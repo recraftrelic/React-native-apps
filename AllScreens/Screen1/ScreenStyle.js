@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     container:{
         width: scale(311),
         height: verticalScale(450),
-        top: moderateScale(120),
+        top: moderateScale(100),
         left: moderateScale(20),
         borderRadius:40,
         backgroundColor:AppColor.black,
