@@ -16,9 +16,7 @@ You can also get the app on play store-- -->
 
 <!-- Browse the full documentation on
 
-## IOS Demo
-
-## Android Demo -->
+## IOS Demo -->
 
 ## Android Demo
 
@@ -33,7 +31,6 @@ You can also get the app on play store-- -->
 <p align="center">
   <img width="250" src="./gifs/Screen7.gif" hspace="20" vspace="20"><img width="250" src="./gifs/Screen8.gif" hspace="20" vspace="20"><img width="250" src="./gifs/Screen9.gif" hspace="20" vspace="20"><img width="250" src="./gifs/Screen10.gif" hspace="20" vspace="20">
 
-<!-- [<img src="./gifs/Screen1.gif"  width="250"/>] -->
 ## Packages & Libraries used
 
 * [React Native](https://www.npmjs.com/package/react-native) - A framework for building native apps with React.
