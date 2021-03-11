@@ -76,21 +76,16 @@ const Screen6 = () => {
             </Text>
           ) : null}
           <View style={styles.checkBoxView}>
-                        <TouchableOpacity style={styles.rectangle}
-                            onPress={() => setCheckStatus(!check)}
-                        >
-                            {
-                                check ? <Image source={images.checkbox}
-                                    style={styles.checkBox} /> :
-                                    <Image source={images.checkIcon} />
-                            }
-
-
-                        </TouchableOpacity>
-
-                        
-
-                    </View>
+            <TouchableOpacity
+              style={styles.rectangle}
+              onPress={() => setCheckStatus(!check)}>
+              {check ? (
+                <Image source={images.checkbox} style={styles.checkBox} />
+              ) : (
+                <Image source={images.checkIcon} />
+              )}
+            </TouchableOpacity>
+          </View>
           <Text style={styles.remember}>{screen.remember}</Text>
           <Text style={styles.forgot}>{screen.forgot}</Text>
           <View style={styles.button}>
