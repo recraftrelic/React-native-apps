@@ -23,13 +23,13 @@ You can also get the app on play store-- -->
 <hr>
 
 <p align="center">
-  <img width="250" src="./gifs/screen1.gif" hspace="20" vspace="20" ><img width="250" src="./gifs/screen2.gif" hspace="20" vspace="20"><img width="250" src="./gifs/screen3.gif" hspace="20" vspace="20">
+  <img width="250" src="./gifs/screen1.gif?raw=true" hspace="20" vspace="20" ><img width="250" src="./gifs/screen2.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen3.gif?raw=true" hspace="20" vspace="20">
 </p>
 <p align="center">
-  <img width="250" src="./gifs/screen4.gif" hspace="20" vspace="20"><img width="250" src="./gifs/screen5.gif" hspace="20" vspace="20"><img width="250" src="./gifs/screen6.gif" hspace="20" vspace="20">
+  <img width="250" src="./gifs/screen4.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen5.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen6.gif?raw=true" hspace="20" vspace="20">
 </p>
 <p align="center">
-  <img width="250" src="./gifs/screen7.gif" hspace="20" vspace="20"><img width="250" src="./gifs/screen8.gif" hspace="20" vspace="20"><img width="250" src="./gifs/screen9.gif" hspace="20" vspace="20"><img width="250" src="./gifs/screen10.gif" hspace="20" vspace="20">
+  <img width="250" src="./gifs/screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen10.gif?raw=true" hspace="20" vspace="20">
 
 ## Packages & Libraries used
 
