@@ -128,22 +128,22 @@ export const styles = StyleSheet.create({
     },
     circle3:{
         position:'absolute',
-        top: moderateScale(505),
+        top: moderateScale(550),
         left: moderateScale(80)
     },
     arrow2: {
         position:'absolute',
-        top: moderateScale(570),
+        top: moderateScale(600),
         left: moderateScale(105)
     },
     image3: {
         position:'absolute',
-        top: moderateScale(300),
+        top: moderateScale(350),
         left: moderateScale(190)
     },
     circle4: {
         position:'absolute',
-        top: moderateScale(560),
+        top: moderateScale(600),
         left: moderateScale(270)
     },
     errorMessage: {
