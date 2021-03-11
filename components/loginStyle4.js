@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
         borderRadius: 10
 
     },
-    opacitySignBtn:{
+    opacitySignBtn: {
         backgroundColor: 'white',
         height: moderateScale(48),
         width: width - 80,
@@ -106,7 +106,7 @@ export const styles = StyleSheet.create({
     regularTxt: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: moderateScale(50),
+        marginTop: moderateScale(40),
     },
     regularStyle: {
         color: '#092C4C',
@@ -144,10 +144,27 @@ export const styles = StyleSheet.create({
         top: moderateScale(33),
         right: moderateScale(51)
     },
+    HideIcon: {
+        top: moderateScale(18)
+    },
 
     textStyle: {
         color: '#8F70FF',
         fontFamily: fonts.regular,
+    },
+    errorMessage: {
+        fontSize: 12,
+        color: "red",
+        marginLeft: moderateScale(40),
+        fontFamily: fonts.regular
+    },
+
+    tick: {
+        bottom: moderateScale(35),
+        left: moderateScale(300),
+        height: moderateScale(20),
+        width: moderateScale(20),
+
     },
     passwordInput: {
         height: moderateScale(44),
@@ -155,7 +172,6 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         borderBottomWidth: moderateScale(1),
         borderColor: 'grey',
-        // paddingHorizontal: moderateScale(25),
         marginTop: moderateScale(20),
         fontFamily: fonts.regular,
 
@@ -163,7 +179,7 @@ export const styles = StyleSheet.create({
     logo: {
         position: 'absolute',
         top: moderateScale(95),
-        left: moderateScale(162),
+        left: moderateScale(155),
 
     },
     groupLogo: {
@@ -178,7 +194,6 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         borderColor: 'grey',
         borderBottomWidth: moderateScale(1),
-        // paddingHorizontal: moderateScale(25),
         fontFamily: fonts.regular,
 
     },
@@ -211,7 +226,7 @@ export const styles = StyleSheet.create({
     logoView: {
         flex: 0.3,
     },
-        headerStyle: {
+    headerStyle: {
         marginTop: moderateScale(120),
         color: '#393F45',
         fontFamily: fonts.bold,
@@ -222,7 +237,7 @@ export const styles = StyleSheet.create({
 
     headtextStyle: {
         marginTop: moderateScale(10),
-        color: '#36455A',
+        color: 'grey',
         fontFamily: fonts.regular,
         marginRight: moderateScale(140),
         width: width - 20
@@ -236,5 +251,5 @@ export const styles = StyleSheet.create({
         backgroundColor: 'red'
 
     },
-    
+
 });

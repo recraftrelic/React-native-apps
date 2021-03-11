@@ -1,83 +1,84 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { AppColor } from "../AppUtil";
+import {
+    moderateScale, scale, verticalScale,
+ } from 'react-native-size-matters';
+ import { RFValue } from 'react-native-responsive-fontsize';
 
 export const styles = StyleSheet.create({
     container:{
-        width:331,
-        height:511,
-        marginTop:176,
-        marginLeft:40,
+        width: scale(311),
+        height: verticalScale(450),
+        top: moderateScale(100),
+        left: moderateScale(20),
         borderRadius:40,
         backgroundColor:AppColor.black,
         position:'absolute'
     },
+    main: {
+        marginTop: Platform.OS == "ios" ? 50 : 0,
+        flex: 1,
+        backgroundColor: 'white'
+    },
     login: {
-        width:89,
-        height:46,
-        marginTop:62,
-        marginLeft:116,
+        marginTop: moderateScale(52),
+        textAlign:'center',
         fontWeight:'400',
-        fontSize:34,
+        fontSize: RFValue(34),
         color:AppColor.white, 
         fontFamily:'AbrilFatface-Regular',
     },
     email: {
-        height:36,
-        marginTop:15,
-        fontSize:15,
+        height: moderateScale(30),
+        marginTop: moderateScale(10),
+        fontSize: RFValue(15),
         fontWeight:'400',
         textAlign:'center',
         color:AppColor.blackGrey,
         fontFamily:'WorkSans-VariableFont'
     },
     number: {
-        fontSize:15,
+        fontSize: RFValue(15),
         fontWeight:'400',
         textAlign:'center',
         color:AppColor.blackGrey,
-        height:36,
-        marginTop:-8,
+        height: moderateScale(36),
+        marginTop: moderateScale(-8),
         fontFamily:'WorkSans-VariableFont'
     },
     inputEmail:{
-        width: 172,
-        height:26,
-        marginTop:27,
-        marginLeft:85,
-        fontWeight:'400',
-        fontSize:14,
         color:AppColor.white,
-        fontFamily:'WorkSans-VariableFont'
+        height: moderateScale(55),
+        marginLeft: moderateScale(80),
+        fontWeight:'400',
+        fontSize: RFValue(14),
     },
     emailIcon: {
-        width: 15,
-        height: 12,
-        marginLeft:50,
-        marginTop:-22,   
+        width: moderateScale(15),
+        height: moderateScale(12),
+        marginLeft: moderateScale(50),
+        marginTop: moderateScale(-34),   
     },
     childView: {
-        marginTop:15,
-        width: 256,
-        height: 0,
-        marginLeft:40,
+        marginTop:moderateScale(15),
+        width: moderateScale(256),
+        marginLeft: moderateScale(40),
         borderBottomWidth :1,
         borderBottomColor: AppColor.lineGrey     
     },
     forgotPassword: {
-        width:140,
-        height:20,
-        marginTop:20,
-        marginLeft:200,
+        marginTop: moderateScale(20),
+        marginLeft: moderateScale(200),
         fontWeight:'400',
-        fontSize:14,
-        color:AppColor.blackGrey,
+        fontSize: RFValue(14),
+        color:AppColor.white,
         fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
-        width:260,
-        height:50,
-        marginTop:15,
-        marginLeft:40,
+        width: moderateScale(265),
+        height: moderateScale(50),
+        marginTop: moderateScale(15),
+        marginLeft:moderateScale(40),
         backgroundColor:AppColor.darkSky,
         borderRadius:10
     },
@@ -85,74 +86,69 @@ export const styles = StyleSheet.create({
         paddingTop:15,
         textAlign:'center',
         color:AppColor.white,
-        fontSize:17,
+        fontSize: RFValue(17),
         fontFamily:'WorkSans-VariableFont'
     },
    account: {
-        width:200,
-        height:20,
-        marginTop:10,
-        marginLeft:75,
+        marginTop: moderateScale(10),
+        marginLeft: moderateScale(75),
         color:AppColor.white,
-        fontSize:15,
+        fontSize: RFValue(15),
         fontFamily:'WorkSans-VariableFont'
     },
     Sign: {
-        width:55,
-        height:20,
-        marginTop:10,
-        marginLeft:215,
+        marginTop: moderateScale(10),
+        marginLeft: moderateScale(215),
         position:'absolute',
-        color:AppColor.blackBlue,
-        fontSize:15,
+        color:AppColor.darkSky,
+        fontSize: RFValue(15),
         fontFamily:'WorkSans-VariableFont'
     },
     image1: {
-        width:206,
-        height: 306,
-        top:125,
-        opacity:30,
+        top: moderateScale(65),
         position:'absolute',   
     },
     circle1: {
-        width:18,
-        height:18,
-        marginTop:120,
-        marginLeft:56,
+        marginTop: moderateScale(58),
+        marginLeft: moderateScale(56),
     },
     image2: {
-        left:270,
+        left: moderateScale(290),
         position:'absolute',
     },
     circle2: {
         position:'absolute',
-        top:96,
-        left:340,
+        top: moderateScale(45),
+        left: moderateScale(300),
     },
     arrow1: {
         position:'absolute',
-        left:320,
-        top:110,
+        left: moderateScale(280),
+        top: moderateScale(58),
     },
     circle3:{
         position:'absolute',
-        top:645,
-        left:80
+        top: moderateScale(550),
+        left: moderateScale(80)
     },
     arrow2: {
         position:'absolute',
-        top:720,
-        left:105
+        top: moderateScale(600),
+        left: moderateScale(105)
     },
     image3: {
         position:'absolute',
-        top:420,
-        left:210
+        top: moderateScale(350),
+        left: moderateScale(190)
     },
     circle4: {
         position:'absolute',
-        top:710,
-        left:310
+        top: moderateScale(600),
+        left: moderateScale(270)
+    },
+    errorMessage: {
+       color:AppColor.red,
+       textAlign:'center'
     }
     
 })

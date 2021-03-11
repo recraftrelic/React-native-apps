@@ -8,6 +8,7 @@ import { fonts } from "./utilities/images";
 import {
     moderateScale,
 } from 'react-native-size-matters';
+import { RFValue } from 'react-native-responsive-fontsize';
 const { width } = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
         height: moderateScale(480),
         width: moderateScale(315),
         backgroundColor: 'white',
-        position: 'absolute', 
+        position: 'absolute',
         zIndex: 99,
         top: moderateScale(130),
         left: moderateScale(28),
@@ -26,7 +27,7 @@ export const styles = StyleSheet.create({
     signInText: {
         color: 'white',
         fontSize: moderateScale(16),
-        fontFamily: fonts.bold
+        fontFamily: fonts.semiBold
     },
     container: {
         marginTop: Platform.OS == 'ios' ? 50 : 0,
@@ -56,7 +57,8 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 20,
-        paddingTop: 0
+        paddingTop: 0,
+        bottom: moderateScale(12)
     },
     googlebtn: {
         borderRadius: 10,
@@ -84,7 +86,7 @@ export const styles = StyleSheet.create({
     facebookText: {
         color: 'white',
         marginLeft: moderateScale(10),
-        fontFamily: fonts.bold
+        fontFamily: fonts.regular
     },
     regularTxt: {
         flexDirection: 'row',
@@ -103,7 +105,7 @@ export const styles = StyleSheet.create({
     forgote: {
         color: '#FC6D5B',
         marginBottom: moderateScale(2),
-        left: moderateScale(60),
+        left: moderateScale(50),
         fontFamily: fonts.regular
     },
     remember: {
@@ -115,8 +117,10 @@ export const styles = StyleSheet.create({
     checkBox: {
         height: moderateScale(22),
         width: moderateScale(22),
-        borderRadius: 5
+        borderRadius: 5,
+
     },
+
     checkBoxView: {
         marginTop: moderateScale(20),
         flexDirection: 'row',
@@ -126,11 +130,13 @@ export const styles = StyleSheet.create({
     },
     checkBoxTouch: {
         flexDirection: 'row',
+        left: moderateScale(8)
+
     },
     checkBoxbtn: {
         position: 'absolute',
         top: moderateScale(30),
-        right: moderateScale(30)
+        right: moderateScale(15)
     },
     lockImage: {
         position: 'absolute',
@@ -145,7 +151,20 @@ export const styles = StyleSheet.create({
         borderColor: 'lightgrey',
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(25),
-        marginTop: moderateScale(20)
+        marginTop: moderateScale(20),
+        fontFamily: fonts.regular,
+    },
+    errorMessage: {
+        fontSize: 12,
+        color: "red",
+        fontFamily: fonts.regular
+    },
+    tick: {
+        bottom: moderateScale(30),
+        left: moderateScale(260),
+        height: moderateScale(20),
+        width: moderateScale(20),
+
     },
     emailIcon: {
         position: 'absolute',
@@ -153,13 +172,15 @@ export const styles = StyleSheet.create({
         left: moderateScale(30)
     },
     emailInput: {
-        height: moderateScale(44),
+        height: moderateScale(40),
         width: width - 80,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(25)
+        paddingHorizontal: moderateScale(25),
+        fontFamily: fonts.regular
+
     },
     inputView: {
         flex: 0.2,
@@ -169,6 +190,15 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(25),
         flex: 0.3,
         alignItems: 'center',
+    },
+    headTxt: {
+        fontSize: RFValue(24),
+        marginTop: moderateScale(10),
+        fontFamily: fonts.bold,
+    },
+    usernameInput: {
+        fontSize: 16,
+        padding: 15,
     },
     headLogo: {
         position: 'absolute',
@@ -181,7 +211,7 @@ export const styles = StyleSheet.create({
     googleTxt: {
         color: 'white',
         marginLeft: moderateScale(10),
-        fontFamily: fonts.bold
+        fontFamily: fonts.regular
     },
     headerStyle: {
         marginTop: moderateScale(10),

@@ -7,7 +7,6 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import {
   moderateScale,
@@ -15,8 +14,7 @@ import {
 
 import login2 from './login2.json';
 import { styles } from './loginStyle2';
-import { images, fonts } from './utilities/images';
-
+import { images } from './utilities/images';
 
 
 const LoginScreen10 = () => {
@@ -24,10 +22,49 @@ const LoginScreen10 = () => {
   const [password, setPassword] = useState('');
   const [check, setCheckStatus] = useState(false);
   const [showHidePassword, setShowHidePassword] = useState(true);
+  const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
+  const [emailErrorStatus, setEmailErrorStatus] = useState(false);
+
+
+  const onEnterText = (password) => {
+    setPassword(password);
+    if (password.trim().length < 8) {
+      setPasswordErrorStatus(true);
+    } else {
+      setPasswordErrorStatus(false);
+    }
+  }
+
+  const onEnterEmail = (value) => {
+    console.log(value, "989898")
+    let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    if (reg.test(value)) {
+      setEmailErrorStatus(false);
+    } else {
+      if (value !== "") {
+        setEmailErrorStatus(true);
+      }
+    }
+
+    setEmail(value);
+  }
 
   const onLogin = () => {
-    alert(`${email} + ${password}`);
-  };
+    if (email == '') {
+      setEmailErrorStatus(true);
+    }
+    else {
+      setEmailErrorStatus(false);
+    }
+    if (password == '') {
+      setPasswordErrorStatus(true);
+    }
+    else {
+      setPasswordErrorStatus(false);
+      alert(`${email} + ${password}`);
+
+    }
+  }
 
 
   return (
@@ -44,13 +81,7 @@ const LoginScreen10 = () => {
         >
 
           <View style={styles.headText}>
-            <Text style={{
-              fontSize: RFValue(24),
-              marginTop: moderateScale(10),
-              fontFamily: fonts.extraBold,
-              fontWeight: 'bold',
-
-            }}>
+            <Text style={styles.headTxt}>
               {login2.welcome}
             </Text>
 
@@ -65,20 +96,40 @@ const LoginScreen10 = () => {
               <View>
                 <TextInput
                   value={email}
-                  onChangeText={(email) => setEmail(email)}
+                  onChangeText={(email) => onEnterEmail(email)}
                   placeholder='Enter your email'
                   style={styles.emailInput}
                 />
+                {emailErrorStatus == true ? (
+                  <Text style={styles.errorMessage} >
+                    * Please include an '@' in the email address.
+                  </Text>
+                ) : null}
+                {
+                  email && !emailErrorStatus ?
+                    <Image
+                      source={images.tick1}
+                      style={styles.tick}
+                    />
+                    :
+                    null
+                }
               </View>
 
               <View>
                 <TextInput
                   value={password}
-                  onChangeText={(password) => setPassword(password)}
+                  onChangeText={(password) => onEnterText(password)}
                   placeholder='Enter password here.'
                   secureTextEntry={showHidePassword}
                   style={styles.passwordInput}
+                  underlineColorAndroid="transparent"
                 />
+                {passwordErrorStatus == true ? (
+                  <Text style={styles.errorMessage} >
+                    * Password should be minimum 8 characters.
+                  </Text>
+                ) : null}
 
                 <TouchableOpacity
                   onPress={() => setShowHidePassword(!showHidePassword)}
@@ -110,7 +161,8 @@ const LoginScreen10 = () => {
                 {
                   check ? <Image source={images.checkbox}
                     style={styles.checkBox} /> :
-                    <Image source={images.checkIcon} />
+                    <Image source={images.checkIcon}
+                      style={styles.checkBoxIcon} />
                 }
 
                 <Text style={styles.remember}>
@@ -136,7 +188,7 @@ const LoginScreen10 = () => {
               </TouchableOpacity>
 
             </View>
-            <Image source={images.oroptional} style={{ alignSelf: 'center', marginTop: moderateScale(20) }} />
+            <Image source={images.oroptional} style={{ alignSelf: 'center', marginTop: moderateScale(10) }} />
             <View style={styles.googleView}>
 
               <View style={styles.googleInnerView}>
@@ -159,30 +211,30 @@ const LoginScreen10 = () => {
                 </TouchableOpacity>
 
               </View>
-
-              <View style={styles.regularTxt}>
-
-                <Text style={styles.regularStyle}>
-                  {login2.account}
-                </Text>
-
-                <TouchableOpacity
-                  onPress={() => console.log('SignUp')}
-                  hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
-                >
-                  <Text
-
-                    style={styles.signUpTxt}
-                  >
-                    {login2.signup}
-                  </Text>
-                </TouchableOpacity>
-
-
-              </View>
             </View>
+
           </View>
         </KeyboardAwareScrollView>
+      </View>
+      <View style={styles.regularTxt}>
+
+        <Text style={styles.regularStyle}>
+          {login2.account}
+        </Text>
+
+        <TouchableOpacity
+          onPress={() => console.log('SignUp')}
+          hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+        >
+          <Text
+
+            style={styles.signUpTxt}
+          >
+            {login2.signup}
+          </Text>
+        </TouchableOpacity>
+
+
       </View>
     </SafeAreaView>
 

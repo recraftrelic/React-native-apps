@@ -1,140 +1,137 @@
 import { StyleSheet } from "react-native";
+import { RFValue } from "react-native-responsive-fontsize";
+import { moderateScale } from "react-native-size-matters";
 import { AppColor } from '../AppUtil'
 
 export  const styles = StyleSheet.create({
    
     arrow:{
         position: 'absolute',
-        width: 18,
-        height: 13,
-        left: 37,
-        top: 70,
+        left: moderateScale(37),
+        top: moderateScale(65),
     },
     sign: {
         position: 'absolute',
-        width: 60,
-        height: 21,
-        left: 70,
-        top: 66,
+        left: moderateScale(70),
+        top: moderateScale(60),
         fontStyle: 'normal',
         fontWeight: '500',
-        fontSize: 18,
+        fontSize: RFValue(18),
         lineHeight: 21,
         textAlign: 'right'
     },
     logo: {
         position: 'absolute',
-        right: '44.48%',
-        bottom: '67.28%',
-        width:67,
-        height:118,
-        top:147,
+       left: moderateScale(150),
+        top: moderateScale(137),
     },
     email: {
-        width:81,
-        height:13,
-        top:342,
-        left:49,
+        top: moderateScale(302),
+        left: moderateScale(19),
         fontWeight:'400',
-        fontSize:12,
-        lineHeight:14,
-        color:AppColor.blackGrey
+        fontSize: RFValue(12),
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     email1: {
-        width:181,
-        height:19,
-        top:356,
-        left:49,
+        top: moderateScale(306),
+        left:moderateScale(19),
         fontWeight:'500',
-        fontSize:14,
+        fontSize: RFValue(14),
         lineHeight:16,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     childView: {
-        width:262,
-        top:375,
-        left:49,
+        width: moderateScale(292),
+        top: moderateScale(306),
+        left: moderateScale(19),
         borderBottomWidth: 0.58,
         borderColor:AppColor.borderColor
     },
     password: {
-        width:63,
-        height:13,
-        top:420,
-        left:49,
+        top: moderateScale(335),
+        left: moderateScale(19),
         fontWeight:'400',
-        fontSize:12,
+        fontSize: RFValue(12),
         lineHeight:14,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont'
     },
     password1: {
-        width:162,
-        height:20,
-        top:434,
-        left:49,
+        top: moderateScale(334),
+        left: moderateScale(19),
         fontWeight:'500',
-        fontSize:14,
+        fontSize: RFValue(14),
         lineHeight:16,
-        color:AppColor.blackGrey
+        color:AppColor.blackGrey,
+        fontFamily:'WorkSans-VariableFont',
     },
     childView1: {
-        width:262,
-        top:450,
-        left:49,
+        width: moderateScale(292),
+        top: moderateScale(335),
+        left: moderateScale(19),
         borderBottomWidth: 0.58,
-        borderColor:AppColor.borderColor,
+        borderColor:AppColor.borderColor
     },
     eyes:{
         position:'absolute',
-        width:19,
-        height:16,
-        top:477,
-        left:292,
+        top: moderateScale(425),
+        left: moderateScale(275),
         color:AppColor.violet
     },
     print: {
-        width:58,
-        height:58,
-        top:573,
-        left:53,
+        top: moderateScale(473),
+        left: moderateScale(43),
         position:'absolute',
     },
     continue: {
         position:'absolute',
-        width:220,
-        height:61,
-        top:573,
+        width: moderateScale(220),
+        height: moderateScale(61),
+        top:moderateScale(473),
         borderRadius:10,
-        left:121,
+        left: moderateScale(111),
         backgroundColor:AppColor.purple,
         
     },
     content: {
         paddingTop:20,
         color:AppColor.white,
-        paddingLeft:75,
-        fontSize:16,
-        fontWeight:'500'
+        textAlign:'center',
+        fontSize: RFValue(16),
+        fontWeight:'500',
+        fontFamily:'Rubik-VariableFont'
     },
     forgot: {
-        width:134,
-        height:19,
-        top:605,
-        left:131,
+        top: moderateScale(425),
+        textAlign:'center',
         fontWeight:'400',
-        fontSize:16,
-        lineHeight:19,
-        color:AppColor.purple
+        fontSize: RFValue(16),
+        color:AppColor.purple,
+        fontFamily:'Rubik-VariableFont'
     },
     child: {
-        width:135,
-        height:5,
-        top:751,
-        left:130,
+        width: moderateScale(135),
+        height:moderateScale(5),
+        top: moderateScale(585),
+        left: moderateScale(120),
         borderRadius:100,
         position:'absolute',
         backgroundColor:AppColor.background,
         opacity:30
+    },
+    errorMessage: {
+        position:'absolute',
+        top:moderateScale(370),
+        left:moderateScale(70),
+        color:AppColor.red
+    },
+    errorMessage1: {
+        position:'absolute',
+        top:moderateScale(455),
+        left:moderateScale(70),
+        color:AppColor.red
     }
 
 });

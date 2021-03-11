@@ -18,6 +18,14 @@ export const styles = StyleSheet.create({
         top: moderateScale(55),
         left: moderateScale(30),
     },
+    name: {
+        fontSize: RFValue(24),
+        marginTop: moderateScale(160),
+        fontFamily: fonts.bold,
+        right: moderateScale(120),
+        color: '#393F45',
+
+    },
     signInBtn:
     {
         backgroundColor: '#3D57FF',
@@ -37,11 +45,12 @@ export const styles = StyleSheet.create({
     signInText: {
         color: 'white',
         fontSize: moderateScale(16),
-        fontFamily: fonts.bold
+        fontFamily: fonts.semiBold
     },
     container: {
         marginTop: Platform.OS == "ios" ? 50 : 0,
         flex: 1,
+        backgroundColor: 'white'
     },
     signInBtnView: {
         marginTop: moderateScale(20),
@@ -54,7 +63,7 @@ export const styles = StyleSheet.create({
     googleInnerView: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: moderateScale (50),
+        padding: moderateScale(50),
         paddingTop: 0,
     },
     googlebtn: {
@@ -70,14 +79,14 @@ export const styles = StyleSheet.create({
     signintxt: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: moderateScale (50),
+        padding: moderateScale(50),
         paddingTop: 0,
         top: moderateScale(12)
     },
     reset: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        padding: moderateScale (50),
+        padding: moderateScale(50),
         paddingTop: 0,
         top: moderateScale(12)
     },
@@ -128,7 +137,6 @@ export const styles = StyleSheet.create({
     },
     forgote: {
         color: '#393F45',
-        // marginBottom: moderateScale(2),
         fontFamily: fonts.regular,
         top: moderateScale(10),
         left: moderateScale(25),
@@ -136,7 +144,6 @@ export const styles = StyleSheet.create({
 
     },
     reset: {
-        // marginBottom: moderateScale(72),
         fontFamily: fonts.regular,
         bottom: moderateScale(10),
         left: moderateScale(150),
@@ -169,10 +176,28 @@ export const styles = StyleSheet.create({
         top: moderateScale(30),
         right: moderateScale(40)
     },
+    hideIcon: {
+        top: moderateScale(5)
+    },
+
     lockImage: {
         position: 'absolute',
         top: moderateScale(33),
         left: moderateScale(26)
+    },
+    errorMessage: {
+        fontSize: 12,
+        color: 'red',
+        marginLeft: moderateScale(30),
+        fontFamily: fonts.regular
+
+    },
+    tick: {
+        bottom: moderateScale(35),
+        left: moderateScale(310),
+        height: moderateScale(20),
+        width: moderateScale(20),
+
     },
     passwordInput: {
         height: moderateScale(53),
@@ -190,18 +215,18 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         top: moderateScale(21),
         left: moderateScale(30),
-        
+
     },
     vector: {
         position: 'absolute',
         top: moderateScale(18),
         left: moderateScale(52),
-        
+
     },
     vector1: {
         position: 'absolute',
         top: moderateScale(94),
-        left: moderateScale(52)
+        left: moderateScale(52),
     },
     emailInput: {
         height: moderateScale(56),

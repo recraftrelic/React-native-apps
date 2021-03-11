@@ -7,24 +7,56 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import {
-    moderateScale,
-} from 'react-native-size-matters';
 
 import { styles } from './loginStyle3';
 import login3 from './login3.json';
-import { images, fonts } from "./utilities/images";
-
+import { images } from "./utilities/images";
 
 const LoginScreen8 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showHidePassword, setShowHidePassword] = useState(true);
+    const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
+    const [emailErrorStatus, setEmailErrorStatus] = useState(false);
+
+    const onEnterText = (password) => {
+        setPassword(password);
+        if (password.trim().length < 8) {
+            setPasswordErrorStatus(true);
+        } else {
+            setPasswordErrorStatus(false);
+        }
+    }
+
+    const onEnterEmail = (value) => {
+        let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        if (reg.test(value)) {
+            setEmailErrorStatus(false);
+        } else {
+            if (value !== "") {
+                setEmailErrorStatus(true);
+            }
+        }
+
+        setEmail(value);
+    }
 
     const onLogin = () => {
-        alert(`${email} + ${password}`);
+        if (email == '') {
+            setEmailErrorStatus(true);
+        }
+        else {
+            setEmailErrorStatus(false);
+        }
+        if (password == '') {
+            setPasswordErrorStatus(true);
+        }
+        else {
+            setPasswordErrorStatus(false);
+            alert(`${email} + ${password}`);
+
+        }
     };
     const CreateAcconut = () => {
         alert('Account Create +')
@@ -36,9 +68,9 @@ const LoginScreen8 = () => {
                     keyboardShouldPersistTaps='handled'
                     showsVerticalScrollIndicator={false}
                 >
-                <Image source={images.logo} 
-                style={styles.logo}
-                />
+                    <Image source={images.logo}
+                        style={styles.logo}
+                    />
                     <View style={styles.headText}>
 
 
@@ -57,20 +89,39 @@ const LoginScreen8 = () => {
                         <View>
                             <TextInput
                                 value={email}
-                                onChangeText={(email) => setEmail(email)}
+                                onChangeText={(email) => onEnterEmail(email)}
                                 placeholder='Enter your email'
                                 style={styles.emailInput}
                             />
+                            {emailErrorStatus == true ? (
+                                <Text style={styles.errorMessage} >
+                                    * Please include an '@' in the email address.
+                                </Text>
+                            ) : null}
+                            {
+                                email && !emailErrorStatus ?
+                                    <Image
+                                        source={images.tick1}
+                                        style={styles.tick}
+                                    />
+                                    :
+                                    null
+                            }
                         </View>
 
                         <View>
                             <TextInput
                                 value={password}
-                                onChangeText={(password) => setPassword(password)}
-                                placeholder='Enter password here.'
+                                onChangeText={(password) => onEnterText(password)}
+                                placeholder='Password'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
                             />
+                            {passwordErrorStatus == true ? (
+                                <Text style={styles.errorMessage} >
+                                    * Password should be minimum 8 characters.
+                                </Text>
+                            ) : null}
 
                             <TouchableOpacity
                                 onPress={() => setShowHidePassword(!showHidePassword)}
@@ -80,14 +131,14 @@ const LoginScreen8 = () => {
                                 {
                                     showHidePassword ?
                                         <Text style={styles.textStyle}>
-                                        {login3.Show}
+                                            {login3.Show}
                                         </Text>
                                         :
                                         <Text style={styles.textStyle}>
-                                        {login3.Hide}
-                                        
+                                            {login3.Hide}
+
                                         </Text>
-                                        
+
                                 }
 
                             </TouchableOpacity>
@@ -103,8 +154,8 @@ const LoginScreen8 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login3.signIn}
-                        </Text>
+                                {login3.signIn}
+                            </Text>
 
                         </TouchableOpacity>
 
@@ -116,14 +167,14 @@ const LoginScreen8 = () => {
                             {login3.forgote}
                         </Text>
                         <Text style={styles.reset}>
-                        {login3.reset}
-                    </Text>
+                            {login3.reset}
+                        </Text>
 
                     </View>
 
                     <View style={styles.signInBtnView}>
-                        
-                            <Text style={styles.signInText1}>
+
+                        <Text style={styles.signInText1}>
                             {login3.ORSign}
                         </Text>
 
@@ -136,8 +187,8 @@ const LoginScreen8 = () => {
 
                         >
                             <Text style={styles.OpacitySignInText}>
-                            {login3.CreateAcconut}
-                        </Text>
+                                {login3.CreateAcconut}
+                            </Text>
 
                         </TouchableOpacity>
 

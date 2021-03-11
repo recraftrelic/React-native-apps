@@ -1,31 +1,30 @@
 import { StyleSheet } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
+import { moderateScale } from 'react-native-size-matters';
 import { AppColor } from '../AppUtil'
 
 
 export const styles = StyleSheet.create({
     container:{
-        backgroundColor:AppColor.backBlue,
-        // height:100
+        backgroundColor:AppColor.borderBlue,
     },
     style1:{
-        borderTopLeftRadius:30,
-        borderTopRightRadius:30,
+        borderTopLeftRadius: moderateScale(30),
+        borderTopRightRadius: moderateScale(30),
         backgroundColor:AppColor.white,
-        top:70,
-        paddingBottom:100
+        top: moderateScale(60),
+        paddingBottom: moderateScale(100)
     },
     logo1: {
-        width:62,
-        height:110,
-        top:111,
-        left:156,
+        top: moderateScale(81),
+        left: moderateScale(160),
     },
     userName:{
-        width:318,
-        height:91,
-        top:165,
-        left:58,
-        fontSize:15
+        height: moderateScale(81),
+        top: moderateScale(130),
+        left: moderateScale(30),
+        fontSize: RFValue(15),
+        fontFamily:'WorkSans-VariableFont'
     },
     MainContainer: {
  
@@ -35,83 +34,87 @@ export const styles = StyleSheet.create({
      
       },
     email: {
-        top:145,
-        left:8,
-        height:65,
-        width:318,
+        top: moderateScale(65),
+        height: moderateScale(60),
+        width: moderateScale(340),
         borderRadius: 10,
         borderWidth: 2,
         borderColor: AppColor.borderBlue,
-        padding : 2,
-        fontSize: 20,
+        fontSize: RFValue(20),
         textAlign: 'center',
-        margin: 10
+        margin: moderateScale(10)
     },
     password: {
-        top:160,
-        left:8,
-        height:65,
-        width:318,
+        top: moderateScale(-15),
+        height: moderateScale(65),
+        width:moderateScale(348),
         borderRadius: 10,
         borderWidth: 2,
         borderColor: AppColor.white,
         backgroundColor:AppColor.cream,
-        padding : 2,
-        fontSize: 20,
-        paddingLeft:40,
-        margin: 10
+        fontSize: RFValue(20),
+        paddingLeft: moderateScale(40),
+        margin:  moderateScale(10)
     },
     pass:{
-        width:318,
-        height:91,
-        top:180,
-        left:58,
-        fontSize:15
+        height: moderateScale(91),
+        top: moderateScale(60),
+        left:moderateScale(30),
+        fontSize: RFValue(15),
+        fontFamily:'WorkSans-VariableFont'
     },
     man: {
-        top:95,
-        left:-105
+        top: moderateScale(20),
+        left: moderateScale(-115)
     },
-    View:{
-        borderRadius: 10,
-        borderWidth: 2, 
-        borderColor: AppColor.borderBlue, 
-       paddingRight:10,
-       paddingLeft:10,
-       padding:2,
-        top:105,
-        left:105,
+    View5:{
+        borderRadius: moderateScale(10),
+        borderWidth: moderateScale(2), 
+        paddingRight: moderateScale(10),
+        paddingLeft: moderateScale(10),
+        padding: moderateScale(3),
+        top: moderateScale(-70),
+        left: moderateScale(125),
         textAlign:'center',
+        borderColor:AppColor.borderBlue,
         color:AppColor.borderBlue,
-        backgroundColor:AppColor.lightPurple
+        backgroundColor:AppColor.lightPurple,
+        fontFamily:'WorkSans-VariableFont'
     },
     loginButton: {
-        width:240,
-        height:50,
-        marginTop:205,
-        marginLeft:85,
+        width: moderateScale(330),
+        height:moderateScale(50),
+        marginTop:moderateScale(-35),
+        marginLeft:moderateScale(15),
         backgroundColor:AppColor.darkSky,
         borderRadius:10
     },
   button: {
-       paddingTop:15,
+      paddingTop: moderateScale(15),
       textAlign:'center',
       color:AppColor.white,
-      fontSize:15,
+      fontSize: RFValue(15),
+      fontFamily:'WorkSans-VariableFont'
    },
    account: {
-        width:200,
-        height:20,
-        marginTop:25,
-        marginLeft:105,
+        marginLeft: moderateScale(125),
         color:AppColor.black,
+        fontFamily:'WorkSans-VariableFont'
     },
    Sign: {
-        width:51,
-        height:20,
-        marginTop:25,
-        marginLeft:240,
+        marginLeft: moderateScale(250),
         position:'absolute',
-        color:AppColor.lightBlue
+        color:AppColor.lightBlue,
+        fontFamily:'WorkSans-VariableFont'
     },
+    errorMessage: {
+        color:'red',
+        position:'absolute',
+        top:moderateScale(135)
+    },
+    errorMessage1:{
+        color:'red',
+        position:'absolute',
+        top:moderateScale(55)
+    }
 })

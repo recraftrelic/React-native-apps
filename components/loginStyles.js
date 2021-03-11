@@ -4,6 +4,7 @@ import {
     Platform
 } from "react-native";
 import { fonts } from "./utilities/images";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 import {
     moderateScale,
@@ -26,11 +27,13 @@ export const styles = StyleSheet.create({
     signInText: {
         color: 'white',
         fontSize: moderateScale(16),
-        fontFamily: fonts.bold
+        fontFamily: fonts.regular
     },
     container: {
         marginTop: Platform.OS == "ios" ? 50 : 0,
         flex: 1,
+        backgroundColor: 'white'
+
     },
     signInBtnView: {
         marginTop: moderateScale(20),
@@ -38,13 +41,19 @@ export const styles = StyleSheet.create({
     },
     googleView: {
         flex: 0.2,
-        marginTop: moderateScale(20)
+        marginTop: moderateScale(5)
     },
     googleInnerView: {
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 20,
-        paddingTop: 0
+        paddingTop: 0,
+        top: moderateScale(25)
+    },
+    continue: {
+        alignSelf: 'center',
+        marginTop: moderateScale(20),
+        color: '#ABB3BB'
     },
     googlebtn: {
         borderRadius: 10,
@@ -69,7 +78,7 @@ export const styles = StyleSheet.create({
     facebookText: {
         color: 'white',
         marginLeft: moderateScale(10),
-        fontFamily: fonts.bold
+        fontFamily: fonts.regular
     },
     regularTxt: {
         flexDirection: 'row',
@@ -83,10 +92,10 @@ export const styles = StyleSheet.create({
     signUpTxt: {
         color: 'blue',
         marginLeft: moderateScale(5),
-        fontFamily: fonts.regular
+        fontFamily: fonts.semiBold
     },
     forgote: {
-        color: 'blue',
+        color: '#2945FF',
         marginBottom: moderateScale(2),
         fontFamily: fonts.regular
     },
@@ -118,7 +127,7 @@ export const styles = StyleSheet.create({
     lockImage: {
         position: 'absolute',
         top: moderateScale(28),
-        left: moderateScale(30)
+        left: moderateScale(27)
     },
     passwordInput: {
         height: moderateScale(44),
@@ -127,22 +136,40 @@ export const styles = StyleSheet.create({
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(35),
-        marginTop: moderateScale(20)
+        paddingHorizontal: moderateScale(38),
+        marginTop: moderateScale(20),
+        fontFamily: fonts.regular
+
     },
     emailIcon: {
         position: 'absolute',
-        top: moderateScale(15),
+        top: moderateScale(18),
         left: moderateScale(30)
     },
+    errorMessage: {
+        fontSize: 12,
+        color: "red",
+        marginLeft: moderateScale(30),
+        fontFamily: fonts.regular
+
+    },
+    tick: {
+        bottom: moderateScale(35),
+        left: moderateScale(310),
+        height: moderateScale(20),
+        width: moderateScale(20),
+
+    },
     emailInput: {
-        height: moderateScale(44),
+        height: moderateScale(50),
         width: width - 50,
         alignSelf: 'center',
         borderRadius: moderateScale(10),
         borderColor: 'lightgrey',
         borderWidth: 0.5,
-        paddingHorizontal: moderateScale(35)
+        paddingHorizontal: moderateScale(38),
+        fontFamily: fonts.regular
+
     },
     inputView: {
         flex: 0.2,
@@ -153,22 +180,32 @@ export const styles = StyleSheet.create({
         flex: 0.3,
         alignItems: 'center',
     },
+    logo: {
+        marginTop: moderateScale(40),
+
+    },
+    headName: {
+        fontSize: RFValue(24),
+        marginTop: moderateScale(10),
+        fontFamily: fonts.bold
+    },
     headLogo: {
         position: 'absolute',
         top: moderateScale(-30),
         right: moderateScale(-10)
     },
     logoView: {
-        flex: 1
+        flex: 1,
+
     },
     googleTxt: {
         color: 'white',
         marginLeft: moderateScale(10),
-        fontFamily: fonts.bold
+        fontFamily: fonts.regular
     },
     headerStyle: {
         marginTop: moderateScale(10),
-        color: '#393F45',
+        color: 'grey',
         fontFamily: fonts.regular
     }
 });

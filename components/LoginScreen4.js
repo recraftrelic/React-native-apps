@@ -7,25 +7,59 @@ import {
     Image,
     TouchableOpacity,
 } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import {
-    moderateScale,
-} from 'react-native-size-matters';
 
 import { styles } from "./loginStyle1";
 import login1 from './login1.json';
-import { images, fonts } from "./utilities/images";
+import { images } from "./utilities/images";
 
 
 const LoginScreen1 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [check, setCheckStatus] = useState(false);
     const [showHidePassword, setShowHidePassword] = useState(true);
+    const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
+    const [emailErrorStatus, setEmailErrorStatus] = useState(false);
+
+    const onEnterText = (password) => {
+        setPassword(password);
+        if (password.trim().length < 8) {
+            setPasswordErrorStatus(true);
+        } else {
+            setPasswordErrorStatus(false);
+        }
+    }
+
+    const onEnterEmail = (value) => {
+        console.log(value, "989898")
+        let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        if (reg.test(value)) {
+            setEmailErrorStatus(false);
+        } else {
+            if (value !== "") {
+                setEmailErrorStatus(true);
+            }
+        }
+
+        setEmail(value);
+    }
+
 
     const onLogin = () => {
-        alert(`${email} + ${password}`);
+        if (email == '') {
+            setEmailErrorStatus(true);
+        }
+        else {
+            setEmailErrorStatus(false);
+        }
+        if (password == '') {
+            setPasswordErrorStatus(true);
+        }
+        else {
+            setPasswordErrorStatus(false);
+            alert(`${email} + ${password}`);
+
+        }
     };
 
     return (
@@ -44,19 +78,10 @@ const LoginScreen1 = () => {
 
                     <View style={styles.headText}>
                         <Image source={images.logo}
-                        style={styles.logo}
+                            style={styles.logo}
                         />
 
-                        <Text style={{
-                            fontSize: RFValue(24),
-                            marginTop: moderateScale(160),
-                            fontFamily: fonts.bold,
-                            right: moderateScale(120),
-                            color: '#393F45',
-
-
-
-                        }}>
+                        <Text style={styles.name}>
                             {login1.name}
                         </Text>
 
@@ -67,13 +92,13 @@ const LoginScreen1 = () => {
 
                     <View style={styles.signintxt}>
                         <Text style={styles.signintxt1}>
-                        {login1.signing}
-                    </Text>
+                            {login1.signing}
+                        </Text>
 
                         <Text style={styles.siguptxt}>
-                        {login1.headerSigning}
-                    </Text>
-                </View>
+                            {login1.headerSigning}
+                        </Text>
+                    </View>
 
 
                     <View style={styles.inputView}>
@@ -81,10 +106,24 @@ const LoginScreen1 = () => {
                         <View>
                             <TextInput
                                 value={email}
-                                onChangeText={(email) => setEmail(email)}
+                                onChangeText={(email) => onEnterEmail(email)}
                                 placeholder='Enter your email'
                                 style={styles.emailInput}
                             />
+                            {emailErrorStatus == true ? (
+                                <Text style={styles.errorMessage} >
+                                    * Please include an '@' in the email address.
+                                </Text>
+                            ) : null}
+                            {
+                                email && !emailErrorStatus ?
+                                    <Image
+                                        source={images.tick1}
+                                        style={styles.tick}
+                                    />
+                                    :
+                                    null
+                            }
                             <Image
                                 style={styles.emailIcon}
                                 source={images.at}
@@ -94,11 +133,16 @@ const LoginScreen1 = () => {
                         <View>
                             <TextInput
                                 value={password}
-                                onChangeText={(password) => setPassword(password)}
+                                onChangeText={(password) => onEnterText(password)}
                                 placeholder='Enter password here.'
                                 secureTextEntry={showHidePassword}
                                 style={styles.passwordInput}
                             />
+                            {passwordErrorStatus == true ? (
+                                <Text style={styles.errorMessage} >
+                                    * Password should be minimum 8 characters.
+                                </Text>
+                            ) : null}
                             <Image
                                 style={styles.lockImage}
                                 source={images.lock}
@@ -113,36 +157,35 @@ const LoginScreen1 = () => {
                                     showHidePassword ?
                                         <Image
                                             source={images.HideIcon}
+                                            style={styles.hideIcon}
                                         />
                                         :
                                         <Image
                                             source={images.ic_ad_view}
                                         />
                                 }
-
                             </TouchableOpacity>
-
 
                         </View>
                         <Image
-                                style={styles.vector}
-                                source={images.Vector}
-                            />
-                            <Image
-                                style={styles.vector1}
-                                source={images.Vector}
-                            />
+                            style={styles.vector}
+                            source={images.Vector}
+                        />
+                        <Image
+                            style={styles.vector1}
+                            source={images.Vector}
+                        />
 
                     </View>
                     <View style={styles.forgotetext}>
-                    <Text style={styles.forgote}>
-                    {login1.forgote}
-                </Text>
+                        <Text style={styles.forgote}>
+                            {login1.forgote}
+                        </Text>
 
-                    <Text style={styles.reset}>
-                    {login1.reset}
-                </Text>
-                     </View>
+                        <Text style={styles.reset}>
+                            {login1.reset}
+                        </Text>
+                    </View>
 
                     <View style={styles.signInBtnView}>
                         <TouchableOpacity style={styles.signInBtn}
@@ -150,16 +193,16 @@ const LoginScreen1 = () => {
 
                         >
                             <Text style={styles.signInText}>
-                            {login1.login}
-                        </Text>
+                                {login1.login}
+                            </Text>
 
                         </TouchableOpacity>
 
                     </View>
 
                     <Text style={styles.skip}>
-                            {login1.skip}
-                        </Text>
+                        {login1.skip}
+                    </Text>
 
 
                 </KeyboardAwareScrollView>

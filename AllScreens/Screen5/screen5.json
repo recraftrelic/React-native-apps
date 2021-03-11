@@ -2,7 +2,9 @@
     "userName":"UserName or Email",
     "pass":"Password",
     "View":"View",
-    "button":"Log in",
+    "button":"Login",
     "account":"Don't have account?",
-    "Sign":"Sign Up"
+    "Sign":"Sign Up",
+    "Show":"View",
+    "Hide":"Hide"
 }
