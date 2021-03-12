@@ -1,0 +1,12 @@
+{
+    "hello":"Hello",
+    "state":"Let’s Learn More About Plants",
+    "user":"Username",
+    "name":"Email",
+    "password":"Password",
+    "remember":"Remember me",
+    "forgot":"Forgot Password?",
+    "login":"LOGIN",
+    "account":"Don’t Have Account?",
+    "sign":"Sign Up"
+}

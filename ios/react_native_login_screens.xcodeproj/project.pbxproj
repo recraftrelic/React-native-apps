@@ -1,0 +1,1131 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* react_native_login_screensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* react_native_login_screensTests.m */; };
+		04D5CF27E0EC42649EEE9CE2 /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3FC0FB1A414C5C88FB3D1E /* WorkSans-Medium.ttf */; };
+		05169C55A3B4F53D0738003C /* libPods-react_native_login_screens.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E6277ECA404ABD93021DD0 /* libPods-react_native_login_screens.a */; };
+		0AE4F15FB461468CB866F565 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFE182E91A8E4F358FA3E6E1 /* WorkSans-SemiBold.ttf */; };
+		11B4FFEE33E548DA90BD1E11 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02AEA5BFB4154F7985E3DE53 /* Rubik-Regular.ttf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		14294E5ABD754A358BC392CE /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAEFD4C8292B44E7AFF4D985 /* Rubik-LightItalic.ttf */; };
+		1FC72A37C5C5462D986DD6F1 /* WorkSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E932F71A77944B0497520CB1 /* WorkSans-SemiBoldItalic.ttf */; };
+		228F10C76A314CD5B4DADDFB /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0F73151A04449D9B15A5A75 /* WorkSans-ExtraBoldItalic.ttf */; };
+		2302DEAE58DEB0145A5BB2D0 /* libPods-react_native_login_screens-react_native_login_screensTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 344031550DE5E5B388C926AF /* libPods-react_native_login_screens-react_native_login_screensTests.a */; };
+		253EB594366045DBB7596325 /* WorkSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E41DA0FE19C4450BB8FF6DF1 /* WorkSans-BoldItalic.ttf */; };
+		28C3794ADED74EEFAF8F1A72 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20944AB5B0D641C098326E3A /* Rubik-ExtraBold.ttf */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* react_native_login_screensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* react_native_login_screensTests.m */; };
+		2E1667BCC70C4A56B3EDA9D8 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E25194E44234235BCF959B0 /* WorkSans-Regular.ttf */; };
+		2E7786585ACC4AE584221DA0 /* WorkSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C982AF8BC214F27916E15AE /* WorkSans-ExtraLightItalic.ttf */; };
+		357C756C48164AE4AE5DDF5C /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85979117C1CC4761A0873D42 /* WorkSans-Black.ttf */; };
+		3F7DA10AD2397B559273F4B9 /* libPods-react_native_login_screens-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC34CBD74ABBB6F8CEDBCBC /* libPods-react_native_login_screens-tvOS.a */; };
+		494E0B0FAB234CAFA71D189C /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 593E540BCF4147278B5BD7ED /* WorkSans-Italic-VariableFont_wght.ttf */; };
+		5949BA65A1F6447E8C36C8B4 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B83996349FAC486B96E31F01 /* Rubik-Medium.ttf */; };
+		5B64F33323D6434EAAEC1A17 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFAD2965060A4992ABE1091A /* Rubik-Light.ttf */; };
+		65CC7C3A5C8B42CDA1CB6D91 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD71D30CB17490E9770ABF9 /* Rubik-Bold.ttf */; };
+		6BD3094527F3458B8BFF548E /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D6312B84EEA4A10B8AFC39C /* Rubik-BoldItalic.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		89FDBD3D3067478583F7C26E /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A2509637F414DFEBDCE04A9 /* WorkSans-ExtraBold.ttf */; };
+		8B8A0E827C769550E425FE99 /* libPods-react_native_login_screens-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28391C7E7C26FCACD9D30C0E /* libPods-react_native_login_screens-tvOSTests.a */; };
+		99A2B85204624E27B103FFB8 /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E35AA65E822748E7A64E71F3 /* WorkSans-ExtraLight.ttf */; };
+		9C39E45000494CC8BB69F27C /* WorkSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6681EA819F04ECEB9F5B239 /* WorkSans-MediumItalic.ttf */; };
+		A1487E2D8DF04C5DB8481EF9 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86B3CD6F34064374B454E6CA /* Rubik-Italic.ttf */; };
+		A2D3B9992EF7444CBF216E43 /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FBD69135244CB9962E412D /* WorkSans-VariableFont_wght.ttf */; };
+		A875FB543AE040A6B052C5A2 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF7E4E9854854F93861994E4 /* Rubik-SemiBoldItalic.ttf */; };
+		AA7C88494C894425BEA7BD3F /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB7DBB5CBA294DDD85BC877C /* WorkSans-Light.ttf */; };
+		B8E069C333DE4E0DA40F2F7E /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B237A0287C44FF283B94351 /* Rubik-MediumItalic.ttf */; };
+		B91EC64BA0EE4289A64B2FCA /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 503CE8C8A2204AF19E3004F3 /* WorkSans-Italic.ttf */; };
+		BF07FEEC96034F2EADA97E38 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9C4B5ED367041D9AF558A9B /* Rubik-Black.ttf */; };
+		C313E47ECA1A429BA573D218 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2AF6DFAF9C5433E9E5503AB /* Rubik-SemiBold.ttf */; };
+		C8E04BD47D34455F94F93F06 /* Rubik-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA852DAE03C48AD95F6C44E /* Rubik-Italic-VariableFont_wght.ttf */; };
+		CD14FFE50C1F4F599748649B /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC4EC6624C394B44AE286F9D /* WorkSans-Thin.ttf */; };
+		D59409FBE47D4450A58362AC /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD6FAF28B70649B293AC3E6E /* WorkSans-LightItalic.ttf */; };
+		DA8C18F8EDE7460EA370FEA2 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDB68BAEBECB4A8EACECC547 /* Rubik-ExtraBoldItalic.ttf */; };
+		DCB42D9C1AFF4129B9DFDAD5 /* WorkSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E50C5BF9D3CB4F749DAC5171 /* WorkSans-ThinItalic.ttf */; };
+		DEC1F35936424A569665A37A /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B70813A6655F4D9A9021607D /* Rubik-BlackItalic.ttf */; };
+		E6867BB0543F4C479523979E /* WorkSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6B0CE8AA0704FF7BF683E58 /* WorkSans-BlackItalic.ttf */; };
+		F1E01373CFDA4C69AB73ACD2 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96091137333447EF89033ABA /* Rubik-VariableFont_wght.ttf */; };
+		FA6596F00CBB47B1A88C07B4 /* Vector.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5F7BD567F7484FF09FBE717E /* Vector.svg */; };
+		FDD23F886A11409ABF5FAEA6 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E443AF4E02634D4BA7C72FAF /* AbrilFatface-Regular.ttf */; };
+		FE366E5264004DC4AA2630EE /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C24D37EB12C949388FF2FF65 /* WorkSans-Bold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = react_native_login_screens;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "react_native_login_screens-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* react_native_login_screensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = react_native_login_screensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* react_native_login_screensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = react_native_login_screensTests.m; sourceTree = "<group>"; };
+		02AEA5BFB4154F7985E3DE53 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../assets/fonts/static/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		0B237A0287C44FF283B94351 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-MediumItalic.ttf"; path = "../assets/fonts/static/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* react_native_login_screens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = react_native_login_screens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = react_native_login_screens/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = react_native_login_screens/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = react_native_login_screens/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = react_native_login_screens/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = react_native_login_screens/main.m; sourceTree = "<group>"; };
+		1CD71D30CB17490E9770ABF9 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../assets/fonts/static/Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		20944AB5B0D641C098326E3A /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBold.ttf"; path = "../assets/fonts/static/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2383EB8FEDFB879B6EFF247F /* Pods-react_native_login_screens-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens-tvOS/Pods-react_native_login_screens-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		273CDF6F385DAA6F37279331 /* Pods-react_native_login_screens-react_native_login_screensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens-react_native_login_screensTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens-react_native_login_screensTests/Pods-react_native_login_screens-react_native_login_screensTests.release.xcconfig"; sourceTree = "<group>"; };
+		28391C7E7C26FCACD9D30C0E /* libPods-react_native_login_screens-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_login_screens-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* react_native_login_screens-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "react_native_login_screens-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* react_native_login_screens-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "react_native_login_screens-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6312B84EEA4A10B8AFC39C /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BoldItalic.ttf"; path = "../assets/fonts/static/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		344031550DE5E5B388C926AF /* libPods-react_native_login_screens-react_native_login_screensTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_login_screens-react_native_login_screensTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA852DAE03C48AD95F6C44E /* Rubik-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/Rubik-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		442606CD84EA4C11BA4680F1 /* Pods-react_native_login_screens-react_native_login_screensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens-react_native_login_screensTests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens-react_native_login_screensTests/Pods-react_native_login_screens-react_native_login_screensTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A2509637F414DFEBDCE04A9 /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraBold.ttf"; path = "../assets/fonts/static/WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		503CE8C8A2204AF19E3004F3 /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Italic.ttf"; path = "../assets/fonts/static/WorkSans-Italic.ttf"; sourceTree = "<group>"; };
+		593E540BCF4147278B5BD7ED /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		5F7BD567F7484FF09FBE717E /* Vector.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Vector.svg; path = ../assets/fonts/Vector.svg; sourceTree = "<group>"; };
+		658CC50874AA7E43C66AC970 /* Pods-react_native_login_screens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens.release.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens/Pods-react_native_login_screens.release.xcconfig"; sourceTree = "<group>"; };
+		6C982AF8BC214F27916E15AE /* WorkSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraLightItalic.ttf"; path = "../assets/fonts/static/WorkSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		73FBD69135244CB9962E412D /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-VariableFont_wght.ttf"; path = "../assets/fonts/WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		7EC34CBD74ABBB6F8CEDBCBC /* libPods-react_native_login_screens-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_login_screens-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = react_native_login_screens/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84E6277ECA404ABD93021DD0 /* libPods-react_native_login_screens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react_native_login_screens.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85979117C1CC4761A0873D42 /* WorkSans-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Black.ttf"; path = "../assets/fonts/static/WorkSans-Black.ttf"; sourceTree = "<group>"; };
+		86B3CD6F34064374B454E6CA /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../assets/fonts/static/Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		8E25194E44234235BCF959B0 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Regular.ttf"; path = "../assets/fonts/static/WorkSans-Regular.ttf"; sourceTree = "<group>"; };
+		96091137333447EF89033ABA /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-VariableFont_wght.ttf"; path = "../assets/fonts/Rubik-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		AF7E4E9854854F93861994E4 /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBoldItalic.ttf"; path = "../assets/fonts/static/Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		B6B0CE8AA0704FF7BF683E58 /* WorkSans-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-BlackItalic.ttf"; path = "../assets/fonts/static/WorkSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B70813A6655F4D9A9021607D /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BlackItalic.ttf"; path = "../assets/fonts/static/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B83996349FAC486B96E31F01 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/static/Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		B9E27937A8A0EF6D325EF2D0 /* Pods-react_native_login_screens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens.debug.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens/Pods-react_native_login_screens.debug.xcconfig"; sourceTree = "<group>"; };
+		BC3FC0FB1A414C5C88FB3D1E /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Medium.ttf"; path = "../assets/fonts/static/WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		C24D37EB12C949388FF2FF65 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Bold.ttf"; path = "../assets/fonts/static/WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		C2AF6DFAF9C5433E9E5503AB /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/static/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		D0F73151A04449D9B15A5A75 /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraBoldItalic.ttf"; path = "../assets/fonts/static/WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		DAEFD4C8292B44E7AFF4D985 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-LightItalic.ttf"; path = "../assets/fonts/static/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		DB7DBB5CBA294DDD85BC877C /* WorkSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Light.ttf"; path = "../assets/fonts/static/WorkSans-Light.ttf"; sourceTree = "<group>"; };
+		DC4EC6624C394B44AE286F9D /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Thin.ttf"; path = "../assets/fonts/static/WorkSans-Thin.ttf"; sourceTree = "<group>"; };
+		DFAD2965060A4992ABE1091A /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../assets/fonts/static/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E35AA65E822748E7A64E71F3 /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraLight.ttf"; path = "../assets/fonts/static/WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E41DA0FE19C4450BB8FF6DF1 /* WorkSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-BoldItalic.ttf"; path = "../assets/fonts/static/WorkSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E443AF4E02634D4BA7C72FAF /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AbrilFatface-Regular.ttf"; path = "../assets/fonts/AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
+		E50C5BF9D3CB4F749DAC5171 /* WorkSans-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ThinItalic.ttf"; path = "../assets/fonts/static/WorkSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		E6681EA819F04ECEB9F5B239 /* WorkSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-MediumItalic.ttf"; path = "../assets/fonts/static/WorkSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E932F71A77944B0497520CB1 /* WorkSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-SemiBoldItalic.ttf"; path = "../assets/fonts/static/WorkSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E9C4B5ED367041D9AF558A9B /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../assets/fonts/static/Rubik-Black.ttf"; sourceTree = "<group>"; };
+		EC34CE7993C4C19A932F4519 /* Pods-react_native_login_screens-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens-tvOSTests/Pods-react_native_login_screens-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F6942097DA63AD7486E4F888 /* Pods-react_native_login_screens-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens-tvOS.release.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens-tvOS/Pods-react_native_login_screens-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		FB65CF3EB3EB477E0E721B91 /* Pods-react_native_login_screens-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_login_screens-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_login_screens-tvOSTests/Pods-react_native_login_screens-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD6FAF28B70649B293AC3E6E /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-LightItalic.ttf"; path = "../assets/fonts/static/WorkSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		FDB68BAEBECB4A8EACECC547 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBoldItalic.ttf"; path = "../assets/fonts/static/Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		FFE182E91A8E4F358FA3E6E1 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-SemiBold.ttf"; path = "../assets/fonts/static/WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2302DEAE58DEB0145A5BB2D0 /* libPods-react_native_login_screens-react_native_login_screensTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05169C55A3B4F53D0738003C /* libPods-react_native_login_screens.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7DA10AD2397B559273F4B9 /* libPods-react_native_login_screens-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8A0E827C769550E425FE99 /* libPods-react_native_login_screens-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* react_native_login_screensTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* react_native_login_screensTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = react_native_login_screensTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* react_native_login_screens */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = react_native_login_screens;
+			sourceTree = "<group>";
+		};
+		22027BD981008DB8C59F22D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9E27937A8A0EF6D325EF2D0 /* Pods-react_native_login_screens.debug.xcconfig */,
+				658CC50874AA7E43C66AC970 /* Pods-react_native_login_screens.release.xcconfig */,
+				442606CD84EA4C11BA4680F1 /* Pods-react_native_login_screens-react_native_login_screensTests.debug.xcconfig */,
+				273CDF6F385DAA6F37279331 /* Pods-react_native_login_screens-react_native_login_screensTests.release.xcconfig */,
+				2383EB8FEDFB879B6EFF247F /* Pods-react_native_login_screens-tvOS.debug.xcconfig */,
+				F6942097DA63AD7486E4F888 /* Pods-react_native_login_screens-tvOS.release.xcconfig */,
+				EC34CE7993C4C19A932F4519 /* Pods-react_native_login_screens-tvOSTests.debug.xcconfig */,
+				FB65CF3EB3EB477E0E721B91 /* Pods-react_native_login_screens-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				84E6277ECA404ABD93021DD0 /* libPods-react_native_login_screens.a */,
+				344031550DE5E5B388C926AF /* libPods-react_native_login_screens-react_native_login_screensTests.a */,
+				7EC34CBD74ABBB6F8CEDBCBC /* libPods-react_native_login_screens-tvOS.a */,
+				28391C7E7C26FCACD9D30C0E /* libPods-react_native_login_screens-tvOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B60D32E97BD46FDB69A28CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F7BD567F7484FF09FBE717E /* Vector.svg */,
+				E443AF4E02634D4BA7C72FAF /* AbrilFatface-Regular.ttf */,
+				3BA852DAE03C48AD95F6C44E /* Rubik-Italic-VariableFont_wght.ttf */,
+				96091137333447EF89033ABA /* Rubik-VariableFont_wght.ttf */,
+				E9C4B5ED367041D9AF558A9B /* Rubik-Black.ttf */,
+				B70813A6655F4D9A9021607D /* Rubik-BlackItalic.ttf */,
+				1CD71D30CB17490E9770ABF9 /* Rubik-Bold.ttf */,
+				2D6312B84EEA4A10B8AFC39C /* Rubik-BoldItalic.ttf */,
+				20944AB5B0D641C098326E3A /* Rubik-ExtraBold.ttf */,
+				FDB68BAEBECB4A8EACECC547 /* Rubik-ExtraBoldItalic.ttf */,
+				86B3CD6F34064374B454E6CA /* Rubik-Italic.ttf */,
+				DFAD2965060A4992ABE1091A /* Rubik-Light.ttf */,
+				DAEFD4C8292B44E7AFF4D985 /* Rubik-LightItalic.ttf */,
+				B83996349FAC486B96E31F01 /* Rubik-Medium.ttf */,
+				0B237A0287C44FF283B94351 /* Rubik-MediumItalic.ttf */,
+				02AEA5BFB4154F7985E3DE53 /* Rubik-Regular.ttf */,
+				C2AF6DFAF9C5433E9E5503AB /* Rubik-SemiBold.ttf */,
+				AF7E4E9854854F93861994E4 /* Rubik-SemiBoldItalic.ttf */,
+				85979117C1CC4761A0873D42 /* WorkSans-Black.ttf */,
+				B6B0CE8AA0704FF7BF683E58 /* WorkSans-BlackItalic.ttf */,
+				C24D37EB12C949388FF2FF65 /* WorkSans-Bold.ttf */,
+				E41DA0FE19C4450BB8FF6DF1 /* WorkSans-BoldItalic.ttf */,
+				4A2509637F414DFEBDCE04A9 /* WorkSans-ExtraBold.ttf */,
+				D0F73151A04449D9B15A5A75 /* WorkSans-ExtraBoldItalic.ttf */,
+				E35AA65E822748E7A64E71F3 /* WorkSans-ExtraLight.ttf */,
+				6C982AF8BC214F27916E15AE /* WorkSans-ExtraLightItalic.ttf */,
+				503CE8C8A2204AF19E3004F3 /* WorkSans-Italic.ttf */,
+				DB7DBB5CBA294DDD85BC877C /* WorkSans-Light.ttf */,
+				FD6FAF28B70649B293AC3E6E /* WorkSans-LightItalic.ttf */,
+				BC3FC0FB1A414C5C88FB3D1E /* WorkSans-Medium.ttf */,
+				E6681EA819F04ECEB9F5B239 /* WorkSans-MediumItalic.ttf */,
+				8E25194E44234235BCF959B0 /* WorkSans-Regular.ttf */,
+				FFE182E91A8E4F358FA3E6E1 /* WorkSans-SemiBold.ttf */,
+				E932F71A77944B0497520CB1 /* WorkSans-SemiBoldItalic.ttf */,
+				DC4EC6624C394B44AE286F9D /* WorkSans-Thin.ttf */,
+				E50C5BF9D3CB4F749DAC5171 /* WorkSans-ThinItalic.ttf */,
+				593E540BCF4147278B5BD7ED /* WorkSans-Italic-VariableFont_wght.ttf */,
+				73FBD69135244CB9962E412D /* WorkSans-VariableFont_wght.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* react_native_login_screens */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* react_native_login_screensTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				22027BD981008DB8C59F22D8 /* Pods */,
+				4B60D32E97BD46FDB69A28CD /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* react_native_login_screens.app */,
+				00E356EE1AD99517003FC87E /* react_native_login_screensTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* react_native_login_screens-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* react_native_login_screens-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* react_native_login_screensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "react_native_login_screensTests" */;
+			buildPhases = (
+				B006D5AF0D8EE25179C851C5 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				245E5F860EEF2A8DD8BD5A47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = react_native_login_screensTests;
+			productName = react_native_login_screensTests;
+			productReference = 00E356EE1AD99517003FC87E /* react_native_login_screensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* react_native_login_screens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "react_native_login_screens" */;
+			buildPhases = (
+				C3C62E0FF179466CF8A47881 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				31111EBAE6C2AEF6586C38BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = react_native_login_screens;
+			productName = react_native_login_screens;
+			productReference = 13B07F961A680F5B00A75B9A /* react_native_login_screens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* react_native_login_screens-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_login_screens-tvOS" */;
+			buildPhases = (
+				27191091F2F76603DA8CC995 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "react_native_login_screens-tvOS";
+			productName = "react_native_login_screens-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* react_native_login_screens-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* react_native_login_screens-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_login_screens-tvOSTests" */;
+			buildPhases = (
+				2D6A26CC622754D6A9400617 /* [CP] Check Pods Manifest.lock */,
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "react_native_login_screens-tvOSTests";
+			productName = "react_native_login_screens-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* react_native_login_screens-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "react_native_login_screens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* react_native_login_screens */,
+				00E356ED1AD99517003FC87E /* react_native_login_screensTests */,
+				2D02E47A1E0B4A5D006451C7 /* react_native_login_screens-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* react_native_login_screens-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				FA6596F00CBB47B1A88C07B4 /* Vector.svg in Resources */,
+				FDD23F886A11409ABF5FAEA6 /* AbrilFatface-Regular.ttf in Resources */,
+				C8E04BD47D34455F94F93F06 /* Rubik-Italic-VariableFont_wght.ttf in Resources */,
+				F1E01373CFDA4C69AB73ACD2 /* Rubik-VariableFont_wght.ttf in Resources */,
+				BF07FEEC96034F2EADA97E38 /* Rubik-Black.ttf in Resources */,
+				DEC1F35936424A569665A37A /* Rubik-BlackItalic.ttf in Resources */,
+				65CC7C3A5C8B42CDA1CB6D91 /* Rubik-Bold.ttf in Resources */,
+				6BD3094527F3458B8BFF548E /* Rubik-BoldItalic.ttf in Resources */,
+				28C3794ADED74EEFAF8F1A72 /* Rubik-ExtraBold.ttf in Resources */,
+				DA8C18F8EDE7460EA370FEA2 /* Rubik-ExtraBoldItalic.ttf in Resources */,
+				A1487E2D8DF04C5DB8481EF9 /* Rubik-Italic.ttf in Resources */,
+				5B64F33323D6434EAAEC1A17 /* Rubik-Light.ttf in Resources */,
+				14294E5ABD754A358BC392CE /* Rubik-LightItalic.ttf in Resources */,
+				5949BA65A1F6447E8C36C8B4 /* Rubik-Medium.ttf in Resources */,
+				B8E069C333DE4E0DA40F2F7E /* Rubik-MediumItalic.ttf in Resources */,
+				11B4FFEE33E548DA90BD1E11 /* Rubik-Regular.ttf in Resources */,
+				C313E47ECA1A429BA573D218 /* Rubik-SemiBold.ttf in Resources */,
+				A875FB543AE040A6B052C5A2 /* Rubik-SemiBoldItalic.ttf in Resources */,
+				357C756C48164AE4AE5DDF5C /* WorkSans-Black.ttf in Resources */,
+				E6867BB0543F4C479523979E /* WorkSans-BlackItalic.ttf in Resources */,
+				FE366E5264004DC4AA2630EE /* WorkSans-Bold.ttf in Resources */,
+				253EB594366045DBB7596325 /* WorkSans-BoldItalic.ttf in Resources */,
+				89FDBD3D3067478583F7C26E /* WorkSans-ExtraBold.ttf in Resources */,
+				228F10C76A314CD5B4DADDFB /* WorkSans-ExtraBoldItalic.ttf in Resources */,
+				99A2B85204624E27B103FFB8 /* WorkSans-ExtraLight.ttf in Resources */,
+				2E7786585ACC4AE584221DA0 /* WorkSans-ExtraLightItalic.ttf in Resources */,
+				B91EC64BA0EE4289A64B2FCA /* WorkSans-Italic.ttf in Resources */,
+				AA7C88494C894425BEA7BD3F /* WorkSans-Light.ttf in Resources */,
+				D59409FBE47D4450A58362AC /* WorkSans-LightItalic.ttf in Resources */,
+				04D5CF27E0EC42649EEE9CE2 /* WorkSans-Medium.ttf in Resources */,
+				9C39E45000494CC8BB69F27C /* WorkSans-MediumItalic.ttf in Resources */,
+				2E1667BCC70C4A56B3EDA9D8 /* WorkSans-Regular.ttf in Resources */,
+				0AE4F15FB461468CB866F565 /* WorkSans-SemiBold.ttf in Resources */,
+				1FC72A37C5C5462D986DD6F1 /* WorkSans-SemiBoldItalic.ttf in Resources */,
+				CD14FFE50C1F4F599748649B /* WorkSans-Thin.ttf in Resources */,
+				DCB42D9C1AFF4129B9DFDAD5 /* WorkSans-ThinItalic.ttf in Resources */,
+				494E0B0FAB234CAFA71D189C /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
+				A2D3B9992EF7444CBF216E43 /* WorkSans-VariableFont_wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		245E5F860EEF2A8DD8BD5A47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-react_native_login_screens-react_native_login_screensTests/Pods-react_native_login_screens-react_native_login_screensTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-react_native_login_screens-react_native_login_screensTests/Pods-react_native_login_screens-react_native_login_screensTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27191091F2F76603DA8CC995 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-react_native_login_screens-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		2D6A26CC622754D6A9400617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-react_native_login_screens-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31111EBAE6C2AEF6586C38BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-react_native_login_screens/Pods-react_native_login_screens-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-react_native_login_screens/Pods-react_native_login_screens-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B006D5AF0D8EE25179C851C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-react_native_login_screens-react_native_login_screensTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C62E0FF179466CF8A47881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-react_native_login_screens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* react_native_login_screensTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* react_native_login_screensTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* react_native_login_screens */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* react_native_login_screens-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442606CD84EA4C11BA4680F1 /* Pods-react_native_login_screens-react_native_login_screensTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = react_native_login_screensTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_login_screens.app/react_native_login_screens";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273CDF6F385DAA6F37279331 /* Pods-react_native_login_screens-react_native_login_screensTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = react_native_login_screensTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_login_screens.app/react_native_login_screens";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E27937A8A0EF6D325EF2D0 /* Pods-react_native_login_screens.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = react_native_login_screens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = react_native_login_screens;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658CC50874AA7E43C66AC970 /* Pods-react_native_login_screens.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = react_native_login_screens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = react_native_login_screens;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2383EB8FEDFB879B6EFF247F /* Pods-react_native_login_screens-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "react_native_login_screens-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_login_screens-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6942097DA63AD7486E4F888 /* Pods-react_native_login_screens-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "react_native_login_screens-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_login_screens-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC34CE7993C4C19A932F4519 /* Pods-react_native_login_screens-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "react_native_login_screens-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_login_screens-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_login_screens-tvOS.app/react_native_login_screens-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB65CF3EB3EB477E0E721B91 /* Pods-react_native_login_screens-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "react_native_login_screens-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.react_native_login_screens-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/react_native_login_screens-tvOS.app/react_native_login_screens-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "react_native_login_screensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "react_native_login_screens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_login_screens-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "react_native_login_screens-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "react_native_login_screens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
