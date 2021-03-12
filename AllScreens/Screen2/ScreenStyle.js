@@ -39,13 +39,14 @@ export  const styles = StyleSheet.create({
     boxShadow: {
         width: scale(310),
         height: verticalScale(75),
-        top: moderateScale(268),
+        top: moderateScale(260),
         left: moderateScale(20),
         backgroundColor:AppColor.white,
         position:'absolute',
         justifyContent:'center',
         paddingLeft:80,
         borderRadius: 25,
+       
       },
       boxShadow1: {
         width: scale(310),
@@ -137,14 +138,14 @@ export  const styles = StyleSheet.create({
         
     },
     errorMessage: {
-      left:moderateScale(50),
-      top:moderateScale(340),
+      left:moderateScale(45),
+      top:moderateScale(335),
       color:AppColor.red,
       position:'absolute'
     },
     errorMessage1: {
-      left:moderateScale(50),
-      top:moderateScale(70),
+      left:moderateScale(45),
+      top:moderateScale(75),
       color:AppColor.red,
       position:'absolute'
     }
