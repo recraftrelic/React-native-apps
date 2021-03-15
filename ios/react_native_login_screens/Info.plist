@@ -80,9 +80,7 @@
 		<string>WorkSans-VariableFont_wght.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>image name</key>
-	<string>image</string>
+	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -95,5 +93,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>image name</key>
+	<string>image</string>
 </dict>
 </plist>
