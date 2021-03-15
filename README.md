@@ -21,7 +21,8 @@ You can also get the app on play store-- -->
   <img width="250" src="./Ios previews/Screen4.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen5.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen6.gif?raw=true" hspace="20" vspace="20">
 </p>
 <p align="center">
-  <img width="250" src="/Ios previews/Screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="20" vspace="20">
+
 ## Android Demo
 <hr>
 <p align="center">
@@ -32,6 +33,7 @@ You can also get the app on play store-- -->
 </p>
 <p align="center">
   <img width="250" src="./gifs/screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen10.gif?raw=true" hspace="20" vspace="20">
+
 ## Packages & Libraries used
 * [React Native](https://www.npmjs.com/package/react-native) - A framework for building native apps with React.
 * [React](https://www.npmjs.com/package/react) - A declarative, efficient, and flexible JavaScript library for building user interfaces.
@@ -72,7 +74,8 @@ Contributors
 =======
 * [kanikarecraft](https://github.com/kanikarecraft) - Kanika Goyal
 * [ChetanBansal](https://github.com/ChetanBansal) - Chetan Bansal 
-* [sandeep9900-max](https://github.com/sandeep9900-max) - Sandeep Kumar 
+* [sandeep9900-max](https://github.com/sandeep9900-max) - Sandeep Kumar
+
 Sponsors
 =======
-[<img src="http://www.recraftstudio.com/images/logo.png" alt="Recraft Relic Private Limited" width="50"/>](http://www.recraftrelic.com)
+[ <img src="http://www.recraftstudio.com/images/logo.png" alt="Recraft Relic Private Limited" width="50"/>](http://www.recraftrelic.com)
