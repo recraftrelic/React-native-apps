@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MainScreen from './AllScreens/MainScreen/MainScreen';
+import SplashScreen from 'react-native-splash-screen'
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -15,6 +16,11 @@ import LoginScreen10 from './components/LoginScreen10';
 import Screen9 from "./AllScreens/Screen9/Screen9";
 const Stack = createStackNavigator();
 const App  = () => {
+
+  // useEffect(() => {
+  //   // Update the document title using the browser API
+  //   SplashScreen.hide();
+  // }, []);
   
   return (
     <NavigationContainer>

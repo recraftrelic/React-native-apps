@@ -118,11 +118,11 @@ export  const styles = StyleSheet.create({
       emailIcon: {
         width:moderateScale(17),
         height:moderateScale(18),
-        left:moderateScale(35),
+         left:moderateScale(-35),
         position:'absolute'
     },
     password1:{
-        left: moderateScale(35),
+        left: moderateScale(-35),
         position:'absolute'
     },
     shadow: {
