@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.reactnativeloginpage"
+        applicationId "com.RecraftLoginScreens"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

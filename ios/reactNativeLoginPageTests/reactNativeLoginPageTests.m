@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface reactNativeLoginPageTests : XCTestCase
+@interface react_native_login_screensTests : XCTestCase
 
 @end
 
-@implementation reactNativeLoginPageTests
+@implementation react_native_login_screensTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

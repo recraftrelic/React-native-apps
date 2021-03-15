@@ -1,4 +1,4 @@
-package com.reactnativeloginpage;
+// package com.react_native_login_screens;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "reactNativeLoginPage";
+    return "react_native_login_screens";
   }
 }

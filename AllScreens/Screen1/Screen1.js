@@ -5,7 +5,6 @@ import screen1 from './screen1.json';
 import {styles} from './ScreenStyle';
 import {images} from '../../components/utilities/images';
 import CommonInput from './Component/CommonInput';
-
 const Screen1 = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,15 +22,13 @@ const Screen1 = () => {
 
   const onChangeEmail = (email) => {
     setEmail(email);
-    
-    let reg =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    let reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!reg.test(email)) {
       setEmailErrorStatus(true);
-      return
+      return;
     } else {
       setEmailErrorStatus(false);
     }
-
   };
 
   return (
@@ -63,10 +60,10 @@ const Screen1 = () => {
               imageStyle={styles.emailIcon}
               imageSource={images.Vector1}
               viewStyle={styles.childView}
-              onChangeText={(value)=>onChangeEmail(value)}
+              onChangeText={(value) => onChangeEmail(value)}
               secureTextEntry={false}
             />
-            {emailErrorStatus  ? (
+            {emailErrorStatus ? (
               <Text style={styles.errorMessage}>
                 * Please include an '@' in the email address.
               </Text>
@@ -105,5 +102,4 @@ const Screen1 = () => {
     </View>
   );
 };
-
 export default Screen1;

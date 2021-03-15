@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.reactnativeloginpage",
+    package = "com.react_native_login_screens",
 )
 
 android_resource(
     name = "res",
-    package = "com.reactnativeloginpage",
+    package = "com.react_native_login_screens",
     res = "src/main/res",
 )
 

@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.reactnativeloginpage",
+  "applicationId": "com.react_native_login_screens",
   "variantName": "processReleaseResources",
   "elements": [
     {

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable */
+import React, {useState} from 'react';
 import {Image} from 'react-native';
 import screen2 from './screen2.json';
 import {View} from 'react-native';
@@ -11,7 +12,6 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import CommonInput from '../Screen1/Component/CommonInput';
 
 const Screen2 = () => {
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
@@ -28,15 +28,14 @@ const Screen2 = () => {
 
   const onChangeEmail = (email) => {
     setEmail(email);
-    
-    let reg =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    let reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!reg.test(email)) {
       setEmailErrorStatus(true);
-      return
+      return;
     } else {
       setEmailErrorStatus(false);
     }
-
   };
 
   return (
@@ -61,16 +60,15 @@ const Screen2 = () => {
             placeholder="Email"
             imageStyle={styles.emailIcon}
             imageSource={images.email2}
-            onChangeText={(value)=> onChangeEmail(value)}
+            onChangeText={(value) => onChangeEmail(value)}
             secureTextEntry={false}
           />
-          
         </View>
-        {emailErrorStatus  ? (
-              <Text style={styles.errorMessage}>
-                * Please include an '@' in the email address.
-              </Text>
-            ) : null}
+        {emailErrorStatus ? (
+          <Text style={styles.errorMessage}>
+            * Please include an '@' in the email address.
+          </Text>
+        ) : null}
         <View style={[styles.boxShadow1, shadow]}>
           <CommonInput
             style={styles.password0}
@@ -82,10 +80,10 @@ const Screen2 = () => {
             secureTextEntry={true}
           />
           {passwordErrorStatus == true ? (
-              <Text style={styles.errorMessage1}>
-                * Password should be minimum 8 characters.
-              </Text>
-            ) : null}
+            <Text style={styles.errorMessage1}>
+              * Password should be minimum 8 characters.
+            </Text>
+          ) : null}
         </View>
         <View>
           <Text style={styles.password}>{screen2.password}</Text>
