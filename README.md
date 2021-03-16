@@ -13,7 +13,7 @@ You can also get the app on play store-- -->
 * [Available Hooks] -->
 <!-- Browse the full documentation on -->
 ## IOS Demo 
-<hr>
+
 <p align="center">
   <img width="250" src="./Ios previews/Screen1.gif?raw=true" hspace="20" vspace="20" ><img width="250" src="./Ios previews/Screen2.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen3.gif?raw=true" hspace="20" vspace="20">
 </p>
@@ -24,7 +24,7 @@ You can also get the app on play store-- -->
   <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="20" vspace="20">
 
 ## Android Demo
-<hr>
+
 <p align="center">
   <img width="250" src="./gifs/screen1.gif?raw=true" hspace="20" vspace="20" ><img width="250" src="./gifs/screen2.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen3.gif?raw=true" hspace="20" vspace="20">
 </p>
