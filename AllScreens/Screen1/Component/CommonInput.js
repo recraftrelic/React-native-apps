@@ -11,14 +11,12 @@ const CommonInput = (props) => {
     viewStyle,
     onChangeText,
     value,
-    secureTextEntry,
-    TouchableOpacity
+    secureTextEntry
 
   } = props;
   console.log(value)
   return (
     <>
-    <TouchableOpacity>
       <TextInput
         style={style}
         placeholderTextColor={placeholderTextColor}
@@ -28,7 +26,7 @@ const CommonInput = (props) => {
         secureTextEntry={secureTextEntry}
       />
       <Image style={imageStyle} source={imageSource} />
-      </TouchableOpacity>
+      <View style={viewStyle}></View>
     </>
   );
 };
