@@ -144,8 +144,8 @@ export const styles = StyleSheet.create({
     },
     reset: {
         fontFamily: fonts.regular,
-        bottom: moderateScale(6),
-        right: moderateScale(126),
+        bottom: moderateScale(5),
+        right: moderateScale(120),
         fontSize: RFValue(14),
         color: '#D0D0D0',
 
@@ -274,6 +274,6 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(5),
         color: '#393F45',
         fontFamily: fonts.bold,
-        right: moderateScale(46),
+        right: moderateScale(38),
     }
 });
