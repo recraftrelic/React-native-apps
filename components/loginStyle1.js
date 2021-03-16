@@ -83,13 +83,13 @@ export const styles = StyleSheet.create({
         paddingTop: 0,
         top: moderateScale(12)
     },
-    reset: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        padding: moderateScale(50),
-        paddingTop: 0,
-        top: moderateScale(12)
-    },
+    // reset: {
+    //     flexDirection: 'row',
+    //     justifyContent: 'space-around',
+    //     padding: moderateScale(50),
+    //     paddingTop: 0,
+    //     top: moderateScale(12)
+    // },
     signintxt1: {
         color: '#393F45',
         marginRight: moderateScale(185),
@@ -100,7 +100,7 @@ export const styles = StyleSheet.create({
 
     siguptxt: {
         color: '#D0D0D0',
-        marginLeft: moderateScale(10),
+        marginLeft: moderateScale(14),
         fontFamily: fonts.regular,
         right: moderateScale(155),
         fontSize: RFValue(18),
@@ -145,10 +145,12 @@ export const styles = StyleSheet.create({
     },
     reset: {
         fontFamily: fonts.regular,
-        bottom: moderateScale(10),
-        left: moderateScale(150),
+        bottom: moderateScale(8),
+        left: moderateScale(160),
         fontSize: RFValue(14),
-        color: '#D0D0D0'
+        color: '#D0D0D0',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
 
     },
     remember: {
@@ -275,6 +277,6 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(5),
         color: '#393F45',
         fontFamily: fonts.bold,
-        right: moderateScale(45),
+        right: moderateScale(38),
     }
 });
