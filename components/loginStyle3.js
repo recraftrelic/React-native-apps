@@ -261,7 +261,7 @@ export const styles = StyleSheet.create({
         fontSize: RFValue(18),
         marginTop: moderateScale(145),
         fontFamily: fonts.regular,
-        right: moderateScale(45),
+        right: moderateScale(55),
         flex: 0.3
     },
 
