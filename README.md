@@ -15,24 +15,26 @@ You can also get the app on play store-- -->
 ## IOS Demo 
 
 <p align="center">
-  <img width="250" src="./Ios previews/Screen1.gif?raw=true" hspace="20" vspace="20" ><img width="250" src="./Ios previews/Screen2.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen3.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen1.gif?raw=true" hspace="10" vspace="10" ><img width="250" src="./Ios previews/Screen2.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen3.gif?raw=true" hspace="10" vspace="10">
 </p>
 <p align="center">
-  <img width="250" src="./Ios previews/Screen4.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen5.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen6.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen4.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen5.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen6.gif?raw=true" hspace="10" vspace="10">
 </p>
 <p align="center">
-  <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="10" vspace="10">
+  </p>
 
 ## Android Demo
 
 <p align="center">
-  <img width="250" src="./gifs/screen1.gif?raw=true" hspace="20" vspace="20" ><img width="250" src="./gifs/screen2.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen3.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./gifs/screen1.gif?raw=true" hspace="10" vspace="10" ><img width="250" src="./gifs/screen2.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen3.gif?raw=true" hspace="10" vspace="10">
 </p>
 <p align="center">
-  <img width="250" src="./gifs/screen4.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen5.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen6.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./gifs/screen4.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen5.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen6.gif?raw=true" hspace="10" vspace="10">
 </p>
 <p align="center">
-  <img width="250" src="./gifs/screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./gifs/screen10.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./gifs/screen7.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen8.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen9.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen10.gif?raw=true" hspace="10" vspace="10">
+  </p>
 
 ## Packages & Libraries used
 * [React Native](https://www.npmjs.com/package/react-native) - A framework for building native apps with React.
