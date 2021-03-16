@@ -10,6 +10,7 @@ import {shadow} from 'react-native-paper';
 import {images} from '../../components/utilities/images';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import CommonInput from '../Screen1/Component/CommonInput';
+import { SafeAreaView } from 'react-navigation';
 
 const Screen2 = () => {
   const [email, setEmail] = useState('');
@@ -39,7 +40,8 @@ const Screen2 = () => {
   };
 
   return (
-    <View style={styles.main}>
+    <SafeAreaView style={styles.main}>
+    <View >
       <KeyboardAwareScrollView
         enableOnAndroid={true}
         keyboardShouldPersistTaps="handled"
@@ -97,6 +99,7 @@ const Screen2 = () => {
         </View>
       </KeyboardAwareScrollView>
     </View>
+    </SafeAreaView>
   );
 };
 export default Screen2;

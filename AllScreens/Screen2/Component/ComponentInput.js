@@ -1,22 +1,23 @@
 import React from 'react';
-import {TextInput, Image, TouchableOpacity} from 'react-native';
+import {TouchableOpacity} from 'react-native';
+import {Image, TextInput} from 'react-native';
 
-const CommonInput = ({
-  style,
-  placeholderTextColor,
-  placeholder,
-  imageStyle,
-  imageSource,
-  onChangeText,
-  value,
-  secureTextEntry,
-}) => {
+const ComponentInput = (props) => {
+  const {
+    style,
+    placeholder,
+    imageStyle,
+    imageSource,
+    value,
+    onChangeText,
+    secureTextEntry,
+  } = props;
+
   return (
     <>
       <TouchableOpacity>
         <TextInput
           style={style}
-          placeholderTextColor={placeholderTextColor}
           placeholder={placeholder}
           value={value}
           onChangeText={onChangeText}
@@ -28,4 +29,4 @@ const CommonInput = ({
   );
 };
 
-export default CommonInput;
+export default ComponentInput;

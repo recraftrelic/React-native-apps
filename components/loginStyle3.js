@@ -139,7 +139,7 @@ export const styles = StyleSheet.create({
     reset: {
         color: '#8F70FF',
         marginBottom: moderateScale(2),
-        right: moderateScale(77),
+        right: moderateScale(60),
         fontFamily: fonts.semiBold
     },
     remember: {
@@ -261,7 +261,7 @@ export const styles = StyleSheet.create({
         fontSize: RFValue(18),
         marginTop: moderateScale(145),
         fontFamily: fonts.regular,
-        right: moderateScale(50),
+        right: moderateScale(45),
         flex: 0.3
     },
 

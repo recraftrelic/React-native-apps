@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Text, View, SafeAreaView} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import screen1 from './screen1.json';
 import {styles} from './ScreenStyle';
 import {images} from '../../components/utilities/images';
 import CommonInput from './Component/CommonInput';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {moderateScale} from 'react-native-size-matters';
+
 const Screen1 = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,6 +24,7 @@ const Screen1 = () => {
 
   const onChangeEmail = (email) => {
     setEmail(email);
+    console.log(email, 'email');
     let reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!reg.test(email)) {
       setEmailErrorStatus(true);
@@ -53,7 +55,7 @@ const Screen1 = () => {
             <Text style={styles.email}>{screen1.email}</Text>
             <Text style={styles.number}>{screen1.number}</Text>
 
-            <View>
+            <View style={styles.line}>
               <CommonInput
                 style={styles.inputEmail}
                 value={email}
@@ -61,17 +63,18 @@ const Screen1 = () => {
                 placeholder="Email or phone number"
                 imageStyle={styles.emailIcon}
                 imageSource={images.Vector1}
-                viewStyle={styles.childView}
                 onChangeText={(value) => onChangeEmail(value)}
                 secureTextEntry={false}
               />
-              {emailErrorStatus ? (
+              <View style={styles.childView}></View>
+              {emailErrorStatus == true ? (
                 <Text style={styles.errorMessage}>
                   * Please include an '@' in the email address.
                 </Text>
               ) : null}
             </View>
-            <View>
+
+            <View style={styles.line}>
               <CommonInput
                 style={styles.inputEmail}
                 placeholderTextColor="white"
@@ -83,8 +86,9 @@ const Screen1 = () => {
                 secureTextEntry={true}
                 onChangeText={(value) => onChangeText(value)}
               />
+              <View style={styles.childView}></View>
               {passwordErrorStatus == true ? (
-                <Text style={styles.errorMessage}>
+                <Text style={styles.errorMessage1}>
                   * Password should be minimum 8 characters.
                 </Text>
               ) : null}
@@ -95,7 +99,7 @@ const Screen1 = () => {
             <View style={styles.loginButton}>
               <Text style={styles.button}>{screen1.button}</Text>
             </View>
-            <View>
+            <View style={styles.accountView}>
               <Text style={styles.account}>{screen1.account}</Text>
               <Text style={styles.Sign}>{screen1.sign}</Text>
             </View>

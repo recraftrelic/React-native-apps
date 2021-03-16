@@ -15,7 +15,7 @@ const Screen5 = () => {
   const [password, setPassword] = useState('');
 
   const onEnterEmail = (value) => {
-    console.log(value, '989898');
+    // console.log(value, '989898');
     let reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     if (reg.test(value)) {
       setEmailErrorStatus(false);
@@ -85,7 +85,6 @@ const Screen5 = () => {
                     <Text style={styles.textStyle}>{screen5.Hide}</Text>
                   )}
                 </TouchableOpacity>
-                {/* <Text style={styles.View5}>{screen5.View}</Text> */}
               </View>
               <View style={styles.loginButton}>
                 <Text style={styles.button}>{screen5.button}</Text>

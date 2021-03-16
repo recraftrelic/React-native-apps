@@ -48,9 +48,22 @@ export const styles = StyleSheet.create({
   inputEmail: {
     color: AppColor.white,
     height: moderateScale(55),
-    marginLeft: moderateScale(80),
+    left: moderateScale(70),
     fontWeight: '400',
     fontSize: RFValue(14),
+    margin: moderateScale(5),
+    top: moderateScale(2),
+    borderBottomEndRadius: 23,
+  },
+  childView: {
+    borderBottomWidth: 1,
+    borderBottomColor: AppColor.lineGrey,
+    left: moderateScale(35),
+    top: moderateScale(10),
+    width: moderateScale(250),
+  },
+  line: {
+    bottom: moderateScale(22),
   },
   emailIcon: {
     width: moderateScale(15),
@@ -58,15 +71,7 @@ export const styles = StyleSheet.create({
     marginLeft: moderateScale(50),
     marginTop: moderateScale(-34),
   },
-  childView: {
-    marginTop: moderateScale(15),
-    width: moderateScale(256),
-    marginLeft: moderateScale(40),
-    borderBottomWidth: 1,
-    borderBottomColor: AppColor.lineGrey,
-  },
   forgotPassword: {
-    marginTop: moderateScale(10),
     marginLeft: moderateScale(180),
     color: AppColor.white,
     fontFamily: fonts.regular,
@@ -74,9 +79,8 @@ export const styles = StyleSheet.create({
   loginButton: {
     width: moderateScale(265),
     height: moderateScale(50),
-    marginTop: moderateScale(15),
+    marginTop: moderateScale(10),
     marginLeft: moderateScale(40),
-    flex: 0.1,
     backgroundColor: AppColor.darkSky,
     borderRadius: 10,
   },
@@ -89,14 +93,19 @@ export const styles = StyleSheet.create({
   },
   account: {
     marginTop: moderateScale(5),
-    marginLeft: moderateScale(50),
+    marginRight: moderateScale(45),
     color: AppColor.white,
     fontSize: RFValue(15),
     fontFamily: fonts.regular,
   },
+  accountView: {
+    flex:0.1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
   Sign: {
     marginTop: moderateScale(5),
-    marginLeft: moderateScale(215),
+    marginLeft: moderateScale(155),
     position: 'absolute',
     color: AppColor.darkSky,
     fontSize: RFValue(15),
@@ -144,8 +153,14 @@ export const styles = StyleSheet.create({
     top: moderateScale(600),
     left: moderateScale(270),
   },
+  errorMessage1: {
+    color: AppColor.red,
+    textAlign: 'center',
+    top: moderateScale(20),
+  },
   errorMessage: {
     color: AppColor.red,
     textAlign: 'center',
+    top: moderateScale(15),
   },
 });
