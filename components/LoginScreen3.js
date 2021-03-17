@@ -14,7 +14,7 @@ import login2 from './login2.json';
 import { images } from "./utilities/images";
 
 
-const LoginScreen3 = (props) => {
+const LoginScreen3 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [check, setCheckStatus] = useState(false);

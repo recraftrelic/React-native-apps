@@ -161,10 +161,9 @@ export const styles = StyleSheet.create({
     },
     tick: {
         bottom: moderateScale(30),
-        left: moderateScale(260),
+        left: moderateScale(270),
         height: moderateScale(20),
         width: moderateScale(20),
-
     },
     emailIcon: {
         position: 'absolute',
@@ -184,7 +183,6 @@ export const styles = StyleSheet.create({
     },
     inputView: {
         flex: 0.2,
-        marginTop: moderateScale(20)
     },
     headText: {
         marginTop: moderateScale(10),

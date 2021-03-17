@@ -1,15 +1,9 @@
-import {
-    StyleSheet,
-    Dimensions,
-    Platform
-} from "react-native";
-import { fonts } from "./utilities/images";
-import { RFValue } from 'react-native-responsive-fontsize';
+import {StyleSheet, Dimensions, Platform} from 'react-native';
+import {fonts} from './utilities/images';
+import {RFValue} from 'react-native-responsive-fontsize';
 
-import {
-    moderateScale,
-} from 'react-native-size-matters';
-const { width } = Dimensions.get('screen');
+import {moderateScale} from 'react-native-size-matters';
+const {width} = Dimensions.get('screen');
 
 export const styles = StyleSheet.create({
 

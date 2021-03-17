@@ -1,21 +1,31 @@
 import React from 'react';
+import {TextInput} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 import {View} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
+//import {TextInput} from 'react-native-gesture-handler';
 
 const CommonInput = (props) => {
-  const {imageStyle, placeholderTextColor, placeholder, imageChild, value, onChangeText, secureTextEntry} = props;
+  const {
+    style,
+    placeholderTextColor,
+    placeholder,
+    imageChild,
+    value,
+    onChangeText,
+    secureTextEntry,
+  } = props;
 
   return (
     <>
       <TextInput
-        style={imageStyle}
+        style={style}
         placeholderTextColor={placeholderTextColor}
         placeholder={placeholder}
         value={value}
         onChangeText={onChangeText}
         secureTextEntry={secureTextEntry}
       />
-      <View viewStyle={imageChild}></View>
+      <View viewStyle={imageChild} />
     </>
   );
 };
