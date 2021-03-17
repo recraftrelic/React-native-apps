@@ -1,32 +1,29 @@
 import React from 'react';
-import {TextInput, Image, View} from 'react-native';
+import {TextInput, Image, TouchableOpacity} from 'react-native';
 
-const CommonInput = (props) => {
-  const {
-    style,
-    placeholderTextColor,
-    placeholder,
-    imageStyle,
-    imageSource,
-    viewStyle,
-    onChangeText,
-    value,
-    secureTextEntry
-
-  } = props;
-  console.log(value)
+const CommonInput = ({
+  style,
+  placeholderTextColor,
+  placeholder,
+  imageStyle,
+  imageSource,
+  onChangeText,
+  value,
+  secureTextEntry,
+}) => {
   return (
     <>
-      <TextInput
-        style={style}
-        placeholderTextColor={placeholderTextColor}
-        placeholder={placeholder}
-        value={value}
-        onChangeText={onChangeText}
-        secureTextEntry={secureTextEntry}
-      />
-      <Image style={imageStyle} source={imageSource} />
-      <View style={viewStyle}></View>
+      <TouchableOpacity>
+        <TextInput
+          style={style}
+          placeholderTextColor={placeholderTextColor}
+          placeholder={placeholder}
+          value={value}
+          onChangeText={onChangeText}
+          secureTextEntry={secureTextEntry}
+        />
+        <Image style={imageStyle} source={imageSource} />
+      </TouchableOpacity>
     </>
   );
 };
