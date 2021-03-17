@@ -3,7 +3,6 @@ import {styles} from './MainScreenStylesheet';
 import {Image, ScrollView, Text, TouchableHighlight, View} from 'react-native';
 import data from './MainScreen.json';
 const MainScreen = (props) => {
-  console.log(props.navigation.navigate,"djkdhjd");
   return (
     <>
       <ScrollView style={styles.body}>

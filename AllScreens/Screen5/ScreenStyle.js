@@ -3,10 +3,16 @@ import {RFValue} from 'react-native-responsive-fontsize';
 import {moderateScale} from 'react-native-size-matters';
 import {AppColor} from '../AppUtil';
 import {fonts} from '../../components/utilities/images';
+import {Platform} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: AppColor.borderBlue,
+  },
+  main: {
+    marginTop: Platform.OS == 'ios' ? 50 : 0,
+    flex: 1,
+    backgroundColor: 'white',
   },
   style1: {
     borderTopLeftRadius: moderateScale(30),
@@ -21,7 +27,7 @@ export const styles = StyleSheet.create({
   },
   userName: {
     height: moderateScale(81),
-    top: moderateScale(130),
+    top: moderateScale(120),
     left: moderateScale(30),
     fontSize: RFValue(15),
     fontFamily: fonts.regular,
@@ -32,18 +38,19 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   email: {
-    top: moderateScale(65),
+    top: moderateScale(55),
     height: moderateScale(60),
     width: moderateScale(340),
     borderRadius: 10,
     borderWidth: 2,
     borderColor: AppColor.borderBlue,
-    fontSize: RFValue(20),
+    fontSize: RFValue(15),
     textAlign: 'center',
     margin: moderateScale(10),
+    flex: 0.1,
   },
   password: {
-    top: moderateScale(-15),
+    top: moderateScale(-25),
     height: moderateScale(65),
     width: moderateScale(348),
     borderRadius: 10,
@@ -53,17 +60,19 @@ export const styles = StyleSheet.create({
     fontSize: RFValue(20),
     paddingLeft: moderateScale(40),
     margin: moderateScale(10),
+    flex: 0.1,
   },
   pass: {
     height: moderateScale(91),
-    top: moderateScale(60),
+    top: moderateScale(50),
     left: moderateScale(30),
     fontSize: RFValue(15),
     fontFamily: fonts.regular,
   },
   man: {
-    top: moderateScale(20),
-    left: moderateScale(-115),
+    top: moderateScale(5),
+    right: moderateScale(125),
+    flex: 0.1,
   },
   View5: {
     borderRadius: moderateScale(10),
@@ -71,7 +80,7 @@ export const styles = StyleSheet.create({
     paddingRight: moderateScale(10),
     paddingLeft: moderateScale(10),
     padding: moderateScale(3),
-    top: moderateScale(-70),
+    top: moderateScale(-80),
     left: moderateScale(125),
     textAlign: 'center',
     borderColor: AppColor.borderBlue,
@@ -82,10 +91,11 @@ export const styles = StyleSheet.create({
   loginButton: {
     width: moderateScale(330),
     height: moderateScale(50),
-    marginTop: moderateScale(-35),
+    marginTop: moderateScale(-45),
     marginLeft: moderateScale(15),
     backgroundColor: AppColor.darkSky,
     borderRadius: 10,
+    flex: 0.1,
   },
   button: {
     paddingTop: moderateScale(15),
@@ -95,15 +105,21 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   account: {
-    marginLeft: moderateScale(100),
+    marginLeft: moderateScale(60),
     color: AppColor.black,
     fontFamily: fonts.regular,
+    flex: 0.1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
   Sign: {
-    marginLeft: moderateScale(250),
+    marginLeft: moderateScale(230),
     position: 'absolute',
     color: AppColor.lightBlue,
     fontFamily: fonts.regular,
+    flex: 0.1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
   errorMessage: {
     color: 'red',

@@ -30,8 +30,8 @@ export const styles = StyleSheet.create({
   },
   boxShadow: {
     width: scale(310),
-    height: verticalScale(55),
-    top: moderateScale(268),
+    height: verticalScale(45),
+    top: moderateScale(258),
     left: moderateScale(20),
     backgroundColor: AppColor.white,
     position: 'absolute',
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
   },
   boxShadow1: {
     width: scale(310),
-    height: verticalScale(55),
+    height: verticalScale(45),
     top: moderateScale(358),
     left: moderateScale(20),
     backgroundColor: AppColor.white,
@@ -52,8 +52,8 @@ export const styles = StyleSheet.create({
   },
   password: {
     width: scale(300),
-    marginTop: moderateScale(250),
-    marginLeft: moderateScale(210),
+    marginTop: moderateScale(240),
+    marginLeft: moderateScale(200),
     fontSize: RFValue(15),
     fontWeight: '500',
     color: AppColor.lineGrey,
@@ -65,9 +65,10 @@ export const styles = StyleSheet.create({
     marginLeft: moderateScale(20),
     backgroundColor: AppColor.darkSky,
     borderRadius: 10,
+    flex:0.1,
   },
   button: {
-    paddingTop: moderateScale(20),
+    paddingTop: moderateScale(15),
     textAlign: 'center',
     color: AppColor.white,
     fontSize: RFValue(17),
@@ -104,34 +105,24 @@ export const styles = StyleSheet.create({
   },
 
   emailIcon: {
-    width: moderateScale(17),
-    height: moderateScale(18),
-    left: moderateScale(35),
+    top: moderateScale(10),
+    right: moderateScale(290),
     position: 'absolute',
   },
   password1: {
-    left: moderateScale(35),
+    top: moderateScale(10),
+    right: moderateScale(290),
     position: 'absolute',
-  },
-  shadow: {
-    shadowColor: AppColor.black,
-    shadowRadius: 10,
-    shadowOpacity: 0.6,
-    elevation: 5,
-    shadowOffset: {
-      height: 11,
-      width: 0,
-    },
   },
   errorMessage: {
     left: moderateScale(50),
-    top: moderateScale(340),
+    top: moderateScale(310),
     color: AppColor.red,
     position: 'absolute',
   },
   errorMessage1: {
     left: moderateScale(50),
-    top: moderateScale(70),
+    top: moderateScale(50),
     color: AppColor.red,
     position: 'absolute',
   },

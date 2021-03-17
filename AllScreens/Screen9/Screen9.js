@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import {Image, Text, View} from 'react-native';
 import {styles} from '../Screen9/ScreenStyle';
 import screen from '../Screen9/Screen9.json';
-import CommonInput from '../Screen1/Component/CommonInput';
+import CommonInput from '../Screen9/Component/CommonInput';
 import {images} from '../../components/utilities/images';
 import {TouchableOpacity} from 'react-native';
+import {SafeAreaView} from 'react-navigation';
 
 const Screen9 = () => {
   const [email, setEmail] = useState('');
@@ -35,59 +36,62 @@ const Screen9 = () => {
   };
   return (
     <>
-      <View>
+      <SafeAreaView style={styles.main}>
         <View>
-          <Image style={styles.arrow} source={images.arrow_backward} />
-          <Text style={styles.sign}>{screen.sign}</Text>
-          <Image style={styles.logo} source={images.Screen9logo} />
-          <Text style={styles.email}>{screen.email}</Text>
-          <CommonInput
-            style={styles.email1}
-            value={email}
-            placeholderTextColor="grey"
-            placeholder="Youraddress@email.com"
-            viewStyle={styles.childView}
-            secureTextEntry={false}
-            onChangeText={(value) => onChangeEmail(value)}
-          />
-          {emailErrorStatus ? (
-            <Text style={styles.errorMessage}>
-              * Please include an '@' in the email address.
-            </Text>
-          ) : null}
-          <Text style={styles.password}>{screen.password}</Text>
-          <CommonInput
-            style={styles.password1}
-            value={password}
-            placeholderTextColor="grey"
-            placeholder="Enter your password"
-            viewStyle={styles.childView1}
-            secureTextEntry={showHidePassword}
-            onChangeText={(value) => onChangeText(value)}
-          />
-          <TouchableOpacity
-            onPress={() => setShowHidePassword(!showHidePassword)}
-            style={styles.eyes}
-            hitSlop={{top: 10, bottom: 10, right: 10, left: 10}}>
-            {showHidePassword ? (
-              <Image source={images.Eyes} />
-            ) : (
-              <Image source={images.ic_ad_view} />
-            )}
-          </TouchableOpacity>
-          {passwordErrorStatus === true ? (
-            <Text style={styles.errorMessage1}>
-              * Password should be minimum 8 characters.
-            </Text>
-          ) : null}
-          <Image style={styles.print} source={images.print} />
-          <View style={styles.continue}>
-            <Text style={styles.content}>{screen.continue}</Text>
+          <View>
+            <Image style={styles.arrow} source={images.arrow_backward} />
+            <Text style={styles.sign}>{screen.sign}</Text>
+            <Image style={styles.logo} source={images.Screen9logo} />
+            <Text style={styles.email}>{screen.email}</Text>
+            <CommonInput
+              style={styles.email1}
+              value={email}
+              placeholderTextColor="grey"
+              placeholder="Youraddress@email.com"
+              secureTextEntry={false}
+              onChangeText={(value) => onChangeEmail(value)}
+            />
+            {emailErrorStatus ? (
+              <Text style={styles.errorMessage}>
+                * Please include an '@' in the email address.
+              </Text>
+            ) : null}
+            <View style={styles.childView} />
+            <Text style={styles.password}>{screen.password}</Text>
+            <CommonInput
+              style={styles.password1}
+              value={password}
+              placeholderTextColor="grey"
+              placeholder="Enter your password"
+              viewStyle={styles.childView1}
+              secureTextEntry={showHidePassword}
+              onChangeText={(value) => onChangeText(value)}
+            />
+            <TouchableOpacity
+              onPress={() => setShowHidePassword(!showHidePassword)}
+              style={styles.eyes}
+              hitSlop={{top: 10, bottom: 10, right: 10, left: 10}}>
+              {showHidePassword ? (
+                <Image source={images.Eyes} />
+              ) : (
+                <Image source={images.ic_ad_view} />
+              )}
+            </TouchableOpacity>
+            {passwordErrorStatus === true ? (
+              <Text style={styles.errorMessage1}>
+                * Password should be minimum 8 characters.
+              </Text>
+            ) : null}
+            <View style={styles.childView1} />
+            <Image style={styles.print} source={images.print} />
+            <View style={styles.continue}>
+              <Text style={styles.content}>{screen.continue}</Text>
+            </View>
+            <Text style={styles.forgot}>{screen.forgot}</Text>
+            <View style={styles.child} />
           </View>
-          <Text style={styles.forgot}>{screen.forgot}</Text>
-          <View style={styles.child} />
         </View>
-      </View>
+      </SafeAreaView>
     </>
   );
 };
