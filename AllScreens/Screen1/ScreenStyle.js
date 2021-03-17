@@ -15,11 +15,13 @@ export const styles = StyleSheet.create({
     position: 'absolute',
   },
   arrow: {
-    left: moderateScale(30),
+    left: moderateScale(35),
     marginTop: moderateScale(65),
     color: AppColor.white,
-    //height: 200,
-    // width: null,
+  },
+  arr: {
+    width:18,
+    height:18,
   },
   main: {
     marginTop: Platform.OS == 'ios' ? 50 : 0,
