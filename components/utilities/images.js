@@ -3,6 +3,7 @@ import logo from '../../images/icons/logo.png';
 import Ellipse from '../../images/icons/Ellipse.png';
 import oroptional from '../../images/icons/oroptional.png';
 import Google from '../../images/icons/Google.png';
+import backArrow from '../../images/icons/backArrow.png';
 import Shape from '../../images/icons/Shape.png';
 import checkIcon from '../../images/icons/check.png';
 import checkbox from '../../images/icons/checkbox.png';
@@ -79,6 +80,7 @@ const images = {
   Screen9logo,
   tick1,
   arr,
+  backArrow
 };
 
 const fonts = Platform.select({
