@@ -17,7 +17,7 @@ import { styles } from './loginStyle2';
 import { images } from './utilities/images';
 
 
-const LoginScreen10 = () => {
+const LoginScreen10 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [check, setCheckStatus] = useState(false);
@@ -79,8 +79,16 @@ const LoginScreen10 = () => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
         >
-
           <View style={styles.headText}>
+          <TouchableOpacity
+          onPress={() => props.navigation.goBack()}
+          hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+          >
+          <Image
+              source={images.backArrow}
+              style={styles.backArrow}
+          />
+          </TouchableOpacity>
             <Text style={styles.headTxt}>
               {login2.welcome}
             </Text>
@@ -105,15 +113,6 @@ const LoginScreen10 = () => {
                     * Please include an '@' in the email address.
                   </Text>
                 ) : null}
-                {
-                  email && !emailErrorStatus ?
-                    <Image
-                      source={images.tick1}
-                      style={styles.tick}
-                    />
-                    :
-                    null
-                }
               </View>
 
               <View>

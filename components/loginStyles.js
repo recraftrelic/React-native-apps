@@ -184,6 +184,10 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(40),
 
     },
+    backArrow: {
+        top: moderateScale(40),
+        left: moderateScale(22)
+    },
     headName: {
         fontSize: RFValue(24),
         marginTop: moderateScale(10),

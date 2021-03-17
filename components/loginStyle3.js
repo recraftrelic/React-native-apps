@@ -209,6 +209,10 @@ export const styles = StyleSheet.create({
         top: moderateScale(55),
         left: moderateScale(30),
     },
+    backArrow: {
+        top: moderateScale(20),
+        left: moderateScale(22)
+    },
 
     emailIcon: {
         position: 'absolute',
@@ -261,7 +265,7 @@ export const styles = StyleSheet.create({
         fontSize: RFValue(18),
         marginTop: moderateScale(145),
         fontFamily: fonts.regular,
-        right: moderateScale(50),
+        right: moderateScale(45),
         flex: 0.3
     },
 

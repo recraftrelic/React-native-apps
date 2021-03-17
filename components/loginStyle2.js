@@ -187,7 +187,7 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(20)
     },
     headText: {
-        marginTop: moderateScale(25),
+        marginTop: moderateScale(10),
         flex: 0.3,
         alignItems: 'center',
     },
@@ -196,6 +196,11 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(10),
         fontFamily: fonts.bold,
     },
+    backArrow: {
+        top: moderateScale(10),
+        right: moderateScale(130)
+    },
+
     usernameInput: {
         fontSize: 16,
         padding: 15,

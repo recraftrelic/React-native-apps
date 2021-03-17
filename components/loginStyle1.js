@@ -84,9 +84,7 @@ export const styles = StyleSheet.create({
         top: moderateScale(12)
     },
     reset: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        padding: moderateScale(50),
+  
         paddingTop: 0,
         top: moderateScale(12)
     },
@@ -102,7 +100,7 @@ export const styles = StyleSheet.create({
         color: '#D0D0D0',
         marginLeft: moderateScale(10),
         fontFamily: fonts.regular,
-        right: moderateScale(155),
+        right: moderateScale(144),
         fontSize: RFValue(18),
 
     },
@@ -144,9 +142,11 @@ export const styles = StyleSheet.create({
 
     },
     reset: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
         fontFamily: fonts.regular,
-        bottom: moderateScale(10),
-        left: moderateScale(150),
+        bottom: moderateScale(8),
+        left: moderateScale(170),
         fontSize: RFValue(14),
         color: '#D0D0D0'
 
@@ -265,6 +265,10 @@ export const styles = StyleSheet.create({
     logoView: {
         flex: 1
     },
+    backArrow: {
+        top: moderateScale(40),
+        left: moderateScale(22)
+    },
     googleTxt: {
         color: 'white',
         marginLeft: moderateScale(10),
@@ -275,6 +279,6 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(5),
         color: '#393F45',
         fontFamily: fonts.bold,
-        right: moderateScale(45),
+        right: moderateScale(38),
     }
 });

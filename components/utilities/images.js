@@ -12,6 +12,7 @@ import HideIcon from "../../images/icons/Hide.png";
 import ic_ad_view from "../../images/icons/ic_ad_view.png";
 import group from "../../images/icons/Group.png";
 import at from "../../images/icons/at.png";
+import backArrow from "../../images/icons/backArrow.png";
 import Vector from "../../images/icons/Vector.png";
 import EllipseCrcl from "../../images/icons/EllipseCrcl.png";
 import zigzag from "../../images/icons/zigzag.png";
@@ -77,7 +78,9 @@ const images = {
     print,
     arrow_backward,
     Screen9logo,
-    tick1
+    tick1,
+    backArrow
+
 }
 
 const fonts = Platform.select({

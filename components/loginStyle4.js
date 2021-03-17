@@ -182,6 +182,10 @@ export const styles = StyleSheet.create({
         left: moderateScale(155),
 
     },
+    backArrow: {
+        top: moderateScale(40),
+        left: moderateScale(22)
+    },
     groupLogo: {
         position: 'absolute',
         top: moderateScale(55),

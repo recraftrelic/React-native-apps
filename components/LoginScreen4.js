@@ -14,7 +14,7 @@ import login1 from './login1.json';
 import { images } from "./utilities/images";
 
 
-const LoginScreen1 = () => {
+const LoginScreen1 = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showHidePassword, setShowHidePassword] = useState(true);
@@ -69,6 +69,15 @@ const LoginScreen1 = () => {
                     keyboardShouldPersistTaps='handled'
                     showsVerticalScrollIndicator={false}
                 >
+                <TouchableOpacity
+                onPress={() => props.navigation.goBack()}
+                hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+                >
+                <Image
+                    source={images.backArrow}
+                    style={styles.backArrow}
+                />
+                </TouchableOpacity>
 
                     <Image source={images.Ellipse} style={styles.headLogo} />
 
