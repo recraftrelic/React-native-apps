@@ -115,15 +115,7 @@ const LoginScreen1 = () => {
                                     * Please include an '@' in the email address.
                                 </Text>
                             ) : null}
-                            {
-                                email && !emailErrorStatus ?
-                                    <Image
-                                        source={images.tick1}
-                                        style={styles.tick}
-                                    />
-                                    :
-                                    null
-                            }
+                            
                             <Image
                                 style={styles.emailIcon}
                                 source={images.at}
@@ -162,6 +154,7 @@ const LoginScreen1 = () => {
                                         :
                                         <Image
                                             source={images.ic_ad_view}
+                                            style={styles.hideIcon}
                                         />
                                 }
                             </TouchableOpacity>

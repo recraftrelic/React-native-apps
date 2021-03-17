@@ -177,7 +177,7 @@ export const styles = StyleSheet.create({
     },
     tick: {
         bottom: moderateScale(35),
-        left: moderateScale(285),
+        left: moderateScale(295),
         height: moderateScale(20),
         width: moderateScale(20),
 
@@ -261,7 +261,7 @@ export const styles = StyleSheet.create({
         fontSize: RFValue(18),
         marginTop: moderateScale(145),
         fontFamily: fonts.regular,
-        right: moderateScale(44),
+        right: moderateScale(47),
         flex: 0.3
     },
 
