@@ -6,7 +6,7 @@ import {images} from '../../components/utilities/images';
 import CommonInput from '../Screen1/Component/CommonInput';
 import {TouchableOpacity} from 'react-native';
 
-const Screen6 = () => {
+const Screen6 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
@@ -39,6 +39,14 @@ const Screen6 = () => {
         <Image style={styles.image1} source={images.Ellipse21} />
         <Image style={styles.circle2} source={images.pCircle1} />
         <Image style={styles.arrow1} source={images.arrow1} />
+        <TouchableOpacity
+          onPress={() => {
+            props.navigation.goBack();
+          }}>
+          <View style={styles.arrow}>
+            <Image source={images.arrow_backward} />
+          </View>
+        </TouchableOpacity>
         <Image style={styles.logo} source={images.pLogo1} />
         <View>
           <Text style={styles.hello}>{screen.hello}</Text>
@@ -54,7 +62,7 @@ const Screen6 = () => {
             onChangeText={(value) => onChangeEmail(value)}
             secureTextEntry={false}
           />
-          <Text style={styles.childView}></Text>
+          <Text style={styles.childView} />
           {emailErrorStatus ? (
             <Text style={styles.errorMessage}>
               * Please include an '@' in the email address.
@@ -69,7 +77,7 @@ const Screen6 = () => {
             secureTextEntry={true}
           />
 
-          <View style={styles.childView1}></View>
+          <View style={styles.childView1} />
           {passwordErrorStatus == true ? (
             <Text style={styles.errorMessage1}>
               * Password should be minimum 8 characters.

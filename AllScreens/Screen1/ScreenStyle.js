@@ -14,13 +14,19 @@ export const styles = StyleSheet.create({
     backgroundColor: AppColor.black,
     position: 'absolute',
   },
+  arrow: {
+    left: moderateScale(30),
+    marginTop: moderateScale(65),
+    color: AppColor.white,
+    //height: 200,
+    // width: null,
+  },
   main: {
     marginTop: Platform.OS == 'ios' ? 50 : 0,
     flex: 1,
     backgroundColor: 'white',
   },
   login: {
-    marginTop: moderateScale(52),
     textAlign: 'center',
     fontWeight: '400',
     fontSize: RFValue(34),
@@ -99,7 +105,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   accountView: {
-    flex:0.1,
+    flex: 0.1,
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
