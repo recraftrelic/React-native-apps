@@ -7,9 +7,8 @@ import {Platform} from 'react-native';
 
 export const styles = StyleSheet.create({
   arrow: {
-    position: 'absolute',
-    left: moderateScale(37),
-    top: moderateScale(65),
+    left: moderateScale(30),
+    marginTop: moderateScale(65),
   },
   main: {
     marginTop: Platform.OS == 'ios' ? 50 : 0,
@@ -32,7 +31,7 @@ export const styles = StyleSheet.create({
     top: moderateScale(127),
   },
   email: {
-    top: moderateScale(280),
+    top: moderateScale(180),
     left: moderateScale(19),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -40,7 +39,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   email1: {
-    top: moderateScale(286),
+    top: moderateScale(186),
     left: moderateScale(19),
     fontWeight: '500',
     fontSize: RFValue(14),
@@ -50,14 +49,14 @@ export const styles = StyleSheet.create({
   },
   childView: {
     width: moderateScale(292),
-    top: moderateScale(286),
+    top: moderateScale(186),
     left: moderateScale(19),
     borderBottomWidth: 0.58,
     borderColor: AppColor.borderColor,
     flex: 0.1,
   },
   password: {
-    top: moderateScale(320),
+    top: moderateScale(220),
     left: moderateScale(19),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -66,7 +65,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   password1: {
-    top: moderateScale(330),
+    top: moderateScale(230),
     left: moderateScale(19),
     fontWeight: '500',
     fontSize: RFValue(14),
@@ -76,19 +75,18 @@ export const styles = StyleSheet.create({
   },
   childView1: {
     width: moderateScale(292),
-    top: moderateScale(320),
+    top: moderateScale(10),
     left: moderateScale(19),
     borderBottomWidth: 0.58,
     borderColor: AppColor.borderColor,
   },
   eyes: {
-    position: 'absolute',
-    top: moderateScale(415),
+    marginTop: moderateScale(200),
     left: moderateScale(275),
     color: AppColor.violet,
   },
   print: {
-    top: moderateScale(473),
+    top: moderateScale(453),
     left: moderateScale(43),
     position: 'absolute',
     flex: 0.2,
@@ -97,7 +95,7 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     width: moderateScale(220),
     height: moderateScale(61),
-    top: moderateScale(473),
+    top: moderateScale(453),
     borderRadius: 10,
     left: moderateScale(111),
     backgroundColor: AppColor.purple,
@@ -112,7 +110,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   forgot: {
-    top: moderateScale(425),
+    top: moderateScale(325),
     textAlign: 'center',
     fontWeight: '400',
     fontSize: RFValue(16),

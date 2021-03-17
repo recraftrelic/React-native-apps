@@ -9,6 +9,11 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     left: moderateScale(295),
   },
+  arrow: {
+    left: moderateScale(30),
+    marginTop: moderateScale(65),
+    color: 'red',
+  },
   circle2: {
     position: 'absolute',
     top: moderateScale(90),
@@ -25,7 +30,7 @@ export const styles = StyleSheet.create({
     position: 'absolute',
   },
   hello: {
-    top: moderateScale(230),
+    top: moderateScale(150),
     left: moderateScale(35),
     fontWeight: '700',
     fontSize: RFValue(30),
@@ -33,7 +38,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   state: {
-    top: moderateScale(277),
+    top: moderateScale(187),
     left: moderateScale(35),
     fontWeight: '400',
     fontSize: RFValue(16),
@@ -42,7 +47,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   user: {
-    top: moderateScale(322),
+    top: moderateScale(232),
     left: moderateScale(20),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -51,7 +56,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   name: {
-    top: moderateScale(345),
+    top: moderateScale(215),
     left: moderateScale(20),
     position: 'absolute',
     fontWeight: '400',
@@ -60,22 +65,16 @@ export const styles = StyleSheet.create({
     color: AppColor.greyContent,
     fontFamily: fonts.regular,
   },
-  tick: {
-    position: 'absolute',
-    height: moderateScale(21),
-    top: moderateScale(355),
-    left: moderateScale(301),
-  },
   childView: {
     position: 'absolute',
     width: moderateScale(313),
-    top: moderateScale(363),
+    top: moderateScale(273),
     left: moderateScale(20),
     borderBottomWidth: 0.58,
     borderColor: AppColor.borderColor,
   },
   password: {
-    top: moderateScale(360),
+    top: moderateScale(270),
     left: moderateScale(20),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -85,13 +84,13 @@ export const styles = StyleSheet.create({
   },
   childView1: {
     width: moderateScale(313),
-    top: moderateScale(370),
+    top: moderateScale(280),
     left: moderateScale(20),
     borderBottomWidth: 0.58,
     borderColor: AppColor.borderColor,
   },
   rectangle: {
-    top: moderateScale(400),
+    top: moderateScale(310),
     left: moderateScale(20),
     borderRadius: 1,
     position: 'absolute',
@@ -103,7 +102,7 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
   },
   remember: {
-    top: moderateScale(405),
+    top: moderateScale(315),
     left: moderateScale(55),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -112,7 +111,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   forgot: {
-    top: moderateScale(395),
+    top: moderateScale(305),
     left: moderateScale(236),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -123,7 +122,7 @@ export const styles = StyleSheet.create({
   button: {
     width: moderateScale(320),
     height: moderateScale(50),
-    top: moderateScale(511),
+    top: moderateScale(421),
     left: moderateScale(20),
     borderRadius: 10,
     position: 'absolute',
@@ -137,7 +136,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   account: {
-    top: moderateScale(475),
+    top: moderateScale(385),
     left: moderateScale(60),
     fontWeight: '400',
     fontSize: RFValue(13),
@@ -146,7 +145,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   sign: {
-    top: moderateScale(575),
+    top: moderateScale(485),
     left: moderateScale(200),
     fontWeight: '400',
     fontSize: RFValue(12),

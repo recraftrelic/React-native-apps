@@ -4,10 +4,11 @@ import {styles} from '../Screen9/ScreenStyle';
 import screen from '../Screen9/Screen9.json';
 import CommonInput from '../Screen9/Component/CommonInput';
 import {images} from '../../components/utilities/images';
-import {TouchableOpacity} from 'react-native';
-import {SafeAreaView} from 'react-navigation';
 
-const Screen9 = () => {
+import {SafeAreaView} from 'react-navigation';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+
+const Screen9 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
@@ -34,12 +35,20 @@ const Screen9 = () => {
       setEmailErrorStatus(false);
     }
   };
+
   return (
     <>
       <SafeAreaView style={styles.main}>
         <View>
           <View>
-            <Image style={styles.arrow} source={images.arrow_backward} />
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.goBack();
+              }}>
+              <View style={styles.arrow}>
+                <Image source={images.arrow_backward} />
+              </View>
+            </TouchableOpacity>
             <Text style={styles.sign}>{screen.sign}</Text>
             <Image style={styles.logo} source={images.Screen9logo} />
             <Text style={styles.email}>{screen.email}</Text>

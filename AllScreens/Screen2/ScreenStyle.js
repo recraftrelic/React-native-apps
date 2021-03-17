@@ -6,7 +6,7 @@ import {RFValue} from 'react-native-responsive-fontsize';
 export const styles = StyleSheet.create({
   container: {
     marginLeft: moderateScale(32),
-    marginTop: moderateScale(120),
+    marginTop: moderateScale(20),
     height: moderateScale(25),
     width: moderateScale(73),
     fontWeight: '400',
@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   container1: {
-    marginTop: moderateScale(10),
     marginLeft: moderateScale(30),
     fontSize: RFValue(32),
     fontWeight: '700',
@@ -52,7 +51,7 @@ export const styles = StyleSheet.create({
   },
   password: {
     width: scale(300),
-    marginTop: moderateScale(240),
+    marginTop: moderateScale(230),
     marginLeft: moderateScale(200),
     fontSize: RFValue(15),
     fontWeight: '500',
@@ -65,7 +64,7 @@ export const styles = StyleSheet.create({
     marginLeft: moderateScale(20),
     backgroundColor: AppColor.darkSky,
     borderRadius: 10,
-    flex:0.1,
+    flex: 0.1,
   },
   button: {
     paddingTop: moderateScale(15),
@@ -99,9 +98,8 @@ export const styles = StyleSheet.create({
     top: moderateScale(95),
   },
   mark1: {
-    position: 'absolute',
     left: moderateScale(30),
-    top: moderateScale(70),
+    marginTop: moderateScale(100),
   },
 
   emailIcon: {

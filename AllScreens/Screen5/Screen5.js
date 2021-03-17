@@ -7,8 +7,9 @@ import picture from '../images';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {TouchableOpacity} from 'react-native';
 import {SafeAreaView} from 'react-navigation';
+import {images} from '../../components/utilities/images';
 
-const Screen5 = () => {
+const Screen5 = (props) => {
   const [showHidePassword, setShowHidePassword] = useState(true);
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
   const [email, setEmail] = useState('');
@@ -46,6 +47,14 @@ const Screen5 = () => {
           showsVerticalScrollIndicator={false}>
           <View style={styles.container}>
             <View style={styles.style1}>
+              <TouchableOpacity
+                onPress={() => {
+                  props.navigation.goBack();
+                }}>
+                <View style={styles.arrow}>
+                  <Image source={images.arrow_backward} />
+                </View>
+              </TouchableOpacity>
               <Image style={styles.logo1} source={picture.logo1} />
               <View>
                 <Text style={styles.userName}>{screen5.userName}</Text>

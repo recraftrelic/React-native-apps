@@ -6,8 +6,9 @@ import {styles} from './ScreenStyle';
 import {images} from '../../components/utilities/images';
 import CommonInput from './Component/CommonInput';
 import {moderateScale} from 'react-native-size-matters';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
-const Screen1 = () => {
+const Screen1 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
@@ -51,6 +52,14 @@ const Screen1 = () => {
             enableOnAndroid={true}
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.goBack();
+              }}>
+              <View style={styles.arrow}>
+                <Image source={images.arr} />
+              </View>
+            </TouchableOpacity>
             <Text style={styles.login}>{screen1.name}</Text>
             <Text style={styles.email}>{screen1.email}</Text>
             <Text style={styles.number}>{screen1.number}</Text>
@@ -66,7 +75,7 @@ const Screen1 = () => {
                 onChangeText={(value) => onChangeEmail(value)}
                 secureTextEntry={false}
               />
-              <View style={styles.childView}></View>
+              <View style={styles.childView} />
               {emailErrorStatus == true ? (
                 <Text style={styles.errorMessage}>
                   * Please include an '@' in the email address.
@@ -86,7 +95,7 @@ const Screen1 = () => {
                 secureTextEntry={true}
                 onChangeText={(value) => onChangeText(value)}
               />
-              <View style={styles.childView}></View>
+              <View style={styles.childView} />
               {passwordErrorStatus == true ? (
                 <Text style={styles.errorMessage1}>
                   * Password should be minimum 8 characters.

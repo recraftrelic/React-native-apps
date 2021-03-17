@@ -9,8 +9,9 @@ import {images} from '../../components/utilities/images';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import CommonInput from '../Screen1/Component/CommonInput';
 import {SafeAreaView} from 'react-navigation';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
-const Screen2 = () => {
+const Screen2 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
@@ -37,6 +38,7 @@ const Screen2 = () => {
     }
   };
 
+  const {navigation} = props;
   return (
     <SafeAreaView style={styles.main}>
       <View>
@@ -47,7 +49,14 @@ const Screen2 = () => {
           <Image style={styles.image1} source={images.Ellipse2} />
           <Image style={styles.circle2} source={images.Circle2} />
           <Image style={styles.arrow1} source={images.zigzag} />
-          <Image style={styles.mark1} source={images.mark1} />
+          <TouchableOpacity
+            onPress={() => {
+              props.navigation.goBack();
+            }}>
+            <View style={styles.mark1}>
+              <Image source={images.mark1} />
+            </View>
+          </TouchableOpacity>
           <View>
             <Text style={styles.container}>{screen2.container}</Text>
             <Text style={styles.container1}>{screen2.container1}</Text>

@@ -9,6 +9,10 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: AppColor.borderBlue,
   },
+  arrow: {
+    left: moderateScale(40),
+    marginTop: moderateScale(65),
+  },
   main: {
     marginTop: Platform.OS == 'ios' ? 50 : 0,
     flex: 1,
@@ -22,12 +26,11 @@ export const styles = StyleSheet.create({
     paddingBottom: moderateScale(100),
   },
   logo1: {
-    top: moderateScale(81),
     left: moderateScale(160),
   },
   userName: {
     height: moderateScale(81),
-    top: moderateScale(120),
+    top: moderateScale(20),
     left: moderateScale(30),
     fontSize: RFValue(15),
     fontFamily: fonts.regular,
@@ -38,7 +41,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   email: {
-    top: moderateScale(55),
+    top: moderateScale(-35),
     height: moderateScale(60),
     width: moderateScale(340),
     borderRadius: 10,
@@ -50,7 +53,7 @@ export const styles = StyleSheet.create({
     flex: 0.1,
   },
   password: {
-    top: moderateScale(-25),
+    top: moderateScale(-105),
     height: moderateScale(65),
     width: moderateScale(348),
     borderRadius: 10,
@@ -64,13 +67,13 @@ export const styles = StyleSheet.create({
   },
   pass: {
     height: moderateScale(91),
-    top: moderateScale(50),
+    top: moderateScale(-30),
     left: moderateScale(30),
     fontSize: RFValue(15),
     fontFamily: fonts.regular,
   },
   man: {
-    top: moderateScale(5),
+    top: moderateScale(-85),
     right: moderateScale(125),
     flex: 0.1,
   },
@@ -80,7 +83,7 @@ export const styles = StyleSheet.create({
     paddingRight: moderateScale(10),
     paddingLeft: moderateScale(10),
     padding: moderateScale(3),
-    top: moderateScale(-80),
+    top: moderateScale(-160),
     left: moderateScale(125),
     textAlign: 'center',
     borderColor: AppColor.borderBlue,
@@ -91,7 +94,7 @@ export const styles = StyleSheet.create({
   loginButton: {
     width: moderateScale(330),
     height: moderateScale(50),
-    marginTop: moderateScale(-45),
+    marginTop: moderateScale(-105),
     marginLeft: moderateScale(15),
     backgroundColor: AppColor.darkSky,
     borderRadius: 10,
@@ -124,11 +127,11 @@ export const styles = StyleSheet.create({
   errorMessage: {
     color: 'red',
     position: 'absolute',
-    top: moderateScale(135),
+    top: moderateScale(40),
   },
   errorMessage1: {
     color: 'red',
     position: 'absolute',
-    top: moderateScale(55),
+    top: moderateScale(-25),
   },
 });
