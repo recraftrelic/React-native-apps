@@ -57,7 +57,7 @@ const Screen1 = (props) => {
                 props.navigation.goBack();
               }}>
               <View style={styles.arrow}>
-                <Image source={images.arr} />
+                <Image style={styles.arr} source={images.arr} />
               </View>
             </TouchableOpacity>
             <Text style={styles.login}>{screen1.name}</Text>
