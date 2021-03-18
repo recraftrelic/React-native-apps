@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.react_native_login_screens",
+  "applicationId": "com.RecraftLoginScreens",
   "variantName": "processReleaseResources",
   "elements": [
     {
