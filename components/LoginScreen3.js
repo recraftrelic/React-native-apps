@@ -13,7 +13,7 @@ import {styles} from './loginStyles';
 import login2 from './login2.json';
 import {images} from './utilities/images';
 
-const LoginScreen3 = () => {
+const LoginScreen3 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [check, setCheckStatus] = useState(false);
@@ -64,6 +64,15 @@ const LoginScreen3 = () => {
           enableOnAndroid={true}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}>
+          <TouchableOpacity
+          onPress={() => props.navigation.goBack()}
+          hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+      >
+      <Image
+          source={images.backArrow}
+          style={styles.backArrow}
+      />
+      </TouchableOpacity>
           <Image source={images.Ellipse} style={styles.headLogo} />
 
           <View style={styles.headText}>

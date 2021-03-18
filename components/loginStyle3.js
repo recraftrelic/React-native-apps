@@ -235,6 +235,10 @@ export const styles = StyleSheet.create({
         flex: 0.3,
         alignItems: 'center',
     },
+    backArrow: {
+        top: moderateScale(2),
+        right: moderateScale(152)
+      },
     headLogo: {
         position: 'absolute',
         top: moderateScale(-30),

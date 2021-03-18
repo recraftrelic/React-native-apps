@@ -13,7 +13,7 @@ import { styles } from './loginStyle3';
 import login3 from './login3.json';
 import { images } from "./utilities/images";
 
-const LoginScreen8 = () => {
+const LoginScreen8 = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showHidePassword, setShowHidePassword] = useState(true);
@@ -72,7 +72,15 @@ const LoginScreen8 = () => {
                         style={styles.logo}
                     />
                     <View style={styles.headText}>
-
+                    <TouchableOpacity
+                    onPress={() => props.navigation.goBack()}
+                    hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+                    >
+                    <Image
+                        source={images.backArrow}
+                        style={styles.backArrow}
+                    />
+                    </TouchableOpacity>
 
                         <Text style={styles.headtextStyle}>
                             {login3.headername}

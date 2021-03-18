@@ -13,7 +13,7 @@ import { styles } from './loginStyle4';
 import login4 from './login4.json';
 import { images } from "./utilities/images";
 
-const LoginScreen4 = () => {
+const LoginScreen4 = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showHidePassword, setShowHidePassword] = useState(true);
@@ -66,7 +66,6 @@ const LoginScreen4 = () => {
                 keyboardShouldPersistTaps='handled'
                 showsVerticalScrollIndicator={false}
             >
-
                 <View style={styles.logoView}>
                     <Image source={images.group}
                         style={styles.groupLogo}
@@ -77,7 +76,15 @@ const LoginScreen4 = () => {
                 </View>
                 <View>
 
-
+                <TouchableOpacity
+                onPress={() => props.navigation.goBack()}
+                hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+                >
+                <Image
+                    source={images.backArrow}
+                    style={styles.backArrow}
+                />
+                </TouchableOpacity>
                     <View style={styles.headText}>
 
                         <Text style={styles.headerStyle}>
