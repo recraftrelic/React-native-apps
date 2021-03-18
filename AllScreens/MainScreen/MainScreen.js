@@ -1,186 +1,43 @@
 import React from 'react';
+import {TouchableHighlight} from 'react-native';
+import {View, Text, Image} from 'react-native';
+import {FlatGrid} from 'react-native-super-grid';
 import {styles} from './MainScreenStylesheet';
-import {Image, ScrollView, Text, TouchableHighlight, View} from 'react-native';
-import data from './MainScreen.json';
-const MainScreen = (props) => {
+export default function Example(props) {
+  const [items, setItems] = React.useState([
+    {name: 'Screen 1', code: '#4287f5', img: require('../../images/logo1.png')},
+    {name: 'Screen 2', code: '#4287f5', img: require('../../images/logo2.png')},
+    {name: 'Screen 3', code: '#4287f5', img: require('../../images/logo3.png')},
+    {name: 'Screen 4', code: '#4287f5', img: require('../../images/logo4.png')},
+    {name: 'Screen 5', code: '#4287f5', img: require('../../images/logo5.png')},
+    {name: 'Screen 6', code: '#4287f5', img: require('../../images/logo6.png')},
+    {name: 'Screen 7', code: '#4287f5', img: require('../../images/logo7.png')},
+    {name: 'Screen 8', code: '#4287f5', img: require('../../images/logo8.png')},
+    {name: 'Screen 9', code: '#4287f5', img: require('../../images/logo9.png')},
+    {
+      name: 'Screen 10',
+      code: '#4287f5',
+      img: require('../../images/logo10.png'),
+    },
+  ]);
   return (
-    <>
-      <ScrollView style={styles.body}>
-        <View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen1');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen1}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight > */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo1.png')}
-            />
-            {/* </TouchableHighlight> */}
+    <FlatGrid
+      itemDimension={130}
+      data={items}
+      style={styles.gridView}
+      spacing={10}
+      renderItem={({item, index}) => (
+        <TouchableHighlight
+          underLayer="white"
+          onPress={() => {
+            props.navigation.navigate(`screen${index + 1}`);
+          }}>
+          <View style={[styles.itemContainer, {backgroundColor: item.code}]}>
+            <Text style={styles.itemName}>{item.name}</Text>
+            <Image style={styles.itemCode} source={item.img} />
           </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen2');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen2}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo2.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen3');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen3}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo3.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen4');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen4}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo4.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen5');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen5}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo5.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen6');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen6}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo6.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen7');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen7}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo7.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen8');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen8}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo8.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen9');
-              }}>
-              <View style={styles.screen1}>
-                <Text style={styles.text}>{data.screen9}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* < TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo9.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-          <View style={styles.containers}>
-            <TouchableHighlight
-              underlayColor="white"
-              onPress={() => {
-                props.navigation.navigate('screen10');
-              }}>
-              <View style={styles.screen2}>
-                <Text style={styles.text}>{data.screen10}</Text>
-              </View>
-            </TouchableHighlight>
-            {/* <TouchableHighlight onPress={modalOpen}> */}
-            <Image
-              style={styles.img}
-              source={require('../../images/logo10.png')}
-            />
-            {/* </TouchableHighlight> */}
-          </View>
-        </View>
-      </ScrollView>
-    </>
+        </TouchableHighlight>
+      )}
+    />
   );
-};
-
-export default MainScreen;
+}

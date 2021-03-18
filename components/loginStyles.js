@@ -181,7 +181,7 @@ export const styles = StyleSheet.create({
   },
   backArrow: {
     top: moderateScale(40),
-    left: moderateScale(22)
+    left: moderateScale(22),
   },
   logoView: {
     flex: 1,
