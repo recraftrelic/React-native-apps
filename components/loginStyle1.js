@@ -236,6 +236,10 @@ export const styles = StyleSheet.create({
     top: moderateScale(-30),
     right: moderateScale(-10),
   },
+  backArrow: {
+    top: moderateScale(40),
+    left: moderateScale(22)
+  },
   crcl: {
     position: 'absolute',
     top: moderateScale(60),

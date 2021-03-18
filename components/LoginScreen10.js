@@ -17,7 +17,7 @@ import { styles } from './loginStyle2';
 import { images } from './utilities/images';
 
 
-const LoginScreen10 = () => {
+const LoginScreen10 = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [check, setCheckStatus] = useState(false);
@@ -71,6 +71,15 @@ const LoginScreen10 = () => {
 
     <SafeAreaView style={styles.container}>
       <View style={styles.headText}>
+      <TouchableOpacity
+      onPress={() => props.navigation.goBack()}
+      hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
+      >
+      <Image
+          source={images.backArrow}
+          style={styles.backArrow}
+      />
+      </TouchableOpacity>
         <Image source={images.logo} />
       </View>
 
@@ -79,7 +88,7 @@ const LoginScreen10 = () => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
         >
-
+       
           <View style={styles.headText}>
             <Text style={styles.headTxt}>
               {login2.welcome}

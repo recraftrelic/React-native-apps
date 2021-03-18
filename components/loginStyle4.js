@@ -226,6 +226,10 @@ export const styles = StyleSheet.create({
     logoView: {
         flex: 0.3,
     },
+    backArrow: {
+        top: moderateScale(40),
+        left: moderateScale(22)
+      },
     headerStyle: {
         marginTop: moderateScale(120),
         color: '#393F45',

@@ -189,6 +189,10 @@ export const styles = StyleSheet.create({
         flex: 0.3,
         alignItems: 'center',
     },
+    backArrow: {
+        top: moderateScale(2),
+        right: moderateScale(152)
+      },
     headTxt: {
         fontSize: RFValue(24),
         marginTop: moderateScale(10),
