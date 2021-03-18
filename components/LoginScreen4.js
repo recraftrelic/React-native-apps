@@ -65,14 +65,10 @@ const LoginScreen1 = (props) => {
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}>
           <TouchableOpacity
-          onPress={() => props.navigation.goBack()}
-          hitSlop={{ top: 10, bottom: 10, right: 10, left: 10 }}
-          >
-          <Image
-              source={images.backArrow}
-              style={styles.backArrow}
-          />
-        </TouchableOpacity>
+            onPress={() => props.navigation.goBack()}
+            hitSlop={{top: 10, bottom: 10, right: 10, left: 10}}>
+            <Image source={images.backArrow} style={styles.backArrow} />
+          </TouchableOpacity>
           <Image source={images.Ellipse} style={styles.headLogo} />
 
           <Image source={images.EllipseCrcl} style={styles.crcl} />
@@ -104,9 +100,6 @@ const LoginScreen1 = (props) => {
                 <Text style={styles.errorMessage}>
                   * Please include an '@' in the email address.
                 </Text>
-              ) : null}
-              {email && !emailErrorStatus ? (
-                <Image source={images.tick1} style={styles.tick} />
               ) : null}
               <Image style={styles.emailIcon} source={images.at} />
             </View>

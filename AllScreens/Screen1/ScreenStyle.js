@@ -101,9 +101,9 @@ export const styles = StyleSheet.create({
   },
   account: {
     marginTop: moderateScale(5),
-    marginRight: moderateScale(45),
+    marginRight: moderateScale(65),
     color: AppColor.white,
-    fontSize: RFValue(15),
+    fontSize: RFValue(12),
     fontFamily: fonts.regular,
   },
   accountView: {
@@ -116,7 +116,7 @@ export const styles = StyleSheet.create({
     marginLeft: moderateScale(155),
     position: 'absolute',
     color: AppColor.darkSky,
-    fontSize: RFValue(15),
+    fontSize: RFValue(12),
     fontFamily: fonts.regular,
   },
   image1: {

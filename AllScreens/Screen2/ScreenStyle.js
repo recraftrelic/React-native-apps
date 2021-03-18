@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
   boxShadow: {
     width: scale(310),
     height: verticalScale(45),
-    top: moderateScale(258),
+    top: moderateScale(280),
     left: moderateScale(20),
     backgroundColor: AppColor.white,
     position: 'absolute',
