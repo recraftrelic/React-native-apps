@@ -64,6 +64,7 @@ export const styles = StyleSheet.create({
     lineHeight: 14,
     color: AppColor.greyContent,
     fontFamily: fonts.regular,
+    width: 150,
   },
   childView: {
     position: 'absolute',
@@ -118,6 +119,7 @@ export const styles = StyleSheet.create({
     lineHeight: 12,
     color: AppColor.greyContent,
     fontFamily: fonts.regular,
+    height: 45,
   },
   button: {
     width: moderateScale(320),
@@ -136,7 +138,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   account: {
-    top: moderateScale(385),
+    top: moderateScale(357),
     left: moderateScale(60),
     fontWeight: '400',
     fontSize: RFValue(13),
@@ -146,7 +148,7 @@ export const styles = StyleSheet.create({
   },
   sign: {
     top: moderateScale(485),
-    left: moderateScale(200),
+    left: moderateScale(230),
     fontWeight: '400',
     fontSize: RFValue(12),
     lineHeight: 14,
