@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   boxShadow: {
     width: scale(310),
     height: verticalScale(45),
-    top: moderateScale(280),
+    top: moderateScale(290),
     left: moderateScale(20),
     backgroundColor: AppColor.white,
     position: 'absolute',
@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
   boxShadow1: {
     width: scale(310),
     height: verticalScale(45),
-    top: moderateScale(358),
+    top: moderateScale(368),
     left: moderateScale(20),
     backgroundColor: AppColor.white,
     position: 'absolute',
@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
   },
   password: {
     width: scale(300),
-    marginTop: moderateScale(230),
+    marginTop: moderateScale(210),
     marginLeft: moderateScale(200),
     fontSize: RFValue(15),
     fontWeight: '500',
@@ -134,13 +134,13 @@ export const styles = StyleSheet.create({
   },
   errorMessage: {
     left: moderateScale(50),
-    top: moderateScale(325),
+    top: moderateScale(335),
     color: AppColor.red,
     position: 'absolute',
   },
   errorMessage1: {
     left: moderateScale(50),
-    top: moderateScale(50),
+    top: moderateScale(60),
     color: AppColor.red,
     position: 'absolute',
   },
