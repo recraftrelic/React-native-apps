@@ -119,7 +119,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   Sign: {
-    marginLeft: moderateScale(230),
+    marginLeft: moderateScale(250),
     position: 'absolute',
     color: AppColor.darkSky,
     fontFamily: fonts.semiBold,
