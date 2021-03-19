@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: AppColor.white,
     backgroundColor: AppColor.cream,
-    fontSize: RFValue(20),
+    fontSize: RFValue(15),
     paddingLeft: moderateScale(40),
     margin: moderateScale(10),
     flex: 0.1,
@@ -114,6 +114,7 @@ export const styles = StyleSheet.create({
     flex: 0.1,
     flexDirection: 'row',
     justifyContent: 'space-around',
+    top: moderateScale(10),
   },
   Sign: {
     marginLeft: moderateScale(230),
@@ -123,6 +124,7 @@ export const styles = StyleSheet.create({
     flex: 0.1,
     flexDirection: 'row',
     justifyContent: 'space-around',
+    top: moderateScale(10),
   },
   errorMessage: {
     color: 'red',

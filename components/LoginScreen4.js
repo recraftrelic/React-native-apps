@@ -65,9 +65,12 @@ const LoginScreen1 = (props) => {
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}>
           <TouchableOpacity
-            onPress={() => props.navigation.goBack()}
-            hitSlop={{top: 10, bottom: 10, right: 10, left: 10}}>
-            <Image source={images.backArrow} style={styles.backArrow} />
+            onPress={() => {
+              props.navigation.goBack();
+            }}>
+            <View>
+              <Image source={images.arrow_backward} style={styles.backArrow} />
+            </View>
           </TouchableOpacity>
           <Image source={images.Ellipse} style={styles.headLogo} />
 

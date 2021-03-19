@@ -193,7 +193,10 @@ export const styles = StyleSheet.create({
     top: moderateScale(55),
     left: moderateScale(30),
   },
-
+  arr: {
+    top: moderateScale(11),
+    left: moderateScale(11),
+  },
   emailIcon: {
     position: 'absolute',
     top: moderateScale(15),
@@ -219,7 +222,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   backArrow: {
-    top: moderateScale(5),
+    top: moderateScale(2),
     right: moderateScale(152),
   },
   headLogo: {

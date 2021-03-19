@@ -110,7 +110,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   forgot: {
-    top: moderateScale(325),
+    top: moderateScale(120),
     textAlign: 'center',
     fontWeight: '400',
     fontSize: RFValue(16),
