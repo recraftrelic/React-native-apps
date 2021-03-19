@@ -62,7 +62,7 @@ const Screen2 = (props) => {
             <Text style={styles.container1}>{screen2.container1}</Text>
             <Text style={styles.container2}>{screen2.container2}</Text>
           </View>
-          <View style={[styles.boxShadow, shadow]}>
+          <View style={[styles.boxShadow]}>
             <CommonInput
               style={styles.email}
               value={email}
@@ -78,7 +78,7 @@ const Screen2 = (props) => {
               * Please include an '@' in the email address.
             </Text>
           ) : null}
-          <View style={[styles.boxShadow1, shadow]}>
+          <View style={[styles.boxShadow1]}>
             <CommonInput
               style={styles.password0}
               value={password}

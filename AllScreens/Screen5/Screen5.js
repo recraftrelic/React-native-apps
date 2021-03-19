@@ -61,7 +61,7 @@ const Screen5 = (props) => {
                 <View style={styles.MainContainer}>
                   <TextInput
                     style={styles.email}
-                    placeholder="userName or Email"
+                    placeholder="username or email"
                     onChangeText={(email) => onEnterEmail(email)}
                   />
                   {emailErrorStatus == true ? (
@@ -100,7 +100,7 @@ const Screen5 = (props) => {
                 <View style={styles.loginButton}>
                   <Text style={styles.button}>{screen5.button}</Text>
                 </View>
-                <View>
+                <View style={styles.bottom}>
                   <Text style={styles.account}>{screen5.account}</Text>
                   <Text style={styles.Sign}>{screen5.Sign}</Text>
                 </View>

@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Text, View, TouchableOpacity} from 'react-native';
 import {styles} from '../Screen9/ScreenStyle';
 import screen from '../Screen9/Screen9.json';
 import CommonInput from '../Screen9/Component/CommonInput';
 import {images} from '../../components/utilities/images';
 
 import {SafeAreaView} from 'react-navigation';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+// import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const Screen9 = (props) => {
   const [email, setEmail] = useState('');

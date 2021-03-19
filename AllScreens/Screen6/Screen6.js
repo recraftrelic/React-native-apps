@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Text, View, TouchableOpacity} from 'react-native';
 import {styles} from './ScreenStyle';
 import screen from './Screen6.json';
 import {images} from '../../components/utilities/images';
-import CommonInput from '../Screen1/Component/CommonInput';
-import {TouchableOpacity} from 'react-native';
+import CommonInput from './Component/CommonInput';
 
 const Screen6 = (props) => {
   const [email, setEmail] = useState('');
@@ -62,6 +61,7 @@ const Screen6 = (props) => {
             onChangeText={(value) => onChangeEmail(value)}
             secureTextEntry={false}
           />
+
           <Text style={styles.childView} />
           {emailErrorStatus ? (
             <Text style={styles.errorMessage}>

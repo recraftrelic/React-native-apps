@@ -1,6 +1,5 @@
 import React from 'react';
-import {Image} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
+import {Image, TextInput} from 'react-native';
 
 const CommonInput = (props) => {
   const {
@@ -25,13 +24,6 @@ const CommonInput = (props) => {
         secureTextEntry={secureTextEntry}
       />
       <Image style={imageStyle} source={imageSource} />
-      {/* <TextInput
-        style={imageStyle}
-        placeholderTextColor={placeholderTextColor}
-        placeholder={placeholder}
-        value={value}
-        onChangeText={onChangeText}
-      /> */}
     </>
   );
 };
