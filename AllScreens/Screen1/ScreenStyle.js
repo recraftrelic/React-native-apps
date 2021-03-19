@@ -20,8 +20,8 @@ export const styles = StyleSheet.create({
     color: AppColor.white,
   },
   arr: {
-    width:18,
-    height:18,
+    width: 20,
+    height: 18,
   },
   main: {
     marginTop: Platform.OS == 'ios' ? 50 : 0,

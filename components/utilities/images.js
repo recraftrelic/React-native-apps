@@ -80,7 +80,7 @@ const images = {
   Screen9logo,
   tick1,
   arr,
-  backArrow
+  backArrow,
 };
 
 const fonts = Platform.select({

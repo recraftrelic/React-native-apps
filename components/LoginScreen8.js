@@ -65,13 +65,27 @@ const LoginScreen8 = (props) => {
           enableOnAndroid={true}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}>
+          <TouchableOpacity
+            onPress={() => {
+              props.navigation.goBack();
+            }}>
+            <View style={styles.arrow}>
+              <Image style={styles.arr} source={images.arrow_backward} />
+            </View>
+          </TouchableOpacity>
           <Image source={images.logo} style={styles.logo} />
           <View style={styles.headText}>
-            <TouchableOpacity
-              onPress={() => props.navigation.goBack()}
-              hitSlop={{top: 10, bottom: 10, right: 10, left: 10}}>
-              <Image source={images.backArrow} style={styles.backArrow} />
-            </TouchableOpacity>
+            {/* <TouchableOpacity
+              onPress={() => {
+                props.navigation.goBack();
+              }}>
+              <View>
+                <Image
+                  source={images.arrow_backward}
+                  style={styles.backArrow}
+                />
+              </View>
+            </TouchableOpacity> */}
 
             <Text style={styles.headtextStyle}>{login3.headername}</Text>
 

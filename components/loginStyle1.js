@@ -231,7 +231,7 @@ export const styles = StyleSheet.create({
     right: moderateScale(-10),
   },
   backArrow: {
-    top: moderateScale(40),
+    top: moderateScale(15),
     left: moderateScale(22),
   },
   crcl: {
