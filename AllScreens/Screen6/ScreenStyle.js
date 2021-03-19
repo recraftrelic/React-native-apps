@@ -7,7 +7,7 @@ import {fonts} from '../../components/utilities/images';
 export const styles = StyleSheet.create({
   image1: {
     position: 'absolute',
-    left: moderateScale(295),
+    left: moderateScale(275),
   },
   arrow: {
     left: moderateScale(30),
@@ -17,11 +17,11 @@ export const styles = StyleSheet.create({
   circle2: {
     position: 'absolute',
     top: moderateScale(90),
-    left: moderateScale(300),
+    left: moderateScale(280),
   },
   arrow1: {
     position: 'absolute',
-    left: moderateScale(280),
+    left: moderateScale(260),
     top: moderateScale(105),
   },
   logo: {
@@ -32,10 +32,10 @@ export const styles = StyleSheet.create({
   hello: {
     top: moderateScale(150),
     left: moderateScale(35),
-    fontWeight: '700',
     fontSize: RFValue(30),
     lineHeight: 35,
-    fontFamily: fonts.regular,
+    fontFamily: fonts.bold,
+    color: AppColor.black,
   },
   state: {
     top: moderateScale(187),
@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   name: {
-    top: moderateScale(215),
+    top: moderateScale(255),
     left: moderateScale(20),
     position: 'absolute',
     fontWeight: '400',
@@ -75,7 +75,7 @@ export const styles = StyleSheet.create({
     borderColor: AppColor.borderColor,
   },
   password: {
-    top: moderateScale(270),
+    top: moderateScale(285),
     left: moderateScale(20),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -124,7 +124,7 @@ export const styles = StyleSheet.create({
   button: {
     width: moderateScale(320),
     height: moderateScale(50),
-    top: moderateScale(421),
+    top: moderateScale(431),
     left: moderateScale(20),
     borderRadius: 10,
     position: 'absolute',
@@ -135,11 +135,11 @@ export const styles = StyleSheet.create({
     color: AppColor.white,
     textAlign: 'center',
     top: moderateScale(15),
-    fontFamily: fonts.regular,
+    fontFamily: fonts.semiBold,
   },
   account: {
-    top: moderateScale(357),
-    left: moderateScale(60),
+    top: moderateScale(367),
+    left: moderateScale(70),
     fontWeight: '400',
     fontSize: RFValue(13),
     lineHeight: 14,
@@ -147,7 +147,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   sign: {
-    top: moderateScale(485),
+    top: moderateScale(495),
     left: moderateScale(230),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -157,13 +157,13 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   errorMessage: {
-    top: moderateScale(370),
+    top: moderateScale(295),
     marginLeft: moderateScale(50),
     position: 'absolute',
     color: AppColor.red,
   },
   errorMessage1: {
-    top: moderateScale(425),
+    top: moderateScale(360),
     marginLeft: moderateScale(50),
     position: 'absolute',
     color: AppColor.red,

@@ -25,7 +25,6 @@ const Screen1 = (props) => {
 
   const onChangeEmail = (email) => {
     setEmail(email);
-    console.log(email, 'email');
     let reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!reg.test(email)) {
       setEmailErrorStatus(true);

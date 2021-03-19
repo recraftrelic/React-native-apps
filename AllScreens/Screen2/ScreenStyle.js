@@ -2,6 +2,7 @@ import {Platform, StyleSheet} from 'react-native';
 import {AppColor} from '../AppUtil';
 import {moderateScale, scale, verticalScale} from 'react-native-size-matters';
 import {RFValue} from 'react-native-responsive-fontsize';
+import {fonts} from '../../components/utilities/images';
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,23 +10,26 @@ export const styles = StyleSheet.create({
     marginTop: moderateScale(20),
     height: moderateScale(25),
     width: moderateScale(73),
-    fontWeight: '400',
     fontSize: RFValue(23),
     lineHeight: 26,
+    fontFamily: fonts.semiBold,
   },
   main: {
     marginTop: Platform.OS === 'ios' ? 50 : 0,
     flex: 1,
+    backgroundColor: AppColor.white,
   },
   container1: {
     marginLeft: moderateScale(30),
     fontSize: RFValue(32),
-    fontWeight: '700',
+    fontFamily: fonts.bold,
+    color: AppColor.black,
   },
   container2: {
     marginLeft: moderateScale(32),
     fontSize: RFValue(18),
     color: AppColor.greyContent,
+    fontFamily: fonts.regular,
   },
   boxShadow: {
     width: scale(310),
@@ -37,6 +41,14 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingLeft: 80,
     borderRadius: 25,
+    shadowColor: AppColor.black,
+    shadowOffset: {
+      width: 0,
+      height: 14,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 15,
   },
   boxShadow1: {
     width: scale(310),
@@ -48,6 +60,14 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingLeft: 80,
     borderRadius: 25,
+    shadowColor: AppColor.black,
+    shadowOffset: {
+      width: 0,
+      height: 14,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 15,
   },
   password: {
     width: scale(300),
@@ -114,7 +134,7 @@ export const styles = StyleSheet.create({
   },
   errorMessage: {
     left: moderateScale(50),
-    top: moderateScale(310),
+    top: moderateScale(325),
     color: AppColor.red,
     position: 'absolute',
   },

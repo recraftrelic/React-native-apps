@@ -1,9 +1,9 @@
 {
-    "userName":"UserName or Email",
+    "userName":"Username or Email",
     "pass":"Password",
     "View":"View",
     "button":"Login",
-    "account":"Don't have account?",
+    "account":"Don't Have an Account?",
     "Sign":"Sign Up",
     "Show":"View",
     "Hide":"Hide"

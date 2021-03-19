@@ -97,6 +97,8 @@ const fonts = Platform.select({
     semiBold: 'WorkSans-SemiBold',
     bold: 'WorkSans-Bold',
     extraBold: 'WorkSans-ExtraBold',
+    VariableFont: 'AbrilFatface-Regular',
+    Rubik: 'Rubik-VariableFont',
   },
 });
 
