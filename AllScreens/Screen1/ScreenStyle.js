@@ -7,7 +7,7 @@ import {fonts} from '../../components/utilities/images';
 export const styles = StyleSheet.create({
   container: {
     width: scale(311),
-    height: verticalScale(511),
+    height: verticalScale(490),
     top: moderateScale(100),
     left: moderateScale(20),
     borderRadius: 40,
@@ -114,7 +114,7 @@ export const styles = StyleSheet.create({
   },
   Sign: {
     marginTop: moderateScale(15),
-    marginLeft: moderateScale(135),
+    marginLeft: moderateScale(150),
     position: 'absolute',
     color: AppColor.darkSky,
     fontSize: RFValue(12),

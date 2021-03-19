@@ -107,7 +107,7 @@ export const styles = StyleSheet.create({
     left: moderateScale(55),
     fontWeight: '400',
     fontSize: RFValue(12),
-    lineHeight: 12,
+    // lineHeight: 12,
     color: AppColor.greyContent,
     fontFamily: fonts.regular,
   },
@@ -147,7 +147,7 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   sign: {
-    top: moderateScale(495),
+    top: moderateScale(505),
     left: moderateScale(230),
     fontWeight: '400',
     fontSize: RFValue(12),
