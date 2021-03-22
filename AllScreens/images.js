@@ -1,8 +1,8 @@
-import logo1 from '../AllScreens/Images/logo1.png';
+import MainLogo from '../AllScreens/Images/Mainlogo.png';
 import man from '../AllScreens/Images/man.png';
 
 const picture = {
-  logo1: logo1,
+  MainLogo: MainLogo,
   man: man,
 };
 

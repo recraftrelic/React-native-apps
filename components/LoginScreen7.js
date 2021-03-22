@@ -65,7 +65,7 @@ const LoginScreen4 = (props) => {
         showsVerticalScrollIndicator={false}>
         <View style={styles.logoView}>
           <Image source={images.group} style={styles.groupLogo} />
-          <Image source={images.logo} style={styles.logo} />
+          <Image source={images.Mainlogo} style={styles.logo} />
         </View>
         <View>
           <TouchableOpacity

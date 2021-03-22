@@ -39,6 +39,7 @@ import arrow_backward from '../../AllScreens/Images/arrow_backward.png';
 import Screen9logo from '../../AllScreens/Images/Screen9logo.png';
 import tick1 from '../../images/icons/tick1.png';
 import arr from '../../images/icons/arr.png';
+import Mainlogo from '../../AllScreens/Images/Mainlogo.png';
 
 const images = {
   logo,
@@ -81,6 +82,7 @@ const images = {
   tick1,
   arr,
   backArrow,
+  Mainlogo,
 };
 
 const fonts = Platform.select({

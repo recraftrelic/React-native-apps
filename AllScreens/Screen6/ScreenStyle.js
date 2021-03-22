@@ -9,6 +9,10 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     left: moderateScale(275),
   },
+  color: {
+    backgroundColor: AppColor.white,
+    height: 2000,
+  },
   arrow: {
     left: moderateScale(30),
     marginTop: moderateScale(65),

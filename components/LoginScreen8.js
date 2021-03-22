@@ -73,7 +73,7 @@ const LoginScreen8 = (props) => {
               <Image style={styles.arr} source={images.arrow_backward} />
             </View>
           </TouchableOpacity>
-          <Image source={images.logo} style={styles.logo} />
+          <Image source={images.Mainlogo} style={styles.logo} />
           <View style={styles.headText}>
             {/* <TouchableOpacity
               onPress={() => {

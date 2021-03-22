@@ -78,7 +78,7 @@ const LoginScreen1 = (props) => {
           <Image source={images.zigzag} style={styles.zigzag} />
 
           <View style={styles.headText}>
-            <Image source={images.logo} style={styles.logo} />
+            <Image source={images.Mainlogo} style={styles.logo} />
 
             <Text style={styles.name}>{login1.name}</Text>
 
@@ -129,7 +129,7 @@ const LoginScreen1 = (props) => {
                 {showHidePassword ? (
                   <Image source={images.HideIcon} style={styles.hideIcon} />
                 ) : (
-                  <Image source={images.ic_ad_view} />
+                  <Image source={images.ic_ad_view} style={styles.hideIcon} />
                 )}
               </TouchableOpacity>
             </View>

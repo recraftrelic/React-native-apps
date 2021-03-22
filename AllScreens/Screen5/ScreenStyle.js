@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
   },
   logo1: {
     left: moderateScale(160),
+    // top: moderateScale(10),
   },
   userName: {
     height: moderateScale(81),
