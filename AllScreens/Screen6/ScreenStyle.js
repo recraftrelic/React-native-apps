@@ -3,11 +3,17 @@ import {RFValue} from 'react-native-responsive-fontsize';
 import {moderateScale} from 'react-native-size-matters';
 import {AppColor} from '../AppUtil';
 import {fonts} from '../../components/utilities/images';
+import {Platform} from 'react-native';
 
 export const styles = StyleSheet.create({
   image1: {
     position: 'absolute',
     left: moderateScale(275),
+  },
+  main: {
+    marginTop: Platform.OS == 'ios' ? 50 : 0,
+    flex: 1,
+    backgroundColor: 'white',
   },
   color: {
     backgroundColor: AppColor.white,
@@ -79,7 +85,7 @@ export const styles = StyleSheet.create({
     borderColor: AppColor.borderColor,
   },
   password: {
-    top: moderateScale(285),
+    top: moderateScale(275),
     left: moderateScale(20),
     fontWeight: '400',
     fontSize: RFValue(12),
@@ -143,16 +149,21 @@ export const styles = StyleSheet.create({
   },
   account: {
     top: moderateScale(367),
-    left: moderateScale(70),
+    right: moderateScale(40),
     fontWeight: '400',
     fontSize: RFValue(13),
     lineHeight: 14,
     color: AppColor.greyContent,
     fontFamily: fonts.regular,
   },
+  regularTxt: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: moderateScale(40),
+  },
   sign: {
-    top: moderateScale(510),
-    left: moderateScale(240),
+    top: moderateScale(365),
+    right: moderateScale(-13),
     fontWeight: '400',
     fontSize: RFValue(12),
     lineHeight: 14,
@@ -161,13 +172,13 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.regular,
   },
   errorMessage: {
-    top: moderateScale(295),
+    top: moderateScale(280),
     marginLeft: moderateScale(50),
     position: 'absolute',
     color: AppColor.red,
   },
   errorMessage1: {
-    top: moderateScale(360),
+    top: moderateScale(335),
     marginLeft: moderateScale(50),
     position: 'absolute',
     color: AppColor.red,

@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     marginLeft: moderateScale(32),
     marginTop: moderateScale(20),
     height: moderateScale(25),
-    width: moderateScale(73),
+    width: moderateScale(83),
     fontSize: RFValue(23),
     lineHeight: 26,
     fontFamily: fonts.semiBold,
@@ -31,12 +31,13 @@ export const styles = StyleSheet.create({
     color: AppColor.greyContent,
     fontFamily: fonts.regular,
   },
-  boxShadow: {
+  email: {
     width: scale(310),
     height: verticalScale(45),
-    top: moderateScale(290),
+    top: moderateScale(270),
     left: moderateScale(20),
     backgroundColor: AppColor.white,
+    zIndex: 9999,
     position: 'absolute',
     justifyContent: 'center',
     paddingLeft: 80,
@@ -50,7 +51,7 @@ export const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 15,
   },
-  boxShadow1: {
+  password0: {
     width: scale(310),
     height: verticalScale(45),
     top: moderateScale(368),
@@ -61,6 +62,7 @@ export const styles = StyleSheet.create({
     paddingLeft: 80,
     borderRadius: 25,
     shadowColor: AppColor.black,
+    zIndex: 9999,
     shadowOffset: {
       width: 0,
       height: 14,

@@ -1,15 +1,11 @@
 import React, {useState} from 'react';
-import {Image} from 'react-native';
+import {Image, TouchableOpacity, View, Text} from 'react-native';
 import screen2 from './screen2.json';
-import {View} from 'react-native';
-import {Text} from 'react-native';
 import {styles} from './ScreenStyle';
-import {shadow} from 'react-native-paper';
 import {images} from '../../components/utilities/images';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import CommonInput from '../Screen1/Component/CommonInput';
-import {SafeAreaView} from 'react-navigation';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import ComponentInput from './Component/ComponentInput';
+import {SafeAreaView} from 'react-native';
 
 const Screen2 = (props) => {
   const [email, setEmail] = useState('');
@@ -37,8 +33,6 @@ const Screen2 = (props) => {
       setEmailErrorStatus(false);
     }
   };
-
-  const {navigation} = props;
   return (
     <SafeAreaView style={styles.main}>
       <View>
@@ -62,9 +56,8 @@ const Screen2 = (props) => {
             <Text style={styles.container1}>{screen2.container1}</Text>
             <Text style={styles.container2}>{screen2.container2}</Text>
           </View>
-          <View style={[styles.boxShadow]}>
-            <CommonInput
-              style={styles.email}
+          <View style={styles.email}>
+            <ComponentInput
               value={email}
               placeholder="Email"
               imageStyle={styles.emailIcon}
@@ -78,9 +71,8 @@ const Screen2 = (props) => {
               * Please include an '@' in the email address.
             </Text>
           ) : null}
-          <View style={[styles.boxShadow1]}>
-            <CommonInput
-              style={styles.password0}
+          <View style={styles.password0}>
+            <ComponentInput
               value={password}
               placeholder="Password"
               imageStyle={styles.password1}

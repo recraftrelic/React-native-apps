@@ -17,13 +17,13 @@ You can also get the app on play store-- -->
 ## IOS Demo 
 
 <p align="center">
-  <img width="250" src="./Ios previews/Screen1.gif?raw=true" hspace="20" vspace="20" ><img width="250" src="./Ios previews/Screen2.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen3.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen1.gif?raw=true" hspace="10" vspace="10" ><img width="250" src="./Ios previews/Screen2.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen3.gif?raw=true" hspace="10" vspace="10">
 </p>
 <p align="center">
-  <img width="250" src="./Ios previews/Screen4.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen5.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen6.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen4.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen5.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen6.gif?raw=true" hspace="10" vspace="10">
 </p>
 <p align="center">
-  <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="20" vspace="20"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="20" vspace="20">
+  <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="10" vspace="10">
 
 ## Android Demo
 
