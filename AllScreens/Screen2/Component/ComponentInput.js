@@ -14,18 +14,16 @@ const ComponentInput = (props) => {
   } = props;
 
   return (
-    <>
-      <TouchableOpacity>
-        <TextInput
-          style={style}
-          placeholder={placeholder}
-          value={value}
-          onChangeText={onChangeText}
-          secureTextEntry={secureTextEntry}
-        />
-        <Image style={imageStyle} source={imageSource} />
-      </TouchableOpacity>
-    </>
+    <React.Fragment>
+      <TextInput
+        style={style}
+        placeholder={placeholder}
+        value={value}
+        onChangeText={onChangeText}
+        secureTextEntry={secureTextEntry}
+      />
+      <Image style={imageStyle} source={imageSource} />
+    </React.Fragment>
   );
 };
 
