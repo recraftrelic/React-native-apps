@@ -75,18 +75,6 @@ const LoginScreen8 = (props) => {
           </TouchableOpacity>
           <Image source={images.Mainlogo} style={styles.logo} />
           <View style={styles.headText}>
-            {/* <TouchableOpacity
-              onPress={() => {
-                props.navigation.goBack();
-              }}>
-              <View>
-                <Image
-                  source={images.arrow_backward}
-                  style={styles.backArrow}
-                />
-              </View>
-            </TouchableOpacity> */}
-
             <Text style={styles.headtextStyle}>{login3.headername}</Text>
 
             <Text style={styles.headerStyle}>{login3.header}</Text>

@@ -5,6 +5,7 @@ import oroptional from '../../images/icons/oroptional.png';
 import Google from '../../images/icons/Google.png';
 import backArrow from '../../images/icons/backArrow.png';
 import Shape from '../../images/icons/Shape.png';
+import coLogo from '../../images/icons/coLogo.jpg';
 import checkIcon from '../../images/icons/check.png';
 import checkbox from '../../images/icons/checkbox.png';
 import emailIcon from '../../images/icons/email.png';
@@ -83,6 +84,7 @@ const images = {
   arr,
   backArrow,
   Mainlogo,
+  coLogo,
 };
 
 const fonts = Platform.select({

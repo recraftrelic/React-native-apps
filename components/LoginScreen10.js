@@ -61,15 +61,7 @@ const LoginScreen10 = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headText}>
-        {/* <TouchableOpacity
-        onPress={() => {
-          props.navigation.goBack();
-        }}>
-        <View style={styles.backArrow}>
-          <Image source={images.backArrow} />
-        </View>
-      </TouchableOpacity> */}
-        <Image source={images.Mainlogo} />
+        <Image style={styles.logo} source={images.coLogo} />
       </View>
 
       <View style={styles.borderBox}>

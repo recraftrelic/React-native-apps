@@ -190,7 +190,7 @@ export const styles = StyleSheet.create({
   },
   logo: {
     position: 'absolute',
-    top: moderateScale(55),
+    top: moderateScale(70),
     left: moderateScale(30),
   },
   arr: {
