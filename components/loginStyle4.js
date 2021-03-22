@@ -166,7 +166,7 @@ export const styles = StyleSheet.create({
   logo: {
     position: 'absolute',
     top: moderateScale(95),
-    left: moderateScale(155),
+    left: moderateScale(150),
   },
   groupLogo: {
     position: 'absolute',

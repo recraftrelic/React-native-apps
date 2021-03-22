@@ -61,7 +61,7 @@ const LoginScreen10 = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headText}>
-        <Image style={styles.logo} source={images.Mainlogo} />
+        <Image style={styles.logo} source={images.coLogo} />
       </View>
 
       <View style={styles.borderBox}>
