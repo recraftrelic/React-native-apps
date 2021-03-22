@@ -75,7 +75,7 @@ const LoginScreen3 = (props) => {
           <Image source={images.Ellipse} style={styles.headLogo} />
 
           <View style={styles.headText}>
-            <Image source={images.logo} style={styles.logo} />
+            <Image source={images.Mainlogo} style={styles.logo} />
 
             <Text style={styles.headName}>{login2.headername}</Text>
 

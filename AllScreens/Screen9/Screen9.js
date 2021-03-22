@@ -50,7 +50,7 @@ const Screen9 = (props) => {
               </View>
             </TouchableOpacity>
             <Text style={styles.sign}>{screen.sign}</Text>
-            <Image style={styles.logo} source={images.Screen9logo} />
+            <Image style={styles.logo} source={images.Mainlogo} />
             <Text style={styles.email}>{screen.email}</Text>
             <CommonInput
               style={styles.email1}

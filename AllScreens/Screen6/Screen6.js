@@ -34,7 +34,7 @@ const Screen6 = (props) => {
   };
   return (
     <>
-      <View>
+      <View style={styles.color}>
         <Image style={styles.image1} source={images.Ellipse21} />
         <Image style={styles.circle2} source={images.pCircle1} />
         <Image style={styles.arrow1} source={images.arrow1} />
@@ -46,7 +46,7 @@ const Screen6 = (props) => {
             <Image source={images.arrow_backward} />
           </View>
         </TouchableOpacity>
-        <Image style={styles.logo} source={images.pLogo1} />
+        <Image style={styles.logo} source={images.Mainlogo} />
         <View>
           <Text style={styles.hello}>{screen.hello}</Text>
           <Text style={styles.state}>{screen.state}</Text>

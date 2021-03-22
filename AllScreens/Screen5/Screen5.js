@@ -55,7 +55,7 @@ const Screen5 = (props) => {
                   <Image source={images.arrow_backward} />
                 </View>
               </TouchableOpacity>
-              <Image style={styles.logo1} source={picture.logo1} />
+              <Image style={styles.logo1} source={picture.MainLogo} />
               <View>
                 <Text style={styles.userName}>{screen5.userName}</Text>
                 <View style={styles.MainContainer}>

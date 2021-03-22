@@ -174,6 +174,10 @@ export const styles = StyleSheet.create({
     marginTop: moderateScale(25),
     flex: 0.3,
     alignItems: 'center',
+    backgroundColor: '#E5E5E5',
+  },
+  logo: {
+    backgroundColor: '#E5E5E5',
   },
   arr: {
     top: moderateScale(12),
