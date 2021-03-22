@@ -5,19 +5,55 @@ import {FlatGrid} from 'react-native-super-grid';
 import {styles} from './MainScreenStylesheet';
 export default function Example(props) {
   const [items, setItems] = React.useState([
-    {name: 'Screen 1', code: '#4287f5', img: require('../../images/logo1.png')},
-    {name: 'Screen 2', code: '#4287f5', img: require('../../images/logo2.png')},
-    {name: 'Screen 3', code: '#4287f5', img: require('../../images/logo3.png')},
-    {name: 'Screen 4', code: '#4287f5', img: require('../../images/logo4.png')},
-    {name: 'Screen 5', code: '#4287f5', img: require('../../images/logo5.png')},
-    {name: 'Screen 6', code: '#4287f5', img: require('../../images/logo6.png')},
-    {name: 'Screen 7', code: '#4287f5', img: require('../../images/logo7.png')},
-    {name: 'Screen 8', code: '#4287f5', img: require('../../images/logo8.png')},
-    {name: 'Screen 9', code: '#4287f5', img: require('../../images/logo9.png')},
+    {
+      name: 'Screen 1',
+      code: '#4287f5',
+      img: require('../../images/Login1.png'),
+    },
+    {
+      name: 'Screen 2',
+      code: '#4287f5',
+      img: require('../../images/Login2.png'),
+    },
+    {
+      name: 'Screen 3',
+      code: '#4287f5',
+      img: require('../../images/Login3.png'),
+    },
+    {
+      name: 'Screen 4',
+      code: '#4287f5',
+      img: require('../../images/Login4.png'),
+    },
+    {
+      name: 'Screen 5',
+      code: '#4287f5',
+      img: require('../../images/login5.png'),
+    },
+    {
+      name: 'Screen 6',
+      code: '#4287f5',
+      img: require('../../images/login6.png'),
+    },
+    {
+      name: 'Screen 7',
+      code: '#4287f5',
+      img: require('../../images/login7.png'),
+    },
+    {
+      name: 'Screen 8',
+      code: '#4287f5',
+      img: require('../../images/login8.png'),
+    },
+    {
+      name: 'Screen 9',
+      code: '#4287f5',
+      img: require('../../images/login9.png'),
+    },
     {
       name: 'Screen 10',
       code: '#4287f5',
-      img: require('../../images/logo10.png'),
+      img: require('../../images/login10.png'),
     },
   ]);
   return (
