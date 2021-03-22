@@ -9,7 +9,7 @@ const {width} = Dimensions.get('screen');
 export const styles = StyleSheet.create({
   logo: {
     position: 'absolute',
-    top: moderateScale(55),
+    top: moderateScale(60),
     left: moderateScale(30),
   },
   name: {
